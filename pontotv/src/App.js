@@ -1,14 +1,16 @@
 import './App.css';
-import Header from './header/header';
-import Carrosel from './divcarrosel/carrosel';
+import React from 'react'
+import Routes from '../src/router/router'
+
+
+
 
 
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Carrosel/>
+      <Routes/>
     </div>
   );
 }

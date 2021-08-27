@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoptv from '../img/03.png'
+import logoptv from '../../../img/03.png'
+import { useHistory } from 'react-router-dom'
+
 
 
 /* header */
@@ -57,15 +59,17 @@ const Bttn = styled.button`
 
 
 function Header(){
+  const history = useHistory ()
+
   return(
     <HeaderMenu>
       <ImgDiv>
         <ImgPtv src= {logoptv} />
       </ImgDiv>
       <DivBttn>
-        <Bttn>HOME</Bttn>
-        <Bttn>FRANQUEADOS</Bttn>
-        <Bttn>CONTATO</Bttn>
+        <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
+        <Bttn onClick = {()=> history.push('/Franqueados')}>FRANQUEADOS</Bttn>
+        <Bttn onClick = {()=> history.push('/Contato')}>CONTATO</Bttn>
       </DivBttn>       
     </HeaderMenu>
   )
