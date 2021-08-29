@@ -1,31 +1,37 @@
 import React from 'react'
 import Header from '../HomePage/Components/header/header';
-import Brasil from '../img/full.png'
 import styled from 'styled-components';
-import ReactDOM from "react-dom";
-import Taiwan from "@svg-maps/taiwan";
-import { SVGMap } from "react-svg-map";
+import BrazilMap from '../Franqueados/Map'
 
-const Map = styled.img`
-  width: 110vh;
-`
+
 const MapDiv = styled.div`
-border: 2px solid black;
+
 width: 100vh;
 height: 80vh;
 display: flex;
 align-items: center;
+justify-content: center;
+
+
 
 `
 
-function Franqueados () {
+const TitleDiv = styled.div`
+  width: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+`
+
+function Franqueados (props) {
   return(
     <div>
       <Header/>
-        <MapDiv>
-          <Map src={Brasil}/>
+      <TitleDiv><h1>UNIDADES PELO BRASIL</h1></TitleDiv>
+        <MapDiv>      
+          <BrazilMap/>    
         </MapDiv>
-        <SVGMap map={Taiwan}/>      
     </div>
   )
 }

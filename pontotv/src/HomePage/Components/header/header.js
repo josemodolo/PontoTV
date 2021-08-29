@@ -7,10 +7,10 @@ import { useHistory } from 'react-router-dom'
 
 /* header */
 const HeaderMenu = styled.header`
-  border: 2px solid black;
+  border: 2px solid #2b3445;
   height: 10vh;  
   display: flex;
-  background-color: black;
+  background-color: #2b3445;
 `
 /* header */
 
@@ -21,7 +21,7 @@ const ImgDiv = styled.div`
 width: 50vh;
 display: flex;
 flex-direction: row-reverse;
-background-color: black;
+background-color: #2b3445;
 `
 
 const ImgPtv = styled.img `
@@ -34,23 +34,23 @@ const ImgPtv = styled.img `
 const DivBttn = styled.div `
   width: 40%;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid #2b3445;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
+  background-color: #2b3445;
 `
 
 const Bttn = styled.button`
   padding: 10px;
-  background-color: black;
-  border: 5px solid black;
+  background-color: #2b3445;
+  border: 5px solid #2b3445;
   border-radius: 2px;
   color: white;
   cursor: pointer;  
   &:hover{
-    background-color: blue;
+    background-color: #2b3445;
     border: 5px solid #e3ab10;
   }
   font-size: 19px;
