@@ -11,7 +11,7 @@ import  './map.css'
 function BrazilMap (props) {
   return (   
     
-      <SVGMap map={Brazil} className="BrMap"/>  
+      <SVGMap map={Brazil} className="BrMap" onLocationFocus/>  
     
     
   )
