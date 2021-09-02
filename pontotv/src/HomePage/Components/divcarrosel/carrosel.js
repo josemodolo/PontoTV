@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Sonic from '../../../img/sonic.png'
 import Mario from '../../../img/mario.png'
 import Dk from '../../../img/dk.png'
+import Ptvc from '../../../img/ptvc.jpg'
 
 const DivCarousel = styled.div`
   width: 100vw;
@@ -11,7 +12,7 @@ const DivCarousel = styled.div`
 `
 
 const ImgCarousel = styled.img`
-  width: 200px;
+  width: 100%;
 `
 
 class App extends Component {
@@ -29,10 +30,11 @@ class App extends Component {
     const { items } = this.state;
     return (
       <DivCarousel>
-        <Carousel>
-          <ImgCarousel src= {Sonic}/>
-          <ImgCarousel src= {Mario}/>
-          <ImgCarousel src= {Dk}/>        
+        <Carousel>           
+          <ImgCarousel src= {Ptvc}/>
+          <ImgCarousel src= {Ptvc}/>   
+          <ImgCarousel src= {Ptvc}/>   
+          <ImgCarousel src= {Ptvc}/>        
         </Carousel>
     
       </DivCarousel>      
