@@ -9,17 +9,22 @@ position: fixed;
 `
 
 const WhatsLogo = styled.img`
-  height: 100%;
-  z-index: +1;
+  height: 8%;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1+;
 `
 
 function WhatsApp () {
   return (
-    <WpDiv>
+    <>
       <a href= "https://api.whatsapp.com/send?phone=5541995018102">
         <WhatsLogo src= {WpLogo}/>
       </a>
-    </WpDiv>
+    </>
+      
+    
   )
 }
 
