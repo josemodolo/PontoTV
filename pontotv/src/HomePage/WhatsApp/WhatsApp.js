@@ -5,10 +5,12 @@ import WpLogo from '../../img/WhatsApp.png'
 const WpDiv = styled.div`
 width: 10vw;
 height: 10vh;
+position: fixed;
 `
 
 const WhatsLogo = styled.img`
   height: 100%;
+  z-index: +1;
 `
 
 function WhatsApp () {
