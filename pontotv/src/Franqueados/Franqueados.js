@@ -11,17 +11,13 @@ height: 80vh;
 display: flex;
 align-items: center;
 justify-content: center;
-
-
-
 `
 
 const TitleDiv = styled.div`
   width: ;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 `
 
 function Franqueados (props) {

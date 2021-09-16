@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
 import styled from 'styled-components';
-import Carimg1 from '../../../img/imgcar.jpg'
-import Carimg2 from '../../../img/imgcar2.jpg'
+import Carimg1 from '../../../img/carrosel01.jpg'
+import Carimg2 from '../../../img/carrosel02.jpg'
+import Carimg3 from '../../../img/carrosel03.jpg'
+import Carimg4 from '../../../img/carrosel04.jpg'
+import Carimg5 from '../../../img/carrosel05.jpg'
 
 
 const DivCarousel = styled.div`
@@ -39,7 +42,10 @@ class App extends Component {
         </Whiteborderdiv>
         <Carousel>           
           <ImgCarousel src= {Carimg1}/>
-          <ImgCarousel src= {Carimg2}/>                 
+          <ImgCarousel src= {Carimg2}/>
+          <ImgCarousel src= {Carimg3}/>
+          <ImgCarousel src= {Carimg4}/>
+          <ImgCarousel src= {Carimg5}/>                 
         </Carousel>
         <Whiteborderdiv>
           <Whiteborder></Whiteborder>

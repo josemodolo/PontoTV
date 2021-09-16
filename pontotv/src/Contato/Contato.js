@@ -10,23 +10,33 @@ const CentralDiv = styled.div`
   align-items: center;
 `
 
+const Inputs = styled.input`
+  width: 25vw;
+  border-radius: 9px;
+  height: 3vh;
+`
+const InputDiv = styled.div`
+  border: 1px solid black;
+  
+`
+
 function Contato () {
   
   return(
     <div>
       <Header/>
       <CentralDiv>
-      <form>
-        <label>
-          Nome:
-          <input type="text" name="name" />
-        </label><br/>
-        <label>
-          EMAIL:
-          <input type="email" name="name" />
-        </label>
-        <input type="submit" value="Enviar" />
-      </form>
+          <h2>FORMULARIO</h2>
+        <form action="pontotvpublicidade@gmail.com" method="post" enctype="text/plain"> 
+            <h3>Nome</h3><br/>
+            <input type="text" name="name"/><br/>
+            <h3>E-Mail</h3><br/>
+            <input type="text" name="mail"/><br/>
+            <h3>Comentario</h3><br/>
+            <input type="text" name="comment" size="50"/>
+            <input type="submit" value="Send"/>
+            <input type="reset" value="Reset"/>
+        </form>
       </CentralDiv>
     </div>
   )

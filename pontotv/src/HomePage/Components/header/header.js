@@ -69,7 +69,7 @@ function Header(){
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Franqueados')}>UNIDADES</Bttn>
-        <Bttn onClick = {()=> history.push('/Contato')}>SEJA UM FRANQUEADO</Bttn>
+        <Bttn onClick = {()=> history.push('/Contato')}>SEJA UM FRANQUEADO</Bttn>        
       </DivBttn>       
     </HeaderMenu>
   )
