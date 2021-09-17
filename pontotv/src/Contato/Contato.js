@@ -10,15 +10,7 @@ const CentralDiv = styled.div`
   align-items: center;
 `
 
-const Inputs = styled.input`
-  width: 25vw;
-  border-radius: 9px;
-  height: 3vh;
-`
-const InputDiv = styled.div`
-  border: 1px solid black;
-  
-`
+
 
 function Contato () {
   

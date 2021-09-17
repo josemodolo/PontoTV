@@ -11,9 +11,6 @@ function Home() {
       <App/>
       <Description/>
       <WhatsApp/>
-      
-      
-
     </div>
   );
 }

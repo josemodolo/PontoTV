@@ -2,11 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import WpLogo from '../../img/WhatsApp.png'
 
-const WpDiv = styled.div`
-width: 10vw;
-height: 10vh;
-position: fixed;
-`
+
 
 const WhatsLogo = styled.img`
   height: 8%;

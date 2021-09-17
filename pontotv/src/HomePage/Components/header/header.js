@@ -5,12 +5,18 @@ import { useHistory } from 'react-router-dom'
 
 
 
+
+
 /* header */
 const HeaderMenu = styled.header`
   border: 2px solid #2b3445;
   height: 10vh;  
   display: flex;
   background-color: #2b3445;
+    /* @media (max-width: 767px){
+      width: 100%;
+      height: 100%;
+    }     */
 `
 /* header */
 
@@ -22,10 +28,16 @@ width: 50vh;
 display: flex;
 flex-direction: row-reverse;
 background-color: #2b3445;
+  @media (max-width: 767px){
+    flex-direction: row;
+  }
 `
 
 const ImgPtv = styled.img `
   height: 9vh;
+    @media (max-width: 767px){
+      margin-left: 50px;
+    }
 `
 /* logo header */
 
@@ -40,6 +52,15 @@ const DivBttn = styled.div `
   align-items: center;
   justify-content: space-around;
   background-color: #2b3445;
+    @media (max-width: 767px){
+      
+      flex-flow: column nowrap;
+      background-color: blue;
+      z-index: +1;
+      align-items: center;
+      height: 30vh;
+      padding-top: 1rem;
+    }
 `
 
 const Bttn = styled.button`
@@ -53,7 +74,8 @@ const Bttn = styled.button`
     background-color: #2b3445;
     border: 5px solid #e3ab10;
   }
-  font-size: 19px;
+  font-size: 19px;  
+  
 `
 
 
@@ -64,13 +86,15 @@ function Header(){
   return(
     <HeaderMenu>
       <ImgDiv>
-        <ImgPtv src= {logoptv} />
+        
+        <ImgPtv src= {logoptv} className='ImgPtv'/>
       </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Franqueados')}>UNIDADES</Bttn>
-        <Bttn onClick = {()=> history.push('/Contato')}>SEJA UM FRANQUEADO</Bttn>        
-      </DivBttn>       
+        <Bttn onClick = {()=> history.push('/Contato')}>FORMULARIO</Bttn>        
+      </DivBttn>
+      
     </HeaderMenu>
   )
 }
