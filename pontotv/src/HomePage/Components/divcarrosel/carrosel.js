@@ -10,7 +10,7 @@ import './carrosel.css'
 
 
 const DivCarousel = styled.div`
-  width: 100%;
+  width: 100%;  
   
 `
 const ImgCarousel = styled.img`
