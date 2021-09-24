@@ -1,57 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoptv from '../../../img/03.png'
+import logoptv from '../../../img/01.png'
 import { useHistory } from 'react-router-dom'
+import Headerback from '../../../img/header.png'
+import Icon01 from '../../../img/iconimg/icon01.png'
+import Icon02 from '../../../img/iconimg/icon02.png'
+import Icon03 from '../../../img/iconimg/icon03.png'
+import Icon04 from '../../../img/iconimg/icon04.png'
 
 
-
-
-
-/* header */
-const HeaderMenu = styled.header`
-  border: 2px solid #2b3445;
-  height: 10vh;  
-  display: flex;
-  background-color: #2b3445;
-    /* @media (max-width: 767px){
-      width: 100%;
-      height: 100%;
-    }     */
+const HeaderMenu = styled.header`  
+height: 10vh;  
+display: flex;
+background-color: #2b3445;
+background:url(${Headerback});    
 `
-/* header */
 
-
-
-/* logo header */
 const ImgDiv = styled.div`
 width: 50vh;
 display: flex;
 flex-direction: row-reverse;
 background-color: #2b3445;
+background:url(${Headerback});
   @media (max-width: 767px){
     flex-direction: row;
-  }
+  }  
 `
 
 const ImgPtv = styled.img `
   height: 9vh;
+  margin-right: 10px;
     @media (max-width: 767px){
       margin-left: 50px;
     }
 `
-/* logo header */
 
-
-/* div button*/
 const DivBttn = styled.div `
   width: 40%;
-  height: 100%;
-  border: 1px solid #2b3445;
+  height: 100%;  
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: space-around;
   background-color: #2b3445;
+  background:url(${Headerback});
     @media (max-width: 767px){
       
       flex-flow: column nowrap;
@@ -60,41 +52,58 @@ const DivBttn = styled.div `
       align-items: center;
       height: 30vh;
       padding-top: 1rem;
-    }
+    }   
 `
 
 const Bttn = styled.button`
   padding: 10px;
-  background-color: #2b3445;
-  border: 5px solid #2b3445;
+  background-color: transparent;
+  border: 5px solid transparent;
   border-radius: 2px;
   color: white;
   cursor: pointer;  
   &:hover{
-    background-color: #2b3445;
-    border: 5px solid #e3ab10;
+    border: 5px solid #e8952b;
+    border-radius: 10px;
   }
   font-size: 19px;  
   
 `
 
+const DivIcon = styled.div`
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  
+`
 
+const IconImg = styled.img`
+  width: 20px;
+`
 
 function Header(){
   const history = useHistory ()
 
   return(
     <HeaderMenu>
-      <ImgDiv>
-        
+      <ImgDiv>        
         <ImgPtv src= {logoptv} className='ImgPtv'/>
       </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Franqueados')}>UNIDADES</Bttn>
-        <Bttn onClick = {()=> history.push('/Contato')}>FORMULARIO</Bttn>        
+        <Bttn>SEJA UM FRANQUEADO</Bttn>
+        <Bttn onClick = {()=> history.push('/Contato')}>CONTATO</Bttn>        
       </DivBttn>
-      
+      <DivIcon>
+        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
+        <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
+        <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
+        <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
+      </DivIcon>
     </HeaderMenu>
   )
 }

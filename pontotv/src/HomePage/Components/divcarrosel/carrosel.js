@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
 import styled from 'styled-components';
-import Carimg1 from '../../../img/01.jpg'
+import Carimg1 from '../../../img/carrosel01.jpg'
 import Carimg2 from '../../../img/carrosel02.jpg'
 import Carimg3 from '../../../img/carrosel03.jpg'
 import Carimg4 from '../../../img/carrosel04.jpg'
