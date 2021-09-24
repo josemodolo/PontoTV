@@ -80,7 +80,7 @@ const DivIcon = styled.div`
 `
 
 const IconImg = styled.img`
-  width: 20px;
+  width: 30px;
 `
 
 function Header(){
