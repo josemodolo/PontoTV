@@ -1,28 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoptv from '../../../img/01.png'
+import logoptv from '../../img/01.png'
 import { useHistory } from 'react-router-dom'
-import Headerback from '../../../img/header.png'
-import Icon01 from '../../../img/iconimg/icon01.png'
-import Icon02 from '../../../img/iconimg/icon02.png'
-import Icon03 from '../../../img/iconimg/icon03.png'
-import Icon04 from '../../../img/iconimg/icon04.png'
-
+import Headerback from '../../img/header.png'
+import Icon01 from '../../img/iconimg/icon01.png'
+import Icon02 from '../../img/iconimg/icon02.png'
+import Icon03 from '../../img/iconimg/icon03.png'
+import Icon04 from '../../img/iconimg/icon04.png'
 
 const HeaderMenu = styled.header`
-height: 10vh;
-display: flex;
-background-color: #2b3445;
-background:url(${Headerback});
-margin: 0;
+  height: 10vh;
+  display: flex;
+  background-color: #2b3445;
+  background:url(${Headerback});
+  margin: 0;
 `
 
 const ImgDiv = styled.div`
-width: 50vh;
-display: flex;
-flex-direction: row-reverse;
-background-color: #2b3445;
-background:url(${Headerback});
+  width: 50vh;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #2b3445;
+  background:url(${Headerback});
   @media (max-width: 767px){
     flex-direction: row;
   }  
@@ -31,9 +30,9 @@ background:url(${Headerback});
 const ImgPtv = styled.img `
   height: 9vh;
   margin-right: 10px;
-    @media (max-width: 767px){
-      margin-left: 50px;
-    }
+  @media (max-width: 767px){
+    margin-left: 50px;
+  }
 `
 
 const DivBttn = styled.div `
@@ -45,14 +44,14 @@ const DivBttn = styled.div `
   justify-content: space-around;
   background-color: #2b3445;
   background:url(${Headerback});
-    @media (max-width: 767px){      
-      flex-flow: column nowrap;
-      background-color: blue;
-      z-index: +1;
-      align-items: center;
-      height: 30vh;
-      padding-top: 1rem;
-    }   
+  @media (max-width: 767px){      
+    flex-flow: column nowrap;
+    background-color: blue;
+    z-index: +1;
+    align-items: center;
+    height: 30vh;
+    padding-top: 1rem;
+  }   
 `
 
 const Bttn = styled.button`
@@ -75,8 +74,6 @@ const DivIcon = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 13px;
-  
-  
 `
 
 const IconImg = styled.img`
@@ -84,7 +81,7 @@ const IconImg = styled.img`
 `
 
 function Header(){
-  const history = useHistory ()
+  const history = useHistory()
 
   return(
     <HeaderMenu>
@@ -107,4 +104,4 @@ function Header(){
   )
 }
 
-export default Header;
+export default Header

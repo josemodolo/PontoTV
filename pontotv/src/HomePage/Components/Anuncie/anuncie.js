@@ -1,5 +1,5 @@
-import react from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 import ImgAnuncie from '../../../img/imghome/anuncie/anuncie.jpg'
 
 const DivAnuncie = styled.div`

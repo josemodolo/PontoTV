@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../HomePage/Components/header/header'
+import { Header } from '../components/'
 import styled from 'styled-components'
 
 const CentralDiv = styled.div`
