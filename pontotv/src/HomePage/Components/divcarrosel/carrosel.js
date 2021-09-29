@@ -38,8 +38,8 @@ const DivCarousel = styled.div`
   }
 `
 const ImgCarousel = styled.img`
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%vh;
     @media (max-width: 767px){
       width: 100%;
       height: 20vh;
@@ -72,7 +72,8 @@ const Carousel = () => {
       <ReactCarousel 
         ref={carouselRef}
         enableAutoPlay
-        autoPlaySpeed={3000}          
+        emulateTouch              
+        autoPlaySpeed={4000}          
         pagination={false}
         onNextEnd={({ index }) => {
           clearTimeout(resetTimeout)

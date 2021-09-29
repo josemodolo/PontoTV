@@ -1,7 +1,7 @@
 import React from 'react'
-import { Header } from '../components/'
+import { Header, WhatsApp } from '../components'
 import styled from 'styled-components'
-import BrazilMap from '../Franqueados/Map'
+import BrazilMap from './Map'
 
 const MapDiv = styled.div`
   width: 100vh;
@@ -25,6 +25,7 @@ function Franqueados (props) {
         <MapDiv>      
           <BrazilMap />    
         </MapDiv>
+        <WhatsApp/>
     </div>
   )
 }

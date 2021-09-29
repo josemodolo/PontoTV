@@ -8,12 +8,14 @@ import Icon02 from '../../img/iconimg/icon02.png'
 import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
 
+
 const HeaderMenu = styled.header`
   height: 10vh;
   display: flex;
   background-color: #2b3445;
   background:url(${Headerback});
   margin: 0;
+  position: sticky;
 `
 
 const ImgDiv = styled.div`
@@ -22,6 +24,7 @@ const ImgDiv = styled.div`
   flex-direction: row-reverse;
   background-color: #2b3445;
   background:url(${Headerback});
+  margin-left: 50px;
   @media (max-width: 767px){
     flex-direction: row;
   }  
@@ -60,7 +63,24 @@ const Bttn = styled.button`
   border: 5px solid transparent;
   border-radius: 2px;
   color: white;
-  cursor: pointer;  
+  cursor: pointer;
+  outline: none;
+  &:hover{
+    border: 5px solid #e8952b;
+    border-radius: 10px;
+  }
+  font-size: 19px;  
+`
+
+const BttnContact = styled.button`
+  padding: 10px;
+  background-color: transparent;
+  border: 5px solid transparent;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  scroll-behavior: smooth;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;
@@ -69,7 +89,7 @@ const Bttn = styled.button`
 `
 
 const DivIcon = styled.div`
-  width: 30vw;
+  width: 18vw;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -77,7 +97,7 @@ const DivIcon = styled.div`
 `
 
 const IconImg = styled.img`
-  width: 30px;
+  width: 20px;
 `
 
 function Header(){
@@ -90,9 +110,9 @@ function Header(){
       </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
-        <Bttn onClick = {()=> history.push('/Franqueados')}>UNIDADES</Bttn>
-        <Bttn>SEJA UM FRANQUEADO</Bttn>
-        <Bttn onClick = {()=> history.push('/Contato')}>CONTATO</Bttn>        
+        <Bttn onClick = {()=> history.push('/Mapa')}>UNIDADES</Bttn>
+        <Bttn onClick = {()=> history.push('/Franqueados')}>SEJA UM FRANQUEADO</Bttn>
+        <a href="#formSection"><BttnContact>CONTATO</BttnContact></a>      
       </DivBttn>
       <DivIcon>
         <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>

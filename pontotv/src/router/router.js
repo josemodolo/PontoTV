@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from '../HomePage/HomePage'
-import Franqueados from '../Franqueados/Franqueados'
-import Contato from '../Contato/Contato'
-
+import Mapa from '../Mapa/mapa'
+import Franqueados from "../components/Franqueado/index";
 
 
 const Routes = () => {
@@ -10,8 +9,8 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact component={Home} path = '/' />
+        <Route exact component={Mapa} path = '/Mapa' />        
         <Route exact component={Franqueados} path = '/Franqueados' />
-        <Route exact component={Contato} path = '/Contato' />
       </Switch>
     </Router>
   )
