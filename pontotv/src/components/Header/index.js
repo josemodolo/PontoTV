@@ -9,12 +9,14 @@ import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
 
 
+
 const HeaderMenu = styled.header`
   height: 10vh;
   display: flex;
   background-color: #2b3445;
   background:url(${Headerback});
   margin: 0;
+  padding: 5px;
   position: sticky;
 `
 
@@ -45,7 +47,7 @@ const DivBttn = styled.div `
   justify-content: space-between;
   align-items: center;
   justify-content: space-around;
-  background-color: #2b3445;
+  background-color: #2b3445;  
   background:url(${Headerback});
   @media (max-width: 767px){      
     flex-flow: column nowrap;
@@ -94,10 +96,11 @@ const DivIcon = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 13px;
+  margin-left: 150px ;
 `
 
 const IconImg = styled.img`
-  width: 20px;
+  width: 28px;
 `
 
 function Header(){

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Gilroy-Bold.tff;
+  src: local("GilroyBold")
+  url("./fonts/Gilroy-Bold.ttf");
+}
+
+.font-gb{
+  font-family: "GilroyBold";
+}
+
 .body {
   margin: 0;
   font-family: san;  
