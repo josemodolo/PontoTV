@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.jpg'
 import styled from "styled-components";
 

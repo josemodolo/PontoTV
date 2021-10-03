@@ -1,16 +1,26 @@
 @font-face {
-  font-family: Gilroy-Bold.tff;
+  font-family:"Gilroy-Bold";
   src: local("GilroyBold")
   url("./fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family:"Gilroy-Heavy";
+  src: local("GilroyHeavy")
+  url("./fonts/Gilroy-Heavy.ttf");
 }
 
 .font-gb{
   font-family: "GilroyBold";
 }
 
+body {
+  font-family: "GilroyHeavy";
+}
+
 .body {
   margin: 0;
-  font-family: san;  
+  /* font-family: san;   */
 }
 
 .App {

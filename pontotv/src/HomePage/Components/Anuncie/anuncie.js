@@ -15,7 +15,8 @@ const DivAnuncie = styled.div`
 const TextArea = styled.div`
 width: 50vw;
 height: 60vh;
-margin-left: 650px;
+margin-left: 685px;
+margin-top: 45px;
 `
 
 
@@ -35,20 +36,21 @@ const OrderList = styled.p`
 z-index: +1;
 color: #4d4d4d;
 font-weight: 500;
+margin-left: 20px;
 `
 
 function Anuncie (){
   return(
     <DivAnuncie>
       <TextArea>
-        <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>
+        <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle><br/>
             <TextImg>Não <strong>importa</strong> se você é micro ou macro, muito menos o tamanho<br/>
               ou segmento do seu negócio, o nosso objetivo é fazer você aparecer!<br/><br/>
               Através de vídeos de 15 ou 30 segundos, você divulga seu negócio,<br/>
               empresa, serviço, eventos ou produtos, impactando milhares de<br/>
               pessoas diariamente, em pontos comerciais estratégicos.<br/>
-            </TextImg>
-        <TextTitle>VANTAGENS:</TextTitle>
+            </TextImg><br/>
+        <TextTitle>VANTAGENS:</TextTitle><br/>
             <OrderList>
               <ul>
                 <li>Pacotes <strong>personalizados.</strong></li>
