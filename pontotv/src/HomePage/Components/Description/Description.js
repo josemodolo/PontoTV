@@ -1,11 +1,12 @@
 import React from "react";
 import Descriptionimg from '../../../img/imghome/historia/historia.jpg'
 import styled from "styled-components";
+import HistoryImg from '../../../img/imghome/historia/historia.jpg'
 
 
 const DivHistory = styled.div`
   display: flex;
-  background:url(${Descriptionimg});
+  background:url(${HistoryImg});
   align-items: center;
   justify-content: center;
   height: 36vh;
@@ -18,6 +19,7 @@ const DivHistory = styled.div`
 const ImgText = styled.p`
  z-index: +1;
  color: white;
+ font-size: 18px;
 `
 
 function Description () {

@@ -6,6 +6,8 @@ import Anuncie from './Components/Anuncie/anuncie'
 import Contato from '../components/Contato'
 import Publicitaria from './Components/Publicitaria'
 import Corporativa from './Components/Corporativa'
+import Anunciantes from '../HomePage/Anunciantes/index'
+import Dados from '../HomePage/Dados/index'
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
       <Anuncie />
       <Publicitaria />
       <Corporativa />
+      <Anunciantes />
+      <Dados />
       <Contato />
     </div>
   )
