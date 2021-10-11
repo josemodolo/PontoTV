@@ -8,10 +8,21 @@ import Publicitaria from './Components/Publicitaria'
 import Corporativa from './Components/Corporativa'
 import Anunciantes from '../HomePage/Anunciantes/index'
 import Dados from '../HomePage/Dados/index'
+import Parceiros from '../HomePage/parceiros/index'
+import Footer from './footer'
+import styled from 'styled-components'
+
+
+
+
+const GlobalDivHome = styled.div`
+height: 100vh;
+overflow: auto;
+`
 
 function Home() {
   return (
-    <div>
+    <GlobalDivHome>
       <Header />
       <App />
       <Description />
@@ -20,9 +31,11 @@ function Home() {
       <Publicitaria />
       <Corporativa />
       <Anunciantes />
+      <Parceiros />
       <Dados />
       <Contato />
-    </div>
+      <Footer />
+    </GlobalDivHome>
   )
 }
 

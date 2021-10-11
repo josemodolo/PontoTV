@@ -1,5 +1,4 @@
 import React from "react";
-import Descriptionimg from '../../../img/imghome/historia/historia.jpg'
 import styled from "styled-components";
 import HistoryImg from '../../../img/imghome/historia/historia.jpg'
 
