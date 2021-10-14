@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Header, WhatsApp } from '../components'
 import styled from 'styled-components'
 import BrazilMap from './Map'
 import { Contato } from '../components'
 import Footer from '../HomePage/footer'
+import "react-svg-map/lib/index.css"
+import { SVGMap } from 'react-svg-map'
+
+const LibMap = styled(SVGMap)`
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+`
+
 
 const MapDiv = styled.div`
   width: 100vh;
@@ -19,13 +28,33 @@ const TitleDiv = styled.div`
   justify-content: center;  
 `
 
+const Slider = styled.div`
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 400px;
+  border-left: 2px solid black;
+  background-color: grey;
+  height: 100vh;
+`
+
 function Franqueados (props) {
+  const [showSlider, setShowSlider] = useState (false)
+  const [selectedState, setSelecetedState] = useState ('')
+
+  function divLateral () {
+    setShowSlider(true)
+  }
+
+
   return(
     <div>
       <Header/>
       <TitleDiv><h1>UNIDADES PELO BRASIL</h1></TitleDiv>
         <MapDiv>      
-          <BrazilMap />    
+          <BrazilMap onLocationClick={divLateral}/>
+          {showSlider && <Slider></Slider>}    
         </MapDiv>
         <Contato />
         <Footer />
