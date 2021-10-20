@@ -43,17 +43,26 @@ const Mailer = () => {
     emailjs.sendForm('service_mtbyfmf','template_0ldod4l',e.target,'user_cJxNni3aYaBfWmtphIclr').then(res=>{console.log(res)}).catch(err=> console.log(err));
   }
 
+  const userAlert = () => {
+    alert ('Mensagem enviada com sucesso')
+  }
+
+
   return ( 
     <FormDiv>
       <h1>Contato</h1><br/>      
         <form onSubmit={sendEmail}>                
             <label>Nome</label>
-            <input type='text' name='name' placeholder='Coloque seu nome'/>
-            <label>Email</label>
-            <input type='email' name='user_email' placeholder='Coloque seu e-mail'/>            
+            <input type='text' name='name' placeholder='Coloque seu nome' required/><br/>
+            <label>E-mail</label>
+            <input type='email' name='user_email' placeholder='Coloque seu e-mail' required/><br/>
+            <label for='phone'>What'sApp</label>
+            <input type="tel" id="phone" name="phone" maxlength="12" placeholder='Exemplo: (11)1234-5678'
+            pattern="\([0-9]{2}\)[(0-9)]{2}-[0-9]{4}-[0-9]{4}"
+            required /> <br/>       
             <label>Mensagem</label><br/><br/>
             <TextBox name='message' rows='4'/><br/>
-            <Bttn type='submit' value='ENVIAR'/>                  
+            <Bttn type='submit' value='ENVIAR' onclick={userAlert}/>                  
         </form>      
     </FormDiv>
   );
