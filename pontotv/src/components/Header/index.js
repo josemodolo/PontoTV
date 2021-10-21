@@ -12,21 +12,22 @@ import Icon04 from '../../img/iconimg/icon04.png'
 
 const HeaderMenu = styled.header`
   height: 10vh;
-  display: flex;
-  background-color: #2b3445;
-  background:url(${Headerback});
-  margin: 0;
+  display: flex;  
+  background:url(${Headerback});  
   padding: 5px;
   position: sticky;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 100%;  
 `
 
 const ImgDiv = styled.div`
   width: 50vh;
   display: flex;
-  flex-direction: row-reverse;
-  background-color: #2b3445;
+  flex-direction: row-reverse;  
   background:url(${Headerback});
-  margin-left: 50px;
+  margin-left: 50px;  
   @media (max-width: 767px){
     flex-direction: row;
   }  
@@ -46,9 +47,8 @@ const DivBttn = styled.div `
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  background-color: #2b3445;  
-  background:url(${Headerback});
+  justify-content: space-around;  
+  background:url(${Headerback});  
   @media (max-width: 767px){      
     flex-flow: column nowrap;
     background-color: blue;

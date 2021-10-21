@@ -16,7 +16,7 @@ const DivHistory = styled.div`
 
 
 const ImgText = styled.p`
- z-index: +1;
+ 
  color: white;
  font-size: 18px;
 `

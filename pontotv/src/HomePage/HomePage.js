@@ -16,8 +16,8 @@ import styled from 'styled-components'
 
 
 const GlobalDivHome = styled.div`
-height: 100vh;
-overflow: auto;
+/* height: 100vh;
+overflow: auto; */
 `
 
 function Home() {
