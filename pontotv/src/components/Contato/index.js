@@ -7,7 +7,7 @@ const FormDiv = styled.div`
 background:url(${ContImg});
 display: flex;
 flex-direction: row-reverse;
-height: 46vh;
+height: 48vh;
 background-size: 100%;
 background-repeat: no-repeat;
 `

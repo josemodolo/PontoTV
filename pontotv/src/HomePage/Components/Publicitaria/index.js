@@ -5,16 +5,19 @@ import '../../../fonts/Gilroy-Bold.ttf'
 
 const DivPub = styled.div`
   background:url(${ImgPub}); 
-  display: flex;  
-  height: 89vh;
+  display: flex;
+  width: 100%;
+  height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat;
+  
 `
 
 const TextArea = styled.div`
 width: 50vw;
 height: 60vh;
-margin-left: 35px;
+margin-left: 2vw;
+
 `
 
 const Hash = styled.h4`

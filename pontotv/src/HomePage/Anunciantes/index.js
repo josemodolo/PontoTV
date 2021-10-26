@@ -6,9 +6,12 @@ import styled from 'styled-components'
 const DivCentral = styled.div`
 background:url(${AnunImg});
 display: flex;
-height: 75vh;
+height: 83vh;
 background-size: 100%;
 background-repeat: no-repeat;
+@media (max-width: 1440px){
+    height: 75vh;
+  }
 `
 
 function Anunciantes () {

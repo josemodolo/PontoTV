@@ -7,16 +7,19 @@ const DivAnuncie = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 63vh;
+  width: 100%;
+  height: 70vh ;
   background-size: 100%;
   background-repeat: no-repeat;
+    
 `
 
 const TextArea = styled.div`
 width: 50vw;
-height: 60vh;
-margin-left: 685px;
-margin-top: 45px;
+height: 43vh;
+margin-left: 49vw;
+
+border: 1px solid black;
 `
 
 
@@ -30,7 +33,7 @@ const TextTitle = styled.h1`
 const TextImg = styled.p`
  z-index: +1;
  color: #4d4d4d;
- font-size: 20px;
+ font-size: 1vw;
  `
 
 const OrderList = styled.p`

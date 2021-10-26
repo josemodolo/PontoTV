@@ -1,19 +1,22 @@
 import styled from "styled-components";
 import emailjs from 'emailjs-com'
+import { React } from 'react'
 
 const FormDiv = styled.div`  
-  background-color: white;
+  background-color: #526898;
   width: 50vw;
-  height: 42vh;
+  height: 45vh;
   margin-top: 16px;
-  margin-right: 20px;
-  
+  margin-right: 20px;  
   text-align: center;
+  color: white;
+  
 `
 
 const TextBox = styled.textarea`
   width: 40vw;
   height: 12vh;
+  border-radius: 10px;
 `
 
 const Bttn = styled.input`
@@ -35,35 +38,53 @@ const Bttn = styled.input`
   }
 `
 
+const InputDiv = styled.input`
+  border-radius: 15px;
+  padding: 1%;
+  border: none;
+  width: 35vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+`
+
+const FormStyle = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  
+`
+
 const Mailer = () => {
 
   function sendEmail(e){
     e.preventDefault();
-
     emailjs.sendForm('service_mtbyfmf','template_0ldod4l',e.target,'user_cJxNni3aYaBfWmtphIclr').then(res=>{console.log(res)}).catch(err=> console.log(err));
   }
-
+  
   const userAlert = () => {
     alert ('Mensagem enviada com sucesso')
   }
 
+ 
 
   return ( 
-    <FormDiv>
-      <h1>Contato</h1><br/>      
-        <form onSubmit={sendEmail}>                
+    <FormDiv>     
+        <FormStyle onSubmit={sendEmail}>                
             <label>Nome</label>
-            <input type='text' name='name' placeholder='Coloque seu nome' required/><br/>
+            <InputDiv type='text' name='name' placeholder='Coloque seu nome' required/>
             <label>E-mail</label>
-            <input type='email' name='user_email' placeholder='Coloque seu e-mail' required/><br/>
+            <InputDiv type='email' name='user_email' placeholder='Coloque seu e-mail' required/>
             <label for='phone'>What'sApp</label>
-            <input type="tel" id="phone" name="phone" maxlength="12" placeholder='Exemplo: (11)1234-5678'
+            <InputDiv type="tel" id="phone" name="phone" maxlength="12" placeholder='Exemplo: (11)1234-5678'
             pattern="\([0-9]{2}\)[(0-9)]{2}-[0-9]{4}-[0-9]{4}"
-            required /> <br/>       
-            <label>Mensagem</label><br/><br/>
-            <TextBox name='message' rows='4'/><br/>
+            required
+            //  onChange={ (event) => {setTelefone(event.target.value) } }
+            />     
+            <label>Mensagem</label>
+            <TextBox name='message' rows='4'/>
             <Bttn type='submit' value='ENVIAR' onclick={userAlert}/>                  
-        </form>      
+        </FormStyle>      
     </FormDiv>
   );
 }

@@ -4,9 +4,12 @@ import styled from "styled-components";
 const ParcDiv = styled.div`
 background:url(${ParcImg});
 display: flex;
-height: 75vh;
+height: 84vh;
 background-size: 100%;
 background-repeat: no-repeat;
+@media (max-width: 1440px){
+    height: 76vh;
+  }
 `
 
 

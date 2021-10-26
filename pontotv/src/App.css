@@ -1,7 +1,6 @@
 @font-face {
-  font-family:"Gilroy-Bold";
-  src: local("GilroyBold")
-  url("./fonts/Gilroy-Bold.ttf");
+  font-family:"GilroyBold";
+  src: url("./fonts/Gilroy-Bold.ttf") format("truetype"); 
 }
 
 @font-face {
@@ -15,7 +14,7 @@
 }
 
 body {
-  font-family: "Gilroy-Bold";
+  font-family: "GilroyBold";
   padding: 0;
 }
 

@@ -5,16 +5,18 @@ import styled from "styled-components";
 const DivCorp = styled.div`
   background:url(${ImgCorp}); 
   display: flex;
-  height: 89vh;
-  align-items: center;
-  flex-direction: column;
+  height: 100vh;
+  justify-content: center ;
   background-size: 100%;
   background-repeat: no-repeat;
+  @media (max-width: 1440px){
+    height: 90vh;
+  }
 `
 const TextArea = styled.div`
 width: 50vw;
 height: 60vh;
-margin-left: 665px;
+margin-left: 48vw;
 `
 
 const Hash = styled.h4`
@@ -27,7 +29,7 @@ const TextTitle = styled.h1`
  color: #0071c0;
  font-weight: 900;
  font-size: 40pt;
-  
+ 
 `
 
 const TextImg = styled.p`

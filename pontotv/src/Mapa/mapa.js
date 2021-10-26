@@ -5,13 +5,9 @@ import BrazilMap from './Map'
 import { Contato } from '../components'
 import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
-import { SVGMap } from 'react-svg-map'
 
-const LibMap = styled(SVGMap)`
-  width: 500px;
-  height: 500px;
-  margin-top: 40px;
-`
+
+
 
 
 const MapDiv = styled.div`
@@ -41,7 +37,7 @@ const Slider = styled.div`
 
 function Franqueados (props) {
   const [showSlider, setShowSlider] = useState (false)
-  const [selectedState, setSelecetedState] = useState ('')
+  // const [selectedState, setSelecetedState] = useState ('')
 
   function divLateral () {
     setShowSlider(true)

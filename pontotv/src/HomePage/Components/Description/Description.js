@@ -8,17 +8,19 @@ const DivHistory = styled.div`
   background:url(${HistoryImg});
   align-items: center;
   justify-content: center;
-  height: 36vh;
+  width: 100%;
+  height: 0 auto;
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
+   
 `
 
 
-const ImgText = styled.p`
- 
+const ImgText = styled.p` 
  color: white;
- font-size: 18px;
+ font-size: 1,9vw;
+  
 `
 
 function Description () {
