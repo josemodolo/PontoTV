@@ -5,6 +5,7 @@ import BrazilMap from './Map'
 import { Contato } from '../components'
 import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
+import Bg from '../img/imghome/conteudomap/bg.jpg'
 
 
 
@@ -16,6 +17,7 @@ const MapDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `
 
 const TitleDiv = styled.div`

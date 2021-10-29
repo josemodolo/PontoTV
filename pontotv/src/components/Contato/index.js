@@ -7,9 +7,10 @@ const FormDiv = styled.div`
 background:url(${ContImg});
 display: flex;
 flex-direction: row-reverse;
-height: 48vh;
+height: 300px;
 background-size: 100%;
 background-repeat: no-repeat;
+background-color: yellow;
 `
 
 function Contato (){

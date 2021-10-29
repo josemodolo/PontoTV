@@ -1,26 +1,28 @@
 import styled from "styled-components";
 import emailjs from 'emailjs-com'
-import { React } from 'react'
+import React, { useState } from 'react'
 
 const FormDiv = styled.div`  
-  background-color: #526898;
-  width: 50vw;
-  height: 45vh;
-  margin-top: 16px;
-  margin-right: 20px;  
+ // background-color: #526898;
+  //width: 50vw;
+  //height: max-content;
+  //overflow: hidden;
+  //margin-top: 16px;
+  //margin-right: 20px;  
+  background-color: yellow;
   text-align: center;
   color: white;
+  //padding: 50px;
   
 `
 
 const TextBox = styled.textarea`
-  width: 40vw;
+  //width: 40vw;
   height: 12vh;
   border-radius: 10px;
 `
 
 const Bttn = styled.input`
-  padding: 10px;
   background-color: transparent;
   border: 5px solid transparent;
   border-radius: 2px;
@@ -29,20 +31,17 @@ const Bttn = styled.input`
   outline: none;
   background-color: #e8952b;
   border-radius: 3px;
-  width: 10vw;
+ // width: 10vw;
   font-weight: bold;
   font-size: 15px;
-  &:hover{
-    border: 5px solid #0071c0;
-    background-color: #0071c0;
-  }
+  
 `
 
 const InputDiv = styled.input`
   border-radius: 15px;
   padding: 1%;
   border: none;
-  width: 35vw;
+  //width: 35vw;
   margin-top: 1%;
   margin-bottom: 1%;
 `
@@ -51,7 +50,12 @@ const FormStyle = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  //height: 40vh;
   color: white;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 10px;
+  overflow: hidden;
   
 `
 
@@ -66,7 +70,16 @@ const Mailer = () => {
     alert ('Mensagem enviada com sucesso')
   }
 
+  const formatPhone = (value) => {
+    return value
+      .replace(/\D/g, '')
+      .replace(/(\d{2})(\d)/, '($1) $2')
+      .replace(/(\d{4})(\d)/, '$1-$2')
+      .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
+      .replace(/(-\d{4})\d+?$/, '$1')
+  }
  
+  const [ telefone, setTelefone ] = useState ("");
 
   return ( 
     <FormDiv>     
@@ -76,10 +89,11 @@ const Mailer = () => {
             <label>E-mail</label>
             <InputDiv type='email' name='user_email' placeholder='Coloque seu e-mail' required/>
             <label for='phone'>What'sApp</label>
-            <InputDiv type="tel" id="phone" name="phone" maxlength="12" placeholder='Exemplo: (11)1234-5678'
-            pattern="\([0-9]{2}\)[(0-9)]{2}-[0-9]{4}-[0-9]{4}"
+            <InputDiv type="tel" id="phone" value={telefone}  name="phone" maxlength="12" placeholder='Exemplo: (11)1234-5678'
+            
             required
-            //  onChange={ (event) => {setTelefone(event.target.value) } }
+            onChange={ (event) => {const newValue = formatPhone(event.target.value)
+              setTelefone(newValue) } }
             />     
             <label>Mensagem</label>
             <TextBox name='message' rows='4'/>

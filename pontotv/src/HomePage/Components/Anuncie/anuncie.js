@@ -3,57 +3,68 @@ import styled from "styled-components"
 import ImgAnuncie from '../../../img/imghome/anuncie/anuncie.jpg'
 
 const DivAnuncie = styled.div`
-  background:url(${ImgAnuncie});
+  
+  /* width: 100%; */
+  height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70vh ;
+  //flex-direction: row-reverse;
+  //width:100% ;
+  //height: 10px;
   background-size: 100%;
   background-repeat: no-repeat;
-    
+  //flex-wrap: wrap;
+  position: relative;
+  
 `
 
-const TextArea = styled.div`
-width: 50vw;
-height: 43vh;
-margin-left: 49vw;
+const Img = styled.img`
+ width: 100%;
+`
 
-border: 1px solid black;
+
+
+const TextArea = styled.div`
+  background-color: yellow;
+;
 `
 
 
 const TextTitle = styled.h1`
- z-index: +1;
+ position: absolute;
  color: #0071c0;
  font-weight: 900;
-  
+ top: 8px;
+ right: 16px;
+
 `
 
 const TextImg = styled.p`
- z-index: +1;
- color: #4d4d4d;
- font-size: 1vw;
+    
+    color: #4d4d4d;
+    //font-size: 20px;
+    position: absolute;
+
  `
 
 const OrderList = styled.p`
-z-index: +1;
+
 color: #4d4d4d;
-font-size: 20px;
-margin-left: 20px;
+//font-size: 20px;
+
 `
 
 const ListTitle = styled.h2`
- z-index: +1;
+ 
  color: #0071c0;
  font-weight: 900;
- font-size: 25px ;
+ //font-size: 25px ;
 `
 
 function Anuncie (){
   return(
     <DivAnuncie>
-      <TextArea>
+      <Img src={ImgAnuncie}/>
         <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle><br/>
             <TextImg>Não <strong>importa</strong> se você é <strong>micro</strong> ou macro, muito menos o <strong>tamanho</strong><br/>
               ou <strong>segmento</strong> do seu <strong>negócio</strong>, o <strong>nosso objetivo</strong> é <strong>fazer você aparecer!</strong><br/><br/>
@@ -70,8 +81,7 @@ function Anuncie (){
                 <li><strong>Foco</strong> em <strong>públicos diversificados</strong>.</li>
                 <li><strong>Mídia limpa, 100% digital</strong> e que <strong>não polui</strong> nem <strong>agride</strong> a <strong>natureza</strong>.</li>  
               </ul>  
-            </OrderList>   
-      </TextArea>              
+            </OrderList> 
     </DivAnuncie>
   )
 }

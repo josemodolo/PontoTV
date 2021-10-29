@@ -19,7 +19,8 @@ const HeaderMenu = styled.header`
   top: 0;
   z-index: 1;
   background-repeat: no-repeat;
-  background-size: 100%;  
+  background-size: 100%;
+  background-color: #0072c0;   
 `
 
 const ImgDiv = styled.div`

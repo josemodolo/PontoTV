@@ -4,44 +4,42 @@ import ImgPub from '../../../img/imghome/tvpublicitaria/tvpublicitaria.jpg'
 import '../../../fonts/Gilroy-Bold.ttf'
 
 const DivPub = styled.div`
-  background:url(${ImgPub}); 
   display: flex;
+  background:url(${ImgPub}); 
   width: 100%;
-  height: 100vh;
+  height: 700px;
   background-size: 100%;
   background-repeat: no-repeat;
-  
+  position: relative;
 `
 
 const TextArea = styled.div`
-width: 50vw;
-height: 60vh;
-margin-left: 2vw;
+//width: 50vw;
+//height: 60vh;
+//margin-left: 2vw;
 
 `
 
 const Hash = styled.h4`
-margin-top: 40px;
+//margin-top: 40px;
 color: white;
 `
 
-
 const TextTitle = styled.h1`
- z-index: +1;
+ //z-index: +1;
  color: #ffb131; 
  margin-top: 10px;
  font-size: 40pt;
 `
 
 const TextImg = styled.p`
- z-index: +1;
+ //z-index: +1;
  color: white;
  font-size: 20px;
-
  `
 
 const OrderList = styled.p`
-z-index: +1;
+//z-index: +1;
 color: white;
 list-style-position: initial;
 margin-left: 20px;
@@ -49,7 +47,7 @@ font-size: 20px;
 `
 
 const ListTitle = styled.h2`
- z-index: 1;
+ //z-index: 1;
  color: #0071c0;
  font-weight: 900;
  font-size: 25px ;
@@ -58,6 +56,7 @@ const ListTitle = styled.h2`
 function Publicitaria () {
   return(  
     <DivPub>
+
       <TextArea>
         <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
         <TextTitle>TV PUBLICITÁRIA</TextTitle>
@@ -77,7 +76,7 @@ function Publicitaria () {
             <li>Pode-se utilizar uma TV já instalada no local.</li>
             <li>Modelo compativel com diversos segmentos.</li>
           </ul>
-        </OrderList>
+        </OrderList>        
       </TextArea>      
     </DivPub>  
        

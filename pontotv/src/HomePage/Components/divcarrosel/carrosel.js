@@ -12,7 +12,7 @@ const DivCarousel = styled.div`
   position: relative;
   & .rec-arrow {
     position: absolute;
-    height: 100%;
+   // height: 100%;
     z-index: 1;
     box-shadow: none;
     border-radius: 0;

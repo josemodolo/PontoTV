@@ -5,7 +5,7 @@ import DadosImg from '../../img/imghome/dados/dados.jpg'
 const DadosArea = styled.div`
 background:url(${DadosImg});
 display: flex;
-height: 75vh;
+//height: 75vh;
 background-size: 100%;
 background-repeat: no-repeat;
 `

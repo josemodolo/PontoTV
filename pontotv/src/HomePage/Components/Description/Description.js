@@ -4,18 +4,18 @@ import HistoryImg from '../../../img/imghome/historia/historia.jpg'
 
 
 const DivHistory = styled.div`
-  display: flex;
-  background:url(${HistoryImg});
+  //display: flex;
+  //background:url(${HistoryImg});
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 0 auto;
+ // height: 0 auto;
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: green;
    
 `
-
 
 const ImgText = styled.p` 
  color: white;
