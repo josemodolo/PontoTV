@@ -3,58 +3,38 @@ import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.jpg'
 import styled from "styled-components";
 
 const DivCorp = styled.div`
-  background:url(${ImgCorp}); 
-  //display: flex;
-  //height: 100vh;
-  justify-content: center ;
-  //background-size: 100%;
-  background-repeat: no-repeat;
-
-  //@media (max-width: 1440px){
-    //height: 90vh;
-  //}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 700px;
+  background-size: cover;
+  background-image: url(${ImgCorp});
+  color: #4d4d4d;
 `
 const TextArea = styled.div`
-//width: 50vw;
-height: max-content;
-//margin-left: 48vw;
-
+  margin: 80px 36px 0 0;
+  width: 40%;
 `
 
 const Hash = styled.h4`
-//padding: 20px;
-//font-size: 20px;
-//margin-top: 20px;
-color: #4d4d4d;
+  color: #4d4d4d;
 `
 
 const TextTitle = styled.h1`
-// z-index: +1;
- color: #0071c0;
- //font-weight: 900;
- //padding: 15px;
- //font-size: 10pt;
- 
+  color: #0071c0;
 `
 
 const TextImg = styled.p`
- //z-index: +1;
- color: #4d4d4d;
- font-size: 15px;
- `
+  color: #4d4d4d;
+  font-size: 15px;
+`
 
 const OrderList = styled.p`
-//z-index: +1;
-color: #4d4d4d;
-//font-size: 15px;
-//margin-left: 15px;
+  color: #4d4d4d;
 `
 
 const ListTitle = styled.h2`
- //z-index: +1;
- color: #0071c0;
- //font-weight: 900;
- //font-size: 15px ;
+  color: #0071c0;
 `
 
 function Corporativa () {

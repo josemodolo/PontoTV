@@ -8,30 +8,28 @@ import Icon02 from '../../img/iconimg/icon02.png'
 import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
 
-
-
 const HeaderMenu = styled.header`
-  height: 10vh;
-  display: flex;  
-  background:url(${Headerback});  
+  height: 80px;
+  display: flex;
+  background:url(${Headerback});
   padding: 5px;
   position: sticky;
   top: 0;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #0072c0;   
+  background-color: #0072c0;
 `
 
 const ImgDiv = styled.div`
   width: 50vh;
   display: flex;
-  flex-direction: row-reverse;  
+  flex-direction: row-reverse;
   background:url(${Headerback});
-  margin-left: 50px;  
+  margin-left: 50px;
   @media (max-width: 767px){
     flex-direction: row;
-  }  
+  }
 `
 
 const ImgPtv = styled.img `
@@ -44,20 +42,20 @@ const ImgPtv = styled.img `
 
 const DivBttn = styled.div `
   width: 40%;
-  height: 100%;  
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-around;  
-  background:url(${Headerback});  
-  @media (max-width: 767px){      
+  justify-content: space-around;
+  background:url(${Headerback});
+  @media (max-width: 767px){
     flex-flow: column nowrap;
     background-color: blue;
     z-index: +1;
     align-items: center;
     height: 30vh;
     padding-top: 1rem;
-  }   
+  }
 `
 
 const Bttn = styled.button`
@@ -72,7 +70,7 @@ const Bttn = styled.button`
     border: 5px solid #e8952b;
     border-radius: 10px;
   }
-  font-size: 19px;  
+  font-size: 19px;
 `
 
 const BttnContact = styled.button`
@@ -88,7 +86,7 @@ const BttnContact = styled.button`
     border: 5px solid #e8952b;
     border-radius: 10px;
   }
-  font-size: 19px;  
+  font-size: 19px;
 `
 
 const DivIcon = styled.div`
@@ -109,14 +107,14 @@ function Header(){
 
   return(
     <HeaderMenu>
-      <ImgDiv>        
+      <ImgDiv>
         <ImgPtv src= {logoptv} className='ImgPtv'/>
       </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Mapa')}>UNIDADES</Bttn>
         <Bttn onClick = {()=> history.push('/Franqueados')}>SEJA UM FRANQUEADO</Bttn>
-        <a href="#formSection"><BttnContact>CONTATO</BttnContact></a>      
+        <a href="#formSection"><BttnContact>CONTATO</BttnContact></a>
       </DivBttn>
       <DivIcon>
         <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>

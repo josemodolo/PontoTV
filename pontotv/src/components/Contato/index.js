@@ -4,13 +4,13 @@ import ContImg from '../../img/imghome/contato/contato.jpg'
 import Mailer from '../Form/form';
 
 const FormDiv = styled.div`
-background:url(${ContImg});
-display: flex;
-flex-direction: row-reverse;
-height: 300px;
-background-size: 100%;
-background-repeat: no-repeat;
-background-color: yellow;
+  background:url(${ContImg});
+  display: flex;
+  flex-direction: row-reverse;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: yellow;
 `
 
 function Contato (){

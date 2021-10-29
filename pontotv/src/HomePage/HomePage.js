@@ -10,20 +10,10 @@ import Anunciantes from '../HomePage/Anunciantes/index'
 import Dados from '../HomePage/Dados/index'
 import Parceiros from '../HomePage/parceiros/index'
 import Footer from './footer'
-import styled from 'styled-components'
-
-
-
-
-const GlobalDivHome = styled.div`
-//height: 100vh;
-//overflow: auto;
-
-`
 
 function Home() {
   return (
-    <GlobalDivHome>
+    <div style={{ display: 'flex', flexDirection: 'column'}}>
       <Header />
       <App />
       <Description />
@@ -36,7 +26,7 @@ function Home() {
       <Dados />
       <Contato />
       <Footer />
-    </GlobalDivHome>
+    </div>
   )
 }
 
