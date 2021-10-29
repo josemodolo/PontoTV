@@ -27,8 +27,8 @@ const TextTitle = styled.h1`
 `
 
 const TextImg = styled.p`
-  color: white;
-  font-size: 20px;
+  color: white;  
+  /* font-size: clamp(1.75em, 1em + 3vw, 2.5em);); */
 `
 
 const OrderList = styled.p`

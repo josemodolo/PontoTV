@@ -8,7 +8,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 height: 10vh;
-background-size: 100%;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 color: white;
 `

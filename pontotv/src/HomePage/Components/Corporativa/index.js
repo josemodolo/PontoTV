@@ -7,7 +7,8 @@ const DivCorp = styled.div`
   flex-direction: column;
   align-items: flex-end;
   height: 700px;
-  background-size: 100% 100%;   
+  background-size: 100% 100%;
+  background-size: cover;   
   background-image: url(${ImgCorp});
   color: #4d4d4d;
 `

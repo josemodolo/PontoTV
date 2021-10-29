@@ -15,9 +15,9 @@ import YoutubeEmbed from '../Youtube'
 const FranquiaDiv = styled.div`
 background:url(${FranquiaOque});
 display: flex;
-flex-direction: row-reverse;
-height: 71vh;
-background-size: 100%;
+height: 500px;
+background-size: 100% 100%;
+background-size: cover;
 background-repeat: no-repeat;
 `
 
@@ -25,8 +25,8 @@ const Oferecemos = styled.div`
 background:url(${OQueOferecemos});
 display: flex;
 flex-direction: row-reverse;
-height: 71vh;
-background-size: 100%;
+height: 600px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 `
 
@@ -34,15 +34,15 @@ const Vantagens = styled.div`
 background:url(${VantagensImg});
 display: flex;
 flex-direction: row-reverse;
-height: 71vh;
-background-size: 100%;
+height: 600px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 `
 
 const Cases = styled.div`
 background:url(${CasesImg});
-height: 184vh;
-background-size: 100%;
+height: 1450px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 display: flex;
 flex-direction: column;
@@ -52,8 +52,8 @@ const Investimento = styled.div`
 background:url(${InvestimentoImg});
 display: flex;
 flex-direction: row-reverse;
-height: 70vh;
-background-size: 100%;
+height: 600px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 `
 
@@ -61,8 +61,8 @@ const Kit = styled.div`
 background:url(${KitImg});
 display: flex;
 flex-direction: row-reverse;
-height: 71vh;
-background-size: 100%;
+height: 600px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 `
 
@@ -70,16 +70,16 @@ const Interessado = styled.div`
 background:url(${InteressadoImg});
 display: flex;
 flex-direction: row-reverse;
-height: 70vh;
-background-size: 100%;
+height: 600px;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 `
 
 const FranquiaText = styled.p`
-color: white;
-margin-right: 50px;
-margin-top: 20px;
-font-size: 20px;
+  color: white;
+  margin-right: 50px;
+  margin-top: 20px;
+  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
 `
 
 const DivTextRodrigo = styled.div`  

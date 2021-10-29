@@ -34,7 +34,7 @@ const ImgDiv = styled.div`
 
 const ImgPtv = styled.img `
   height: 9vh;
-  margin-right: 10px;
+  //margin-right: 10px;
   @media (max-width: 767px){
     margin-left: 50px;
   }
@@ -94,8 +94,8 @@ const DivIcon = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-around;
-  margin-top: 13px;
-  margin-left: 150px ;
+  //margin-top: 13px;
+  //margin-left: 150px ;
 `
 
 const IconImg = styled.img`

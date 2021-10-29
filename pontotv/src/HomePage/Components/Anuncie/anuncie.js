@@ -8,7 +8,8 @@ const DivAnuncie = styled.div`
   justify-content: center;
   align-items: flex-end;
   height: 500px;
-  background-size: 100% 100%;   
+  background-size: 100% 100%;
+  background-size: cover;      
   background-image: url(${ImgAnuncie});
   color: #4d4d4d;
 `
@@ -17,14 +18,17 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
-  min-width: 500px;
-  margin-right: 36px;
-  margin-bottom: 80px;
+  margin-right: 150px ;
 `
 
 const TextTitle = styled.h1`
  color: #0071c0;
  font-weight: 900;
+ font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+`
+
+const Ptext = styled.p`  
+  font-size: clamp(1.75em, 1em + 1vw, 1em);
 `
 
 const ListTitle = styled.h2`
@@ -38,16 +42,16 @@ function Anuncie (){
       <Details>
         <div>
           <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>
-          <br/>
-          <p>
+          
+          <Ptext>
             Não <strong>importa</strong> se você é <strong>micro</strong> ou macro, muito menos o <strong>tamanho</strong> ou <strong>segmento</strong> do seu <strong>negócio</strong>, o <strong>nosso objetivo</strong> é <strong>fazer você aparecer!</strong>
-          </p>
-          <br/>
-          <p>
+          </Ptext>
+          
+          <Ptext>
             Através de <strong>vídeos</strong> de <strong>15</strong> ou <strong>30</strong> segundos, você <strong>divulga</strong> seu negócio,
             empresa, serviço, eventos ou produtos, <strong>impactando milhares</strong> de <strong>pessoas diariamente</strong>, em <strong>pontos</strong> comerciais <strong>estratégicos</strong>.
-          </p>
-          <br/>
+          </Ptext>
+          
         </div>
         <div>
           <ListTitle>VANTAGENS</ListTitle>

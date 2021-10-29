@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { Header, WhatsApp } from '../components'
 import styled from 'styled-components'
 import BrazilMap from './Map'
-import { Contato } from '../components'
 import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
-// import Bg from '../img/imghome/conteudomap/bg.jpg'
+import Bg from '../img/imghome/conteudomap/bg.jpg'
 
 
 
@@ -17,13 +16,9 @@ const MapDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
-`
-
-const TitleDiv = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+  background-image: url(${Bg});
+  background-size: 100% 100%;
+  background-size: cover;  
 `
 
 const Slider = styled.div`
@@ -49,12 +44,11 @@ function Franqueados (props) {
   return(
     <div>
       <Header/>
-      <TitleDiv><h1>UNIDADES PELO BRASIL</h1></TitleDiv>
+      
         <MapDiv>      
           <BrazilMap onLocationClick={divLateral}/>
           {showSlider && <Slider></Slider>}    
-        </MapDiv>
-        <Contato />
+        </MapDiv>        
         <Footer />
         <WhatsApp/>
     </div>
