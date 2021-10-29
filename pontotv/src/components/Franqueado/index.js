@@ -77,9 +77,8 @@ background-repeat: no-repeat;
 
 const FranquiaText = styled.p`
   color: white;
-  margin-right: 50px;
-  margin-top: 20px;
-  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+  
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
 `
 
 const DivTextRodrigo = styled.div`  

@@ -18,7 +18,8 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-right: 150px ;
+  margin-right: 130px ;
+  margin-bottom: 30px;
 `
 
 const TextTitle = styled.h1`
@@ -28,12 +29,14 @@ const TextTitle = styled.h1`
 `
 
 const Ptext = styled.p`  
-  font-size: clamp(1.75em, 1em + 1vw, 1em);
+  font-size: clamp(1.25em, 1em + 1vw, 1em);
+  font-weight: 500;
 `
 
 const ListTitle = styled.h2`
  color: #0071c0;
  font-weight: 900;
+ font-size: clamp(1.75em, 1em + 1vw, 1em);
 `
 
 function Anuncie (){
@@ -41,20 +44,19 @@ function Anuncie (){
     <DivAnuncie>
       <Details>
         <div>
-          <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>
-          
+          <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle><br/>
           <Ptext>
             Não <strong>importa</strong> se você é <strong>micro</strong> ou macro, muito menos o <strong>tamanho</strong> ou <strong>segmento</strong> do seu <strong>negócio</strong>, o <strong>nosso objetivo</strong> é <strong>fazer você aparecer!</strong>
-          </Ptext>
+          </Ptext><br/>
           
           <Ptext>
             Através de <strong>vídeos</strong> de <strong>15</strong> ou <strong>30</strong> segundos, você <strong>divulga</strong> seu negócio,
             empresa, serviço, eventos ou produtos, <strong>impactando milhares</strong> de <strong>pessoas diariamente</strong>, em <strong>pontos</strong> comerciais <strong>estratégicos</strong>.
-          </Ptext>
+          </Ptext><br/>
           
         </div>
         <div>
-          <ListTitle>VANTAGENS</ListTitle>
+          <ListTitle>VANTAGENS</ListTitle><br/>
           <p>
             <ul>
               <li>Pacotes <strong>personalizados.</strong></li>
