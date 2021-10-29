@@ -8,7 +8,7 @@ const DivAnuncie = styled.div`
   justify-content: center;
   align-items: flex-end;
   height: 500px;
-  background-size: cover;
+  background-size: 100% 100%;   
   background-image: url(${ImgAnuncie});
   color: #4d4d4d;
 `

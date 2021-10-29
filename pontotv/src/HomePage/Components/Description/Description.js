@@ -8,6 +8,7 @@ const DivHistory = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-size: 100% 100%;   
 `
 
 const ImgText = styled.p`

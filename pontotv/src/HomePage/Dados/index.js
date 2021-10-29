@@ -6,7 +6,8 @@ const DadosArea = styled.div`
   background:url(${DadosImg});
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 500px;
+  background-size: 100% 100%;   
 `
 
 function Dados () {

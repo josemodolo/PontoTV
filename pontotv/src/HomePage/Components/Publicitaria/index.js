@@ -9,6 +9,7 @@ const DivPub = styled.div`
   height: 700px;
   background-size: cover;
   background-image: url(${ImgPub});
+  background-size: 100% 100%;   
 `
 
 const TextArea = styled.div`

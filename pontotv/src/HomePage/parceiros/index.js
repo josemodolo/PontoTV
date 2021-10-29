@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Partners = styled.div`
   background:url(${ParcImg});
-  background-size: cover;
+  background-size: 100% 100%;   
   background-repeat: no-repeat;
   height: auto;
   min-height: 570px;

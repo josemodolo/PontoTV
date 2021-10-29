@@ -3,13 +3,15 @@ import emailjs from 'emailjs-com'
 import React, { useState } from 'react'
 
 const FormDiv = styled.div`
-  text-align: center;
   color: white;
+  display: flex;
+  align-items: center;
+  
 `
 
 const TextBox = styled.textarea`
   border-radius: 10px;
-  margin-bottom: 8px;
+  
 `
 
 const Bttn = styled.input`
@@ -23,6 +25,9 @@ const Bttn = styled.input`
   border-radius: 3px;
   font-weight: bold;
   font-size: 15px;
+   &:hover{
+     background-color: blue;
+   }
 `
 
 const InputDiv = styled.input`
@@ -62,7 +67,7 @@ const Mailer = () => {
 
   return (
     <FormDiv>
-      <FormStyle onSubmit={sendEmail}>
+      <FormStyle onSubmit={sendEmail} >
         <label>Nome</label>
         <InputDiv type='text' name='name' placeholder='Nome' required/>
         <label>E-mail</label>
@@ -83,7 +88,7 @@ const Mailer = () => {
         />
         <label>Mensagem</label>
         <TextBox name='message' rows='4'/>
-        <Bttn type='submit' value='ENVIAR' onclick={userAlert}/>
+        <Bttn type='submit' value='ENVIAR' onClick={userAlert}/>
       </FormStyle>
     </FormDiv>
   );

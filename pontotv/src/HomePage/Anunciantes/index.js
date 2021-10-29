@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const DivCentral = styled.div`
   background:url(${AnunImg});
-  background-size: cover;
+  background-size: 100% 100%;   
   background-repeat: no-repeat;
   min-height: 600px;
   height: auto;
