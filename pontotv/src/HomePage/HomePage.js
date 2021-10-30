@@ -11,7 +11,9 @@ import Dados from '../HomePage/Dados/index'
 import Parceiros from '../HomePage/parceiros/index'
 import Footer from './footer'
 
+
 function Home() {
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column'}}>
       <Header />

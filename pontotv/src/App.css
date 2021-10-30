@@ -21,6 +21,10 @@
   
 }
 
+*:focus {
+  outline: none;
+}
+
 .App {
   text-align: center;
 }
@@ -45,6 +49,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 

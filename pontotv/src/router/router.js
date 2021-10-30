@@ -4,7 +4,7 @@ import Mapa from '../Mapa/mapa'
 import Franqueados from "../components/Franqueado/index";
 
 
-const Routes = () => {
+const Routes = () => {  
   return (
     <Router>
       <Switch>
