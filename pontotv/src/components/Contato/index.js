@@ -6,12 +6,11 @@ import Mailer from '../Form/form';
 const FormDiv = styled.div`
   background:url(${ContImg});
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;  
   height: 500px;
   background-size: 100% 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: yellow;
+  background-repeat: no-repeat;  
 `
 
 function Contato (){

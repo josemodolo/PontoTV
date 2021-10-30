@@ -11,6 +11,8 @@ const FormDiv = styled.div`
 
 const TextBox = styled.textarea`
   border-radius: 10px;
+  width: 45em;
+  height: 10em;
   
 `
 
@@ -28,12 +30,16 @@ const Bttn = styled.input`
    &:hover{
      background-color: blue;
    }
+   margin-top: 1em;
+   width: 10em;
+   height: 3em;   
 `
 
 const InputDiv = styled.input`
   border-radius: 15px;
   padding: 8px;
   border: none;
+  width: 35em;  
 `
 
 const FormStyle = styled.form`
@@ -42,7 +48,14 @@ const FormStyle = styled.form`
   align-items: center;
   color: white;
   padding: 10px;
+  margin-right: 2em;
 `
+
+const Label = styled.label`
+ margin-top: 1em;
+`
+
+
 
 const formatPhone = (value) => {
   return value
@@ -68,11 +81,11 @@ const Mailer = () => {
   return (
     <FormDiv>
       <FormStyle onSubmit={sendEmail} >
-        <label>Nome</label>
+        <Label>Nome</Label>
         <InputDiv type='text' name='name' placeholder='Nome' required/>
-        <label>E-mail</label>
+        <Label>E-mail</Label>
         <InputDiv type='email' name='user_email' placeholder='E-mail' required/>
-        <label for='phone'>WhatsApp</label>
+        <Label for='phone'>WhatsApp</Label>
         <InputDiv
           type="tel"
           id="phone"
@@ -86,7 +99,7 @@ const Mailer = () => {
             setTelefone(newValue)
           }}
         />
-        <label>Mensagem</label>
+        <Label>Mensagem</Label>
         <TextBox name='message' rows='4'/>
         <Bttn type='submit' value='ENVIAR' onClick={userAlert}/>
       </FormStyle>
