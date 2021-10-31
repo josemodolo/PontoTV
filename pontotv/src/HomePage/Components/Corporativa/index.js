@@ -20,10 +20,13 @@ const Img = styled.img`
   width: 50%;
   height: 0 auto;
   flex-direction: column;  
+  padding: 1vw;
  `
 
  const Hash = styled.h4`
    color: black;
+   font-size: 1.5vw;
+   padding-bottom:0.9em;  
  `
 
  const TextTitle = styled.h1`

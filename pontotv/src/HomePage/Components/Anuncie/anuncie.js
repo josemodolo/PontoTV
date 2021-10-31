@@ -16,6 +16,7 @@ const TextDiv = styled.div`
   width: 50%;
   height: 0 auto;
   flex-direction: column;
+  padding: 2vw;
 `
 
  const Details = styled.div`
