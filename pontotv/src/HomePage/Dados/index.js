@@ -3,16 +3,20 @@ import styled from 'styled-components'
 import DadosImg from '../../img/imghome/dados/dados.jpg'
 
 const DadosArea = styled.div`
-  background:url(${DadosImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: 100% 100%;   
+  width: 100%;
+  height: 100%;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 function Dados () {
   return(
-    <DadosArea />
+    <DadosArea>
+      <Img src = {DadosImg}/>
+    </DadosArea>
   )
 }
 

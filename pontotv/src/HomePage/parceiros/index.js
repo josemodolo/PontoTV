@@ -2,16 +2,20 @@ import ParcImg from '../../img/imghome/parceiros/parceiros.jpg'
 import styled from "styled-components";
 
 const Partners = styled.div`
-  background:url(${ParcImg});
-  background-size: 100% 100%;   
-  background-repeat: no-repeat;
-  height: auto;
-  min-height: 570px;
+  width: 100%;
+  height: 100%;
+`
+
+const Img = styled.img`
+  height: 100%;
+  width: 100%;
 `
 
 function Parceiros () {
   return(
-    <Partners />
+    <Partners>
+      <Img src = {ParcImg}/>
+    </Partners>
   )
 }
 

@@ -4,18 +4,21 @@ import ContImg from '../../img/imghome/contato/contato.jpg'
 import Mailer from '../Form/form';
 
 const FormDiv = styled.div`
-  background:url(${ContImg});
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row-reverse;  
-  height: 500px;
-  background-size: 100% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;  
+  flex-direction: row-reverse;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 function Contato (){
   return(
     <FormDiv id="formSection">
+      <Img src = {ContImg}/>
       <Mailer />
     </FormDiv>
   )

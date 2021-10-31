@@ -9,53 +9,44 @@ import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
 
 const HeaderMenu = styled.header`
-  height: 80px;
+  width: 100%;
+  height: 0 auto;
   display: flex;
+  justify-content: space-around;
   background:url(${Headerback});
   padding: 5px;
   position: sticky;
   top: 0;
   z-index: 1;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: #0072c0;
 `
 
-const ImgDiv = styled.div`
-  width: 50vh;
-  display: flex;
-  flex-direction: row-reverse;
-  background:url(${Headerback});
-  margin-left: 50px;
-  @media (max-width: 767px){
-    flex-direction: row;
-  }
-`
+// const ImgDiv = styled.div`
+//   //border: 1px solid black;
+//   padding: 1vw ;
+//   //height: 0 auto;
+//   //display: flex;
+//   //flex-direction: row-reverse;
+//   background:url(${Headerback});  
+//   /* @media (max-width: 767px){
+//     flex-direction: row;
+//   } */
+// `
 
-const ImgPtv = styled.img `
-  height: 9vh;
-  //margin-right: 10px;
-  @media (max-width: 767px){
-    margin-left: 50px;
-  }
+const ImgPtv = styled.img ` 
+  width: 10em;
 `
 
 const DivBttn = styled.div `
   width: 40%;
-  height: 100%;
+  height: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  background:url(${Headerback});
-  @media (max-width: 767px){
-    flex-flow: column nowrap;
-    background-color: blue;
-    z-index: +1;
-    align-items: center;
-    height: 30vh;
-    padding-top: 1rem;
-  }
+  flex-direction: row;
+  background:url(${Headerback});  
 `
 
 const Bttn = styled.button`
@@ -70,7 +61,7 @@ const Bttn = styled.button`
     border: 5px solid #e8952b;
     border-radius: 10px;
   }
-  font-size: 19px;
+  font-size: 1.4vw;
 `
 
 const BttnContact = styled.button`
@@ -86,20 +77,23 @@ const BttnContact = styled.button`
     border: 5px solid #e8952b;
     border-radius: 10px;
   }
-  font-size: 19px;
+  font-size: 1.4vw;
 `
 
 const DivIcon = styled.div`
-  width: 18vw;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
+  border: 2px solid white;
+  
+  //width: 12vw;
+  //height: 0 auto;
+  //display: flex;
+  //justify-content: space-around;
   //margin-top: 13px;
   //margin-left: 150px ;
 `
 
 const IconImg = styled.img`
-  width: 28px;
+  
+  
 `
 
 function Header(){
@@ -107,9 +101,9 @@ function Header(){
 
   return(
     <HeaderMenu>
-      <ImgDiv>
+      {/* <ImgDiv> */}
         <ImgPtv src= {logoptv} className='ImgPtv'/>
-      </ImgDiv>
+      {/* </ImgDiv> */}
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Mapa')}>UNIDADES</Bttn>

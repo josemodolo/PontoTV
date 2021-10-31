@@ -13,106 +13,113 @@ import Footer from '../../HomePage/footer'
 import YoutubeEmbed from '../Youtube'
 
 const FranquiaDiv = styled.div`
-background:url(${FranquiaOque});
-display: flex;
-height: 500px;
-background-size: 100% 100%;
-background-size: cover;
-background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 `
 
-const Oferecemos = styled.div`
-background:url(${OQueOferecemos});
-display: flex;
-flex-direction: row-reverse;
-height: 600px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+const Img1 = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
-const Vantagens = styled.div`
-background:url(${VantagensImg});
-display: flex;
-flex-direction: row-reverse;
-height: 600px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+const OferecemosDiv = styled.div`
+  width: 100%;
+  height: 100%;
 `
 
-const Cases = styled.div`
-background:url(${CasesImg});
-height: 1450px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-display: flex;
-flex-direction: column;
+const Img2 = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
-const Investimento = styled.div`
-background:url(${InvestimentoImg});
-display: flex;
-flex-direction: row-reverse;
-height: 600px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+const VantagensDiv = styled.div`
+  width: 100%;
+  height: 100%;
 `
 
-const Kit = styled.div`
-background:url(${KitImg});
-display: flex;
-flex-direction: row-reverse;
-height: 600px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+const Img3 = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
-const Interessado = styled.div`
-background:url(${InteressadoImg});
-display: flex;
-flex-direction: row-reverse;
-height: 600px;
-background-size: 100% 100%;
-background-repeat: no-repeat;
+const CasesDiv = styled.div`
+  width: 100%;
+  height: 100%;
 `
 
-const FranquiaText = styled.p`
-  color: white;
+const Img4 = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+const InvestimentoDiv = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
+const Img5 = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+const KitDiv = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
+const Img6 = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+const InteressadoDiv = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
+const Img7 = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+// const FranquiaText = styled.p`
+//   color: white;
   
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
-`
+//   font-size: clamp(1.5rem, 2.5vw, 4rem);
+// `
 
-const DivTextRodrigo = styled.div`  
-  width: 60vw;
-  height: 30vh;
-  margin-top: 200px;
-  margin-left: 350px;
-`
+// const DivTextRodrigo = styled.div`  
+//   width: 60vw;
+//   height: 30vh;
+//   margin-top: 200px;
+//   margin-left: 350px;
+// `
 
-const DivTextSolange = styled.div`  
-  width: 60vw;
-  height: 30vh;
-  margin-top:90px;
-  margin-left: 490px;
+// const DivTextSolange = styled.div`  
+//   width: 60vw;
+//   height: 30vh;
+//   margin-top:90px;
+//   margin-left: 490px;
   
-`
+// `
 
-const DivTextRafael = styled.div`  
-  width: 60vw;
-  height: 30vh;
-  margin-top:75px;
-  margin-left: 350px;  
-`
+// const DivTextRafael = styled.div`  
+//   width: 60vw;
+//   height: 30vh;
+//   margin-top:75px;
+//   margin-left: 350px;  
+// `
 
-const DivTextAyla = styled.div`  
-  width: 60vw;
-  height: 30vh;
-  margin-top: 135px;
-  margin-left: 490px;  
-`
+// const DivTextAyla = styled.div`  
+//   width: 60vw;
+//   height: 30vh;
+//   margin-top: 135px;
+//   margin-left: 490px;  
+// `
 
-const FranqueadosText = styled.p`
-color: white;
-`
+// const FranqueadosText = styled.p`
+// color: white;
+// `
 
 const YoutubeDiv = styled.div`
   
@@ -130,7 +137,8 @@ function SejaFranqueado () {
             
       <Header/>      
       <FranquiaDiv>
-        <FranquiaText>A <strong>Ponto TV</strong> está em <strong>expansão</strong> para todo o <strong>Brasil</strong>, e você também<br/>
+        <Img1 src= {FranquiaOque}/>
+        {/* <FranquiaText>A <strong>Ponto TV</strong> está em <strong>expansão</strong> para todo o <strong>Brasil</strong>, e você também<br/>
         pode <strong>crescer</strong> junto <strong>conosco</strong>!<br/><br/>
         A <strong>Franquia de Midia Indoor</strong> da <strong>Ponto TV</strong>, é uma <strong>franquia barata</strong><br/>
         que traz um <strong>modelo</strong> de <strong>negócios lucrativo</strong>, com <strong>maturidade</strong><br/>
@@ -146,12 +154,17 @@ function SejaFranqueado () {
         <strong>disponibilizada</strong> pela <strong>franqueadora</strong>.<br/><br/>
         <strong>Não há limite</strong> de <strong>idade</strong> nem <strong>restrição de gênero</strong> para quem irá<br/>
         <strong>investir</strong> na <strong>franquia</strong>, e a franqueadora <strong>não exige educação formal</strong>,<br/>
-        contudo, boas <strong>habilidades</strong> de <strong>comunicação</strong> são <strong>essenciais</strong>.</FranquiaText>
+        contudo, boas <strong>habilidades</strong> de <strong>comunicação</strong> são <strong>essenciais</strong>.</FranquiaText> */}
       </FranquiaDiv>
-      <Oferecemos/>
-      <Vantagens/>
-      <Cases>
-        <DivTextRodrigo>
+      <OferecemosDiv>
+        <Img2 src = {OQueOferecemos}/>
+      </OferecemosDiv>
+      <VantagensDiv>
+        <Img3 src= {VantagensImg}/>
+      </VantagensDiv>
+      <CasesDiv>
+        <Img4 src = {CasesImg}/>
+        {/* <DivTextRodrigo>
           <FranqueadosText>A escolha pela franquia Ponto TV foi muito assertiva, iniciei com Kit Básico e em apenas 1 mês<br/>
           já estava com todas os pontos instalados. Com poucos meses de operação já possuo 10 pontos<br/>
           e percebi que o modelo de negócios era promissor e que rapidamente renderia lucros e haveria<br/>
@@ -186,14 +199,21 @@ function SejaFranqueado () {
           A primeira é a possibilidade de contribuir com empresas que precisam divulgar mais<br/>
           o seu negócio, e a segunda é a rentabilidade do negócio.<br/><br/>
           Dai a razão de ser franqueado Ponto TV.</FranqueadosText>
-        </DivTextAyla>       
-      </Cases>
-      <Investimento/>
-      <Kit/>
+        </DivTextAyla>        */}
+      </CasesDiv>
+
+      <InvestimentoDiv>
+        <Img5 src = {InvestimentoImg}/>
+      </InvestimentoDiv>
+      <KitDiv>
+        <Img6 src= {KitImg}/>
+      </KitDiv>
       <YoutubeDiv>
         <YoutubeEmbed/>
       </YoutubeDiv>      
-      <Interessado/>
+      <InteressadoDiv>
+        <Img7 src = {InteressadoImg}/>
+      </InteressadoDiv>
       <Contato/>
       <WhatsApp/>
       <Footer/>

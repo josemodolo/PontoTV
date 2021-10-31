@@ -3,45 +3,45 @@ import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.jpg'
 import styled from "styled-components";
 
 const DivCorp = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 700px;
-  background-size: 100% 100%;
-  background-size: cover;   
-  background-image: url(${ImgCorp});
-  color: #4d4d4d;
-`
-const TextArea = styled.div`
-  margin: 80px 36px 0 0;
-  width: 40%;
+  width: 100%;
+  height: 100%;
 `
 
-const Hash = styled.h4`
-  color: #4d4d4d;
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
+// const TextArea = styled.div`
+//   margin: 80px 36px 0 0;
+//   width: 40%;
+// `
 
-const TextTitle = styled.h1`
-  color: #0071c0;
-`
+// const Hash = styled.h4`
+//   color: #4d4d4d;
+// `
 
-const TextImg = styled.p`
-  color: #4d4d4d;
-  font-size: 15px;
-`
+// const TextTitle = styled.h1`
+//   color: #0071c0;
+// `
 
-const OrderList = styled.p`
-  color: #4d4d4d;
-`
+// const TextImg = styled.p`
+//   color: #4d4d4d;
+//   font-size: 15px;
+// `
 
-const ListTitle = styled.h2`
-  color: #0071c0;
-`
+// const OrderList = styled.p`
+//   color: #4d4d4d;
+// `
+
+// const ListTitle = styled.h2`
+//   color: #0071c0;
+// `
 
 function Corporativa () {
   return (
     <DivCorp>
-      <TextArea>
+      <Img src={ImgCorp}/>
+      {/* <TextArea>
         <Hash>#PARASUAEMPRESA</Hash>
         <TextTitle>TV CORPORATIVA</TextTitle>
         <TextImg>Nesta <strong>categoria</strong> voce <strong>aproveita TV's</strong> presentes em <strong>salas</strong> de <strong>espera</strong><br/>
@@ -62,7 +62,7 @@ function Corporativa () {
             <li>Modelo <strong>compatível</strong> com <strong>diversos segmentos</strong>.</li>
           </ul>
         </OrderList>
-      </TextArea>
+      </TextArea> */}
     </DivCorp>
   )
 }

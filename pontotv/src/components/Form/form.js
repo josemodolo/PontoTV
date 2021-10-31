@@ -6,14 +6,16 @@ const FormDiv = styled.div`
   color: white;
   display: flex;
   align-items: center;
-  
+  position: absolute;
+  border: 1px solid white;
+  height: 0 auto;
+
 `
 
 const TextBox = styled.textarea`
   border-radius: 10px;
   width: 45em;
   height: 10em;
-  
 `
 
 const Bttn = styled.input`
@@ -49,6 +51,7 @@ const FormStyle = styled.form`
   color: white;
   padding: 10px;
   margin-right: 2em;
+  height: 0 auto;
 `
 
 const Label = styled.label`

@@ -3,16 +3,20 @@ import AnunImg from '../../img/imghome/anunciantes/anunciantes.jpg'
 import styled from 'styled-components'
 
 const DivCentral = styled.div`
-  background:url(${AnunImg});
-  background-size: 100% 100%;   
-  background-repeat: no-repeat;
-  min-height: 600px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 function Anunciantes () {
   return(
-    <DivCentral />
+    <DivCentral>
+      <Img src = {AnunImg} />
+    </DivCentral>
   )
 }
 

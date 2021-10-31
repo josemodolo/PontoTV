@@ -4,50 +4,52 @@ import ImgPub from '../../../img/imghome/tvpublicitaria/tvpublicitaria.jpg'
 import '../../../fonts/Gilroy-Bold.ttf'
 
 const DivPub = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 700px;
-  background-size: cover;
-  background-image: url(${ImgPub});
-  background-size: 100% 100%;   
+  width: 100%;
+  height: 100%;   
 `
 
-const TextArea = styled.div`
-  margin: 80px 0 0 24px;
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
-const Hash = styled.h4`
-  color: white;
-`
+// const TextArea = styled.div`
+//   margin: 80px 0 0 24px;
+// `
 
-const TextTitle = styled.h1`
-  color: #ffb131;
-  margin-top: 10px;
-  font-size: 40px;
-`
+// const Hash = styled.h4`
+//   color: white;
+// `
 
-const TextImg = styled.p`
-  color: white;  
-  /* font-size: clamp(1.75em, 1em + 3vw, 2.5em);); */
-`
+// const TextTitle = styled.h1`
+//   color: #ffb131;
+//   margin-top: 10px;
+//   font-size: 40px;
+// `
 
-const OrderList = styled.p`
-  color: white;
-  list-style-position: initial;
-  margin-left: 20px;
-  font-size: 20px;
-`
+// const TextImg = styled.p`
+//   color: white;  
+  
+// `
 
-const ListTitle = styled.h2`
-  color: #0071c0;
-  font-weight: 900;
-  font-size: 25px;
-`
+// const OrderList = styled.p`
+//   color: white;
+//   list-style-position: initial;
+//   margin-left: 20px;
+//   font-size: 20px;
+// `
+
+// const ListTitle = styled.h2`
+//   color: #0071c0;
+//   font-weight: 900;
+//   font-size: 25px;
+// `
 
 function Publicitaria () {
   return(
     <DivPub>
-      <TextArea>
+      <Img src={ImgPub}/>
+      {/* <TextArea>
         <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
         <TextTitle>TV PUBLICITÁRIA</TextTitle>
         <TextImg>Nesta <strong>categoria</strong> seu <strong>estabelecimento</strong> pode ser um <strong>parceiro Ponto TV</strong>,<br/>
@@ -67,7 +69,7 @@ function Publicitaria () {
             <li>Modelo compativel com diversos segmentos.</li>
           </ul>
         </OrderList>
-      </TextArea>
+      </TextArea> */}
     </DivPub>
 
   )
