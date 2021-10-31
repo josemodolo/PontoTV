@@ -7,15 +7,15 @@ const FormDiv = styled.div`
   display: flex;
   align-items: center;
   position: absolute;
-  border: 1px solid white;
+  
   height: 0 auto;
-
+  
 `
 
 const TextBox = styled.textarea`
   border-radius: 10px;
-  width: 45em;
-  height: 10em;
+  width: 5vw;
+  height: 0 auto;  
 `
 
 const Bttn = styled.input`

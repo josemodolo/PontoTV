@@ -12,6 +12,8 @@ import styled from 'styled-components'
 import Footer from '../../HomePage/footer'
 import YoutubeEmbed from '../Youtube'
 
+
+//area da franquia
 const FranquiaDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -22,6 +24,7 @@ const Img1 = styled.img`
   height: 100%;
 `
 
+//area oferecemos
 const OferecemosDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -32,6 +35,7 @@ const Img2 = styled.img`
   height: 100%;
 `
 
+//area vantagens
 const VantagensDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -42,6 +46,7 @@ const Img3 = styled.img`
   height: 100%;
 `
 
+//area cases
 const CasesDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -52,6 +57,8 @@ const Img4 = styled.img`
   height: 100%;
 `
 
+
+//area investimento
 const InvestimentoDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -62,6 +69,8 @@ const Img5 = styled.img`
   height: 100%;
 `
 
+
+//area kit
 const KitDiv = styled.div`
   width: 100%;
   height: 100%;
@@ -72,6 +81,7 @@ const Img6 = styled.img`
   height: 100%;
 `
 
+//area interessado
 const InteressadoDiv = styled.div`
   width: 100%;
   height: 100%;

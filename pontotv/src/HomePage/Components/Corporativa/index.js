@@ -48,9 +48,7 @@ const Img = styled.img`
     font-size: 1.5vw;
   `
 
-const OrderText = styled.ul`
-font-size: 1.5vw;
-`
+
 
  const ListTitle = styled.h2`
   color: #0071c0;

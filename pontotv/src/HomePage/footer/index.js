@@ -2,22 +2,37 @@ import FootImg from '../../img/imghome/footer/footer.png'
 import styled from "styled-components";
 
 const FooterDiv = styled.div`
-background:url(${FootImg});
+width: 100%;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-height: 10vh;
-background-size: 100% 100%;
-background-repeat: no-repeat;
 color: white;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+const TextArea = styled.p`
+  position: absolute;   
+  color: white; 
+  display: flex;    
+  width: 50%;
+  height: 0 auto;
+  flex-direction: column;
 `
 
 function Footer (){
   return(
     <FooterDiv>
-      <p>pontotvpublicidade@gmail.com</p><br/>
-      <p> © Ponto TV Publicidade 2013 - 2021 | Todos os direitos reservados.</p>
+      <Img src= {FootImg}/>
+        <TextArea>
+          <p>pontotvpublicidade@gmail.com</p>
+          <p> © Ponto TV Publicidade 2013 - 2021 | Todos os direitos reservados.</p>
+        </TextArea>
     </FooterDiv>
   )
 }
