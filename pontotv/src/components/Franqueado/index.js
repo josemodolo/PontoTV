@@ -17,12 +17,23 @@ import YoutubeEmbed from '../Youtube'
 const FranquiaDiv = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 `
 
 const Img1 = styled.img`
   width: 100%;
   height: 100%;
 `
+
+ const FranquiaText = styled.p`
+   color: white;
+   font-weight: 400;
+   font-size: 1.5vw;
+   padding-right: 4em;
+   padding-top: 1em;
+   position: absolute;
+ `
 
 //area oferecemos
 const OferecemosDiv = styled.div`
@@ -48,6 +59,7 @@ const Img3 = styled.img`
 
 //area cases
 const CasesDiv = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
 `
@@ -60,6 +72,7 @@ const Img4 = styled.img`
 
 //area investimento
 const InvestimentoDiv = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
 `
@@ -67,11 +80,13 @@ const InvestimentoDiv = styled.div`
 const Img5 = styled.img`
   width: 100%;
   height: 100%;
+  
 `
 
 
 //area kit
 const KitDiv = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
 `
@@ -83,6 +98,7 @@ const Img6 = styled.img`
 
 //area interessado
 const InteressadoDiv = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
 `
@@ -148,23 +164,23 @@ function SejaFranqueado () {
       <Header/>      
       <FranquiaDiv>
         <Img1 src= {FranquiaOque}/>
-        {/* <FranquiaText>A <strong>Ponto TV</strong> está em <strong>expansão</strong> para todo o <strong>Brasil</strong>, e você também<br/>
-        pode <strong>crescer</strong> junto <strong>conosco</strong>!<br/><br/>
-        A <strong>Franquia de Midia Indoor</strong> da <strong>Ponto TV</strong>, é uma <strong>franquia barata</strong><br/>
-        que traz um <strong>modelo</strong> de <strong>negócios lucrativo</strong>, com <strong>maturidade</strong><br/>
-        de <strong>mercado</strong> e <strong>estratégias</strong> de <strong>atuação eficientes</strong> dentro do <strong>ramo</strong><br/>
-        de <strong>publicidade indoor</strong>.<br/><br/>
-        <strong>Além</strong> do lucro por meio da <strong>publicidade</strong>, os <strong>franqueados</strong> podem<br/>
-        <strong>rentabilizar</strong> também <strong>através</strong> da <strong>TV Corporativa</strong>, tudo isso,<br/>
-        <strong>dentro</strong> de um <strong>modelo "home based"</strong>, com <strong>baixo investimento</strong><br/>
-        e <strong>baixo custo</strong> de <strong>operação</strong>.<br/><br/>
-        <strong>Inicialmente</strong>, a <strong>rotina</strong> de negócios <strong>possibilita</strong> que o <strong>franqueado</strong><br/>
-        <strong>atue sozinho</strong>, realizando a <strong>venda</strong> e <strong>publicação</strong> de <strong>anúndios</strong>,<br/>
-        que são <strong>desenvolvidos</strong> por uma <strong>equipe preparada</strong>, que é<br/>
-        <strong>disponibilizada</strong> pela <strong>franqueadora</strong>.<br/><br/>
-        <strong>Não há limite</strong> de <strong>idade</strong> nem <strong>restrição de gênero</strong> para quem irá<br/>
-        <strong>investir</strong> na <strong>franquia</strong>, e a franqueadora <strong>não exige educação formal</strong>,<br/>
-        contudo, boas <strong>habilidades</strong> de <strong>comunicação</strong> são <strong>essenciais</strong>.</FranquiaText> */}
+        <FranquiaText>A <strong>Ponto TV</strong> está em <strong>expansão</strong> para todo o <strong>Brasil</strong>, e você também<br/>
+          pode <strong>crescer</strong> junto <strong>conosco</strong>!<br/><br/>
+          A <strong>Franquia de Midia Indoor</strong> da <strong>Ponto TV</strong>, é uma <strong>franquia barata</strong><br/>
+          que traz um <strong>modelo</strong> de <strong>negócios lucrativo</strong>, com <strong>maturidade</strong><br/>
+          de <strong>mercado</strong> e <strong>estratégias</strong> de <strong>atuação eficientes</strong> dentro do <strong>ramo</strong><br/>
+          de <strong>publicidade indoor</strong>.<br/><br/>
+          <strong>Além</strong> do lucro por meio da <strong>publicidade</strong>, os <strong>franqueados</strong> podem<br/>
+          <strong>rentabilizar</strong> também <strong>através</strong> da <strong>TV Corporativa</strong>, tudo isso,<br/>
+          <strong>dentro</strong> de um <strong>modelo "home based"</strong>, com <strong>baixo investimento</strong><br/>
+          e <strong>baixo custo</strong> de <strong>operação</strong>.<br/><br/>
+          <strong>Inicialmente</strong>, a <strong>rotina</strong> de negócios <strong>possibilita</strong> que o <strong>franqueado</strong><br/>
+          <strong>atue sozinho</strong>, realizando a <strong>venda</strong> e <strong>publicação</strong> de <strong>anúndios</strong>,<br/>
+          que são <strong>desenvolvidos</strong> por uma <strong>equipe preparada</strong>, que é<br/>
+          <strong>disponibilizada</strong> pela <strong>franqueadora</strong>.<br/><br/>
+          <strong>Não há limite</strong> de <strong>idade</strong> nem <strong>restrição de gênero</strong> para quem irá<br/>
+          <strong>investir</strong> na <strong>franquia</strong>, e a franqueadora <strong>não exige educação formal</strong>,<br/>
+          contudo, boas <strong>habilidades</strong> de <strong>comunicação</strong> são <strong>essenciais</strong>.</FranquiaText> */}
       </FranquiaDiv>
       <OferecemosDiv>
         <Img2 src = {OQueOferecemos}/>

@@ -12,41 +12,40 @@ const HeaderMenu = styled.header`
   width: 100%;
   height: 0 auto;
   display: flex;
-  justify-content: space-around;
-  background:url(${Headerback});
+  justify-content: flex-end;
+  
+  background:url(${Headerback});  
   padding: 5px;
   position: sticky;
   top: 0;
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  z-index: 1;  
   background-color: #0072c0;
 `
 
-// const ImgDiv = styled.div`
-//   //border: 1px solid black;
-//   padding: 1vw ;
-//   //height: 0 auto;
-//   //display: flex;
-//   //flex-direction: row-reverse;
-//   background:url(${Headerback});  
-//   /* @media (max-width: 767px){
-//     flex-direction: row;
-//   } */
-// `
+ const ImgDiv = styled.div`
+  
+   /* padding: 1vw ; */
+   height: 0 auto;
+   display: flex;
+   width: 17%;
+   
+ `
 
 const ImgPtv = styled.img ` 
-  width: 10em;
+  width: 100%;
+  height: 0 auto;
+  
 `
 
 const DivBttn = styled.div `
-  width: 40%;
+  width: 44%;
   height: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background:url(${Headerback});  
+  
+  
 `
 
 const Bttn = styled.button`
@@ -81,8 +80,10 @@ const BttnContact = styled.button`
 `
 
 const DivIcon = styled.div`
-  border: 2px solid white;
   
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
   //width: 12vw;
   //height: 0 auto;
   //display: flex;
@@ -92,7 +93,7 @@ const DivIcon = styled.div`
 `
 
 const IconImg = styled.img`
-  
+  width: 2vw;
   
 `
 
@@ -101,9 +102,9 @@ function Header(){
 
   return(
     <HeaderMenu>
-      {/* <ImgDiv> */}
+      <ImgDiv>
         <ImgPtv src= {logoptv} className='ImgPtv'/>
-      {/* </ImgDiv> */}
+      </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Mapa')}>UNIDADES</Bttn>
