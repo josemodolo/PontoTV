@@ -107,7 +107,7 @@ function Header(){
       </ImgDiv>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
-        <Bttn onClick = {()=> history.push('/Mapa')}>UNIDADES</Bttn>
+        <Bttn onClick = {()=> history.push('/Unidades')}>UNIDADES</Bttn>
         <Bttn onClick = {()=> history.push('/Franqueados')}>SEJA UM FRANQUEADO</Bttn>
         <a href="#formSection"><BttnContact>CONTATO</BttnContact></a>
       </DivBttn>

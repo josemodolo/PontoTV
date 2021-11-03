@@ -6,10 +6,32 @@ const FormDiv = styled.div`
   color: white;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   position: absolute;
-  
+  width: 50%;
   height: 0 auto;
-  
+`
+
+const FormStyle = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  margin-right: 2em;
+  height: 0 auto;
+`
+
+const InputDiv = styled.input`
+  border-radius: 15px;
+  padding: 8px;
+  border: none;
+  width: 5vw;
+  height: 0 auto;
+`
+
+const Label = styled.label`
+ margin-top: 1em;
 `
 
 const TextBox = styled.textarea`
@@ -37,26 +59,7 @@ const Bttn = styled.input`
    height: 3em;   
 `
 
-const InputDiv = styled.input`
-  border-radius: 15px;
-  padding: 8px;
-  border: none;
-  width: 35em;  
-`
 
-const FormStyle = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  padding: 10px;
-  margin-right: 2em;
-  height: 0 auto;
-`
-
-const Label = styled.label`
- margin-top: 1em;
-`
 
 
 

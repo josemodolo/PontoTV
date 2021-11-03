@@ -8,6 +8,7 @@ const FormDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
+  
 `
 
 const Img = styled.img`

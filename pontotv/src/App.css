@@ -4,19 +4,18 @@
 }
 
 @font-face {
-  font-family:"Gilroy-Heavy";
-  src: local("GilroyHeavy")
-  url("./fonts/Gilroy-Heavy.ttf");
+  font-family:"GilroyHeavy";
+  src: url("./fonts/Gilroy-Heavy.ttf") format("truetype");
 }
 
 .font-gb{
-  font-family: "GilroyBold";
+  font-family: "GilroyHeavy";
 }
 
 
 *  {
   margin: 0;
-  /* font-family: san;   */
+  font-family:"GilroyBold";
   padding: 0;
   
 }

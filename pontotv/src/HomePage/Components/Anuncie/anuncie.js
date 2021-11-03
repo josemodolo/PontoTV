@@ -10,13 +10,12 @@ const DivAnuncie = styled.div`
 `
 
 const TextDiv = styled.div`
-  position: absolute;   
-  color: black; 
+  position: absolute;     
   display: flex;    
   width: 50%;
   height: 0 auto;
   flex-direction: column;
-  padding: 2vw;
+  margin-top: 2.5vw;
 `
 
  const Details = styled.div`
@@ -29,24 +28,30 @@ const TextDiv = styled.div`
   color: #0071c0;
   font-weight: 900;
   font-size: 2.5vw;
-  padding-bottom:0.5em ;
+  
  `
 
  const Ptext = styled.p`
    font-weight: 500;
    font-size: 1.5vw;
-   padding-bottom:0.9em;  
+   padding-bottom:0.9em;
+   color: #505050 ;
+   margin-top: 1vw;
+   
  `
 
  const ListTitle = styled.h2`
   color: #0071c0;
   font-weight: 900;
   font-size: 1.9vw;
-  padding-bottom:0.5em ;  
+  
  `
 
  const OrderText = styled.ul`
   font-size: 1.5vw;
+  color: #505050;
+  margin-top: 1vw;
+  margin-left: 1.3vw;
  `
 
   const Img = styled.img`
