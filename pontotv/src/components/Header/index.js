@@ -13,13 +13,13 @@ const HeaderMenu = styled.header`
   height: 0 auto;
   display: flex;
   justify-content: flex-end;
-  
   background:url(${Headerback});  
   padding: 5px;
   position: sticky;
   top: 0;
   z-index: 1;  
   background-color: #0072c0;
+  
 `
 
  const ImgDiv = styled.div`
@@ -27,7 +27,8 @@ const HeaderMenu = styled.header`
    /* padding: 1vw ; */
    height: 0 auto;
    display: flex;
-   width: 17%;
+   width: 15vw;
+   margin-right: 1vw;
    
  `
 
@@ -56,6 +57,7 @@ const Bttn = styled.button`
   color: white;
   cursor: pointer;
   outline: none;
+  transition: 0.9s;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;
@@ -72,6 +74,7 @@ const BttnContact = styled.button`
   cursor: pointer;
   outline: none;
   scroll-behavior: smooth;
+  transition: 0.9s;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;

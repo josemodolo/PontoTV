@@ -17,9 +17,11 @@ const Img = styled.img`
   position: absolute;   
   color: white; 
   //display: flex;    
-  width: 50%;
+  width: 47%;
   height: 0 auto;
-  flex-direction: column;  
+  flex-direction: column;
+  margin-top: 0.5vw;  
+  margin-right: 2.2vw;
   
  `
 
@@ -41,13 +43,13 @@ const Img = styled.img`
  const Ptext = styled.p`
    color: #505050;
    font-weight: 500;
-   font-size: 1.5vw;
+   font-size: 1.4vw;
    
  `
 
   const OrderList = styled.p`
     color: #505050;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     margin-top: 0.5vw;
   `
 
@@ -58,6 +60,10 @@ const Img = styled.img`
   margin-top: 0.5vw;
  `
 
+const Ps = styled.span`
+font-weight: 700;
+`
+
 function Corporativa () {
   return (
     <DivCorp>
@@ -65,21 +71,21 @@ function Corporativa () {
       <TextDiv>
         <Hash>#PARASUAEMPRESA</Hash>
         <TextTitle>TV CORPORATIVA</TextTitle>
-        <Ptext>Nesta <strong>categoria</strong> voce <strong>aproveita TV's</strong> presentes em <strong>salas</strong> de <strong>espera</strong>
-        e <strong>filas de atendimento</strong>, e <strong>apresenta</strong> um <strong>conteúdo</strong> 100% personalizado,
-        divulgando <strong>informações</strong>, <strong>produtos</strong> e <strong>serviços</strong> da <strong>própria empresa</strong>
-        para os seus <strong>próprios clientes</strong>, ou até mesmo <strong>funcionários</strong>.
-        Além de ter seu <strong>próprio canal interno</strong> com <strong>notícias diversas</strong>, <strong>previsão</strong>
-        do <strong>tempo</strong> e <strong>cotação da bolsa de valores</strong>, a <strong>Ponto TV</strong> cria <strong>conteúdos</strong>
-        em <strong>vídeo</strong> com <strong>foco</strong> em <strong>sua empresa</strong>, seja com destaque <strong>institucional</strong>,
-        em <strong>produtos</strong>, <strong>ofertas</strong>, ou <strong>serviços especificos</strong>.</Ptext>
+        <Ptext>Nesta <Ps>categoria</Ps> voce <Ps>aproveita TV's</Ps> presentes em <Ps>salas</Ps> de <Ps>espera</Ps>
+        e <Ps>filas de atendimento</Ps>, e <Ps>apresenta</Ps> um <Ps>conteúdo</Ps> 100% personalizado,
+        divulgando <Ps>informações</Ps>, <Ps>produtos</Ps> e <Ps>serviços</Ps> da <Ps>própria empresa</Ps>
+        para os seus <Ps>próprios clientes</Ps>, ou até mesmo <Ps>funcionários</Ps>.
+        Além de ter seu <Ps>próprio canal interno</Ps> com <Ps>notícias diversas</Ps>, <Ps>previsão</Ps>
+        do <Ps>tempo</Ps> e <Ps>cotação da bolsa de valores</Ps>, a <Ps>Ponto TV</Ps> cria <Ps>conteúdos</Ps>
+        em <Ps>vídeo</Ps> com <Ps>foco</Ps> em <Ps>sua empresa</Ps>, seja com destaque <Ps>institucional</Ps>,
+        em <Ps>produtos</Ps>, <Ps>ofertas</Ps>, ou <Ps>serviços especificos</Ps>.</Ptext>
         <ListTitle>VANTAGENS:</ListTitle>
           <OrderList>
-            <li><strong>Fortaleça</strong> o <strong>relacionamento</strong> entre <strong>empresa</strong> e <strong>funcionários/clientes.</strong></li>
-            <li><strong>Programação</strong> controlada via acesso <strong>remoto</strong>, podendo ser <strong>alterada</strong>
-            <strong>sempre</strong> que <strong>necessário</strong>.</li>
-            <li>Pode-se <strong>utilizar</strong> uma <strong>TV</strong> já <strong>instalada</strong> no <strong>local</strong>.</li>
-            <li>Modelo <strong>compatível</strong> com <strong>diversos segmentos</strong>.</li>
+            <li><Ps>Fortaleça</Ps> o <Ps>relacionamento</Ps> entre <Ps>empresa</Ps> e <Ps>funcionários/clientes</Ps>.</li>
+            <li><Ps>Programação</Ps> controlada via acesso <Ps>remoto</Ps>, podendo ser <Ps>alterada</Ps>
+            <Ps>sempre</Ps> que <Ps>necessário</Ps>.</li>
+            <li>Pode-se <Ps>utilizar</Ps> uma <Ps>TV</Ps> já <Ps>instalada</Ps> no <Ps>local</Ps>.</li>
+            <li>Modelo <Ps>compatível</Ps> com <Ps>diversos segmentos</Ps>.</li>
           </OrderList>
         
       </TextDiv>

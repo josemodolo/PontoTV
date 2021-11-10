@@ -18,10 +18,11 @@ const Img = styled.img`
   position: absolute;   
   color: white; 
   //display: flex;    
-  width: 50%;
+  width: 47%;
   height: 0 auto;
   flex-direction: column;
-  margin-left: 1.3vw ;
+  margin-left: 4.2vw;
+  margin-top: 2vw;
   
  `
 
@@ -29,6 +30,7 @@ const Img = styled.img`
    color: white;
    font-size: 1.5vw;
    margin-top: 1vw;
+   ;
  `
 
  const TextTitle = styled.h1`
@@ -39,21 +41,22 @@ const Img = styled.img`
 `
 
  const Ptext = styled.p`
+   color: white;
    font-weight: 500;
-   font-size: 1.5vw;
+   font-size: 1.4vw;
    
    
  `
 
  const OrderList = styled.p`
    color: white;
-   font-size: 1.3vw;
+   
    margin-top: 0.5vw;
-   margin-left: 1.3vw;
+   margin-left: 1.1vw;
  `
 
 const OrderText = styled.ul`
-font-size: 1.5vw;
+font-size: 1.4vw;
 `
 
 const ListTitle = styled.h2`
@@ -63,6 +66,10 @@ const ListTitle = styled.h2`
   margin-top: 0.5vw;
  `
 
+const Ps = styled.span`
+font-weight: 700;
+`
+
 function Publicitaria () {
   return(
     <DivPub>
@@ -70,21 +77,21 @@ function Publicitaria () {
       <TextDiv>
         <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
         <TextTitle>TV PUBLICITÁRIA</TextTitle>
-        <Ptext>Nesta <strong>categoria</strong> seu <strong>estabelecimento</strong> pode ser um <strong>parceiro Ponto TV</strong>,
-        oferecendo <strong>espaços publicitários</strong> para <strong>qualquer anunciante</strong> que queira
-        <strong>divulgar</strong> seus <strong>produtos</strong> e <strong>serviços</strong> através de <strong>videos</strong>, além de <strong>oferecer</strong>
-        aos <strong>seus clientes</strong> um <strong>canal</strong> de <strong>informação</strong> e <strong>entretenimento</strong> por meio
-        de <strong>notícias diversas</strong>, <strong>previsão do tempo</strong>, <strong>cotação</strong> da <strong>bolsa de valores</strong>
+        <Ptext>Nesta <Ps>categoria</Ps> seu <Ps>estabelecimento</Ps> pode ser um <Ps>parceiro Ponto TV</Ps>,
+        oferecendo <Ps>espaços publicitários</Ps> para <Ps>qualquer anunciante</Ps> que queira
+        <Ps>divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>videos</Ps>, além de <Ps>oferecer</Ps>
+        aos <Ps>seus clientes</Ps> um <Ps>canal</Ps> de <Ps>informação</Ps> e <Ps>entretenimento</Ps> por meio
+        de <Ps>notícias diversas, previsão do tempo, cotação</Ps> da <Ps>bolsa de valores</Ps>
         entre outros.</Ptext>
         <ListTitle>VANTAGENS:</ListTitle>
         <OrderList>
           <OrderText>
-            <li>Entretenimento e informação em tempo real para os clientes
-            durante espera forçada.</li>
-            <li>Programação controlada via acesso remoto, podendo ser alterada
-            sempre que necessário.</li>
-            <li>Pode-se utilizar uma TV já instalada no local.</li>
-            <li>Modelo compativel com diversos segmentos.</li>
+            <li><Ps>Entretenimento</Ps> e <Ps>informação</Ps> em <Ps>tempo real</Ps> para os clientes
+            durante <Ps>espera forçada</Ps>.</li>
+            <li><Ps>Programação</Ps> controlada via acesso <Ps>remoto</Ps>, podendo ser <Ps>alterada</Ps>
+            <Ps>sempre</Ps> que <Ps>necessário</Ps>.</li>
+            <li>Pode-se <Ps>utilizar</Ps> uma <Ps>TV</Ps> já <Ps>instalada</Ps> no <Ps>local</Ps>.</li>
+            <li>Modelo <Ps>compativel</Ps> com <Ps>diversos segmentos</Ps>.</li>
           </OrderText>
         </OrderList>
       </TextDiv>

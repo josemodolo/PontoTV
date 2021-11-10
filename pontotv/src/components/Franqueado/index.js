@@ -171,8 +171,11 @@ const YoutubeDiv = styled.div`
   width: 100%;
   height: 0 auto;
   background-color: #0072c0;
-  
 `
+
+const Ps = styled.span`
+  font-weight: 700;
+  `
 
 
 function SejaFranqueado () {
@@ -183,23 +186,23 @@ function SejaFranqueado () {
       <FranquiaDiv>
         <Img1 src= {FranquiaOque}/>
           <FranquiaTextDiv>
-            <FranquiaText>A <strong>Ponto TV</strong> está em <strong>expansão</strong> para todo o <strong>Brasil</strong>, e você também
-              pode <strong>crescer</strong> junto <strong>conosco</strong>!</FranquiaText>
-              <FranquiaText>A <strong>Franquia de Midia Indoor</strong> da <strong>Ponto TV</strong>, é uma <strong>franquia barata</strong>
-              que traz um <strong>modelo</strong> de <strong>negócios lucrativo</strong>, com <strong>maturidade</strong>
-              de <strong>mercado</strong> e <strong>estratégias</strong> de <strong>atuação eficientes</strong> dentro do <strong>ramo</strong>
-              de <strong>publicidade indoor</strong>.</FranquiaText>
-              <FranquiaText><strong>Além</strong> do lucro por meio da <strong>publicidade</strong>, os <strong>franqueados</strong> podem
-              <strong>rentabilizar</strong> também <strong>através</strong> da <strong>TV Corporativa</strong>, tudo isso,
-              <strong>dentro</strong> de um <strong>modelo "home based"</strong>, com <strong>baixo investimento</strong>
-              e <strong>baixo custo</strong> de <strong>operação</strong>.</FranquiaText>
-              <FranquiaText><strong>Inicialmente</strong>, a <strong>rotina</strong> de negócios <strong>possibilita</strong> que o <strong>franqueado</strong>
-              <strong>atue sozinho</strong>, realizando a <strong>venda</strong> e <strong>publicação</strong> de <strong>anúndios</strong>,
-              que são <strong>desenvolvidos</strong> por uma <strong>equipe preparada</strong>, que é
-              <strong>disponibilizada</strong> pela <strong>franqueadora</strong>.</FranquiaText>
-              <FranquiaText><strong>Não há limite</strong> de <strong>idade</strong> nem <strong>restrição de gênero</strong> para quem irá
-              <strong>investir</strong> na <strong>franquia</strong>, e a franqueadora <strong>não exige educação formal</strong>,
-              contudo, boas <strong>habilidades</strong> de <strong>comunicação</strong> são <strong>essenciais</strong>.</FranquiaText>
+            <FranquiaText>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
+              pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaText>
+              <FranquiaText>A <Ps>Franquia de Midia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata</Ps>
+              que traz um <Ps>modelo</Ps> de <Ps>negócios lucrativo</Ps>, com <Ps>maturidade</Ps>
+              de <Ps>mercado</Ps> e <Ps>estratégias</Ps> de <Ps>atuação eficientes</Ps> dentro do <Ps>ramo</Ps>
+              de <Ps>publicidade indoor</Ps>.</FranquiaText>
+              <FranquiaText><Ps>Além</Ps> do lucro por meio da <Ps>publicidade</Ps>, os <Ps>franqueados</Ps> podem
+              <Ps>rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
+              <Ps>dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento</Ps>
+              e <Ps>baixo custo</Ps> de <Ps>operação</Ps>.</FranquiaText>
+              <FranquiaText><Ps>Inicialmente</Ps>, a <Ps>rotina</Ps> de negócios <Ps>possibilita</Ps> que o <Ps>franqueado</Ps>
+              <Ps>atue sozinho</Ps>, realizando a <Ps>venda</Ps> e <Ps>publicação</Ps> de <Ps>anúndios</Ps>,
+              que são <Ps>desenvolvidos</Ps> por uma <Ps>equipe preparada</Ps>, que é
+              <Ps>disponibilizada</Ps> pela <Ps>franqueadora</Ps>.</FranquiaText>
+              <FranquiaText><Ps>Não há limite</Ps> de <Ps>idade</Ps> nem <Ps>restrição de gênero</Ps> para quem irá
+              <Ps>investir</Ps> na <Ps>franquia</Ps>, e a franqueadora <Ps>não exige educação formal</Ps>,
+              contudo, boas <Ps>habilidades</Ps> de <Ps>comunicação</Ps> são <Ps>essenciais</Ps>.</FranquiaText>
           </FranquiaTextDiv>
       </FranquiaDiv>
         
@@ -215,34 +218,34 @@ function SejaFranqueado () {
       <CasesDiv>
         <Img4 src = {CasesImg}/>
         <DivTextRodrigo>
-          <FranqueadosText>A <strong>escolha</strong> pela <strong>franquia Ponto TV</strong> foi muito <strong>assertiva</strong>, <strong>iniciei</strong> com o <strong>Kit Básico</strong> e em <strong>apenas 1 mês </strong>
-           já <strong>estava</strong> com <strong>todos</strong> os <strong>pontos instalados</strong>. Com <strong>poucos meses</strong> de <strong>operação</strong> já <strong>possuo 10 pontos </strong>
-          e percebi que o <strong>modelo</strong> de <strong>negócios</strong> era <strong>promissor</strong> e que <strong>rapidamente</strong> renderia <strong>lucros</strong> e haveria
-          o <strong>retorno</strong> do <strong>investimento</strong>.</FranqueadosText>
-          <FranqueadosText>A <strong>equipe</strong> nos dá todo o <strong>suporte necessário</strong>, seja na <strong>parte técnica</strong> ou na <strong>comercial</strong>, desta forma
-          as <strong>metas diárias</strong> se tornaram mas <strong>eficazes</strong> e <strong>sucesso</strong> de <strong>empreendimento</strong> foi <strong>garantido</strong>.</FranqueadosText>
-          <FranqueadosText>A <strong>Ponto TV</strong>, sem dúvida é um <strong>excelente investimento</strong> para quem tem foco e <strong>determinação</strong>,
-          pois <strong>reúne</strong> em um só produto <strong>várias possibilidades</strong> de <strong>ganhos</strong>, <strong>abrindo</strong> as <strong>portas</strong> para
-          um <strong>negócio local</strong> de <strong>sucesso</strong>... Estou <strong>muito satisfeito</strong> com os <strong>resultados</strong>!</FranqueadosText>
+          <FranqueadosText>A <Ps>escolha</Ps> pela <Ps>franquia Ponto TV</Ps> foi muito <Ps>assertiva</Ps>, <Ps>iniciei</Ps> com o <Ps>Kit Básico</Ps> e em <Ps>apenas 1 mês </Ps>
+           já <Ps>estava</Ps> com <Ps>todos</Ps> os <Ps>pontos instalados</Ps>. Com <Ps>poucos meses</Ps> de <Ps>operação</Ps> já <Ps>possuo 10 pontos </Ps>
+          e percebi que o <Ps>modelo</Ps> de <Ps>negócios</Ps> era <Ps>promissor</Ps> e que <Ps>rapidamente</Ps> renderia <Ps>lucros</Ps> e haveria
+          o <Ps>retorno</Ps> do <Ps>investimento</Ps>.</FranqueadosText>
+          <FranqueadosText>A <Ps>equipe</Ps> nos dá todo o <Ps>suporte necessário</Ps>, seja na <Ps>parte técnica</Ps> ou na <Ps>comercial</Ps>, desta forma
+          as <Ps>metas diárias</Ps> se tornaram mas <Ps>eficazes</Ps> e <Ps>sucesso</Ps> de <Ps>empreendimento</Ps> foi <Ps>garantido</Ps>.</FranqueadosText>
+          <FranqueadosText>A <Ps>Ponto TV</Ps>, sem dúvida é um <Ps>excelente investimento</Ps> para quem tem foco e <Ps>determinação</Ps>,
+          pois <Ps>reúne</Ps> em um só produto <Ps>várias possibilidades</Ps> de <Ps>ganhos</Ps>, <Ps>abrindo</Ps> as <Ps>portas</Ps> para
+          um <Ps>negócio local</Ps> de <Ps>sucesso</Ps>... Estou <Ps>muito satisfeito</Ps> com os <Ps>resultados</Ps>!</FranqueadosText>
           
         </DivTextRodrigo>
         <DivTextSolange>
-          <FranqueadosText>Decidimos <strong>investir</strong> na <strong>Ponto TV</strong> por <strong>entendermos</strong> que <strong>franquia</strong> é um <strong>negócio mais seguro</strong>
-          e <strong>descomplicado</strong>.</FranqueadosText>
-          <FranqueadosText>Estamos em um <strong>mercado</strong> com <strong>alto potencial</strong> para <strong>expansão</strong> e com <strong>possibilidade</strong> de fazermos
-          <strong>mais</strong> e melhor que a <strong>concorrência</strong>.</FranqueadosText>
-          <FranqueadosText>A <strong>gestão</strong> do <strong>negócio</strong> é <strong>simples</strong> e a <strong>franqueadora</strong> fornece <strong>treinamentos</strong> e <strong>suporte</strong> para <strong>rede</strong>.</FranqueadosText>
-          <FranqueadosText>Logo, para o <strong>negócio prosperar</strong> só <strong>depende de nós</strong>, colocando <strong>energia</strong> e <strong>foco</strong>,
-          o <strong>sucesso</strong> é <strong>questão de tempo</strong>!</FranqueadosText>
+          <FranqueadosText>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro</Ps>
+          e <Ps>descomplicado</Ps>.</FranqueadosText>
+          <FranqueadosText>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
+          <Ps>mais</Ps> e melhor que a <Ps>concorrência</Ps>.</FranqueadosText>
+          <FranqueadosText>A <Ps>gestão</Ps> do <Ps>negócio</Ps> é <Ps>simples</Ps> e a <Ps>franqueadora</Ps> fornece <Ps>treinamentos</Ps> e <Ps>suporte</Ps> para <Ps>rede</Ps>.</FranqueadosText>
+          <FranqueadosText>Logo, para o <Ps>negócio prosperar</Ps> só <Ps>depende de nós</Ps>, colocando <Ps>energia</Ps> e <Ps>foco</Ps>,
+          o <Ps>sucesso</Ps> é <Ps>questão de tempo</Ps>!</FranqueadosText>
         </DivTextSolange>
         <DivTextRafael>
-          <FranqueadosText>Ser um <strong>franqueado</strong> da <strong>Ponto TV</strong> me traz duas <strong>satisfações</strong> importantes.</FranqueadosText>
-          <FranqueadosText>A primeira é a <strong>possibilidade</strong> de <strong>contribuir</strong> com <strong>empresas</strong> que <strong>precisam divulgar</strong> mais
-          os <strong>seus serviços</strong>, e a segunda é a <strong>rentabilidade</strong> do <strong>négocio</strong>.</FranqueadosText>
-          <FranqueadosText>Dai a <strong>razão</strong> de ser franqueado <strong>Ponto TV</strong>!</FranqueadosText>
-          <FranqueadosText>O fato de ser <strong>lotérico</strong> a <strong>mais de 10 anos</strong>, também <strong>ajudou</strong> muito a <strong>trabalhar</strong> com a <strong>franquia</strong>.</FranqueadosText>
-          <FranqueadosText><strong>Sempre</strong> que tenho alguma <strong>necessidade</strong>, a <strong>franqueadora</strong> me <strong>ajuda</strong> no que eu <strong>preciso</strong> para
-          <strong>continuar</strong> nos <strong>negócios</strong>.</FranqueadosText>
+          <FranqueadosText>Ser um <Ps>franqueado</Ps> da <Ps>Ponto TV</Ps> me traz duas <Ps>satisfações</Ps> importantes.</FranqueadosText>
+          <FranqueadosText>A primeira é a <Ps>possibilidade</Ps> de <Ps>contribuir</Ps> com <Ps>empresas</Ps> que <Ps>precisam divulgar</Ps> mais
+          os <Ps>seus serviços</Ps>, e a segunda é a <Ps>rentabilidade</Ps> do <Ps>négocio</Ps>.</FranqueadosText>
+          <FranqueadosText>Dai a <Ps>razão</Ps> de ser franqueado <Ps>Ponto TV</Ps>!</FranqueadosText>
+          <FranqueadosText>O fato de ser <Ps>lotérico</Ps> a <Ps>mais de 10 anos</Ps>, também <Ps>ajudou</Ps> muito a <Ps>trabalhar</Ps> com a <Ps>franquia</Ps>.</FranqueadosText>
+          <FranqueadosText><Ps>Sempre</Ps> que tenho alguma <Ps>necessidade</Ps>, a <Ps>franqueadora</Ps> me <Ps>ajuda</Ps> no que eu <Ps>preciso</Ps> para
+          <Ps>continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadosText>
         </DivTextRafael>
         <DivTextAyla>
           <FranqueadosText><strong>Antes</strong> da <strong>Ponto TV</strong>, tinhamos receio sobre o <strong>modelo</strong> de <strong>franquia</strong>, desde o medo

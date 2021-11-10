@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const FooterDiv = styled.div`
 width: 100%;
-height: 100%;
+height: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -21,7 +21,7 @@ const TextArea = styled.p`
   position: absolute;   
   color: white; 
   display: flex;    
-  width: 50%;
+  width: 50vw;
   height: 0 auto;
   flex-direction: column;
 `

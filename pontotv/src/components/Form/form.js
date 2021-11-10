@@ -8,55 +8,60 @@ const FormDiv = styled.div`
   align-items: center;
   flex-direction: row-reverse;
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 0 auto;
+  padding: 1vw;
+  margin-right: 2vw;
 `
 
 const FormStyle = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  padding: 10px;
-  margin-right: 2em;
+  color: white;  
   height: 0 auto;
 `
 
 const InputDiv = styled.input`
-  border-radius: 15px;
-  padding: 8px;
+  border-radius: 1vw;
   border: none;
-  width: 5vw;
+  width: 32vw;
+  padding: 0.5vw;
   height: 0 auto;
 `
 
 const Label = styled.label`
- margin-top: 1em;
+  margin-top: 1vw;
 `
 
 const TextBox = styled.textarea`
-  border-radius: 10px;
-  width: 5vw;
-  height: 0 auto;  
+  border-radius: 0.2vw;
+  width: 40vw;
+  height: 10vh;
 `
 
 const Bttn = styled.input`
   background-color: transparent;
   border: 5px solid transparent;
-  border-radius: 2px;
+  border-radius: 0.5vw;
   color: white;
   cursor: pointer;
   outline: none;
-  background-color: #e8952b;
-  border-radius: 3px;
+  background-color: #e8952b;  
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.3vw;
    &:hover{
      background-color: blue;
    }
-   margin-top: 1em;
-   width: 10em;
-   height: 3em;   
+   margin-top: 1vw;
+   width: 15vw;
+   height: 6vh;
+`
+
+const Select = styled.select`
+  border-radius: 1vw;
+  width: 32vw;
+  padding: 0.5vw;
 `
 
 
@@ -105,6 +110,12 @@ const Mailer = () => {
             setTelefone(newValue)
           }}
         />
+        <Label for="Select">Assunto</Label>
+          <Select id="select" name="select">
+            <option value="anunciar">QUERO ANUNCIAR</option>
+            <option value="saber">QUERO SABER SOBRE A FRANQUIA</option>
+            <option value="outros">OUTROS</option>            
+          </Select>
         <Label>Mensagem</Label>
         <TextBox name='message' rows='4'/>
         <Bttn type='submit' value='ENVIAR' onClick={userAlert}/>

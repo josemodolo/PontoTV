@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import ImgAnuncie from '../../../img/imghome/anuncie/anuncie.jpg'
 
+
 const DivAnuncie = styled.div`
   width: 100%;
   display: flex;
@@ -31,12 +32,12 @@ const TextDiv = styled.div`
   
  `
 
- const Ptext = styled.p`
-   font-weight: 500;
-   font-size: 1.5vw;
+ const Ptext = styled.p`   
+   font-size: 1.4vw;
    padding-bottom:0.9em;
    color: #505050 ;
    margin-top: 1vw;
+  
    
  `
 
@@ -48,7 +49,7 @@ const TextDiv = styled.div`
  `
 
  const OrderText = styled.ul`
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: #505050;
   margin-top: 1vw;
   margin-left: 1.3vw;
@@ -57,6 +58,9 @@ const TextDiv = styled.div`
   const Img = styled.img`
     width: 100%;
     height: 100%;
+  `
+  const Ps = styled.span`
+  font-weight: 700;
   `
 
 function Anuncie (){
@@ -68,12 +72,12 @@ function Anuncie (){
         <div>
           <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>
           <Ptext>
-            Não <strong>importa</strong> se você é <strong>micro</strong> ou macro, muito menos o <strong>tamanho</strong> ou <strong>segmento</strong> do seu <strong>negócio</strong>, o <strong>nosso objetivo</strong> é <strong>fazer você aparecer!</strong>
+            Não <Ps>importa</Ps> se você é <Ps>micro</Ps> ou <Ps>macro</Ps>, muito menos o <Ps>tamanho</Ps> ou <Ps>segmento</Ps> do seu <Ps>negócio</Ps>, o <Ps>nosso objetivo</Ps> é <Ps>fazer você aparecer!</Ps>
           </Ptext>
           
           <Ptext>
-            Através de <strong>vídeos</strong> de <strong>15</strong> ou <strong>30</strong> segundos, você <strong>divulga</strong> seu negócio,
-            empresa, serviço, eventos ou produtos, <strong>impactando milhares</strong> de <strong>pessoas diariamente</strong>, em <strong>pontos</strong> comerciais <strong>estratégicos</strong>.
+            Através de <Ps>vídeos</Ps> de <Ps>15</Ps> ou <Ps>30</Ps> segundos, você <Ps>divulga</Ps> seu negócio,
+            empresa, serviço, eventos ou produtos, <Ps>impactando milhares</Ps> de <Ps>pessoas diariamente</Ps>, em <Ps>pontos</Ps> comerciais <Ps>estratégicos</Ps>.
           </Ptext>
           
         </div>
@@ -81,11 +85,11 @@ function Anuncie (){
           <ListTitle>VANTAGENS</ListTitle>
           <p>
             <OrderText>
-              <li>Pacotes <strong>personalizados.</strong></li>
-              <li>Nós <strong>produzimos</strong> o seu <strong>video</strong>.</li>
-              <li><strong>Foco</strong> em <strong>pontos estratégicos</strong>.</li>
-              <li><strong>Foco</strong> em <strong>públicos diversificados</strong>.</li>
-              <li><strong>Mídia limpa, 100% digital</strong> e que <strong>não polui</strong> nem <strong>agride</strong> a <strong>natureza</strong>.</li>
+              <li>Pacotes <Ps>personalizados</Ps>.</li>
+              <li>Nós <Ps>produzimos</Ps> o seu <Ps>video</Ps>.</li>
+              <li><Ps>Foco</Ps> em <Ps>pontos estratégicos</Ps>.</li>
+              <li><Ps>Foco</Ps> em <Ps>públicos diversificados</Ps>.</li>
+              <li><Ps>Mídia limpa, 100% digital</Ps> e que <Ps>não polui</Ps> nem <Ps>agride</Ps> a <Ps>natureza</Ps>.</li>
             </OrderText>
           </p>
         </div>
