@@ -28,10 +28,12 @@ const InputDiv = styled.input`
   width: 32vw;
   padding: 0.5vw;
   height: 0 auto;
+  font-size: 1.3vw;
 `
 
 const Label = styled.label`
   margin-top: 1vw;
+  font-size: 1.2vw;
 `
 
 const TextBox = styled.textarea`
@@ -56,17 +58,15 @@ const Bttn = styled.input`
    margin-top: 1vw;
    width: 15vw;
    height: 6vh;
+   
 `
 
 const Select = styled.select`
   border-radius: 1vw;
   width: 32vw;
   padding: 0.5vw;
+  font-size: 1.3vw;
 `
-
-
-
-
 
 const formatPhone = (value) => {
   return value
@@ -112,9 +112,9 @@ const Mailer = () => {
         />
         <Label for="Select">Assunto</Label>
           <Select id="select" name="select">
-            <option value="anunciar">QUERO ANUNCIAR</option>
-            <option value="saber">QUERO SABER SOBRE A FRANQUIA</option>
-            <option value="outros">OUTROS</option>            
+            <option value="QUERO ANUNCIAR">QUERO ANUNCIAR</option>
+            <option value="QUERO SABER SOBRE A FRANQUIA">QUERO SABER SOBRE A FRANQUIA</option>
+            <option value="OUTROS">OUTROS</option>            
           </Select>
         <Label>Mensagem</Label>
         <TextBox name='message' rows='4'/>

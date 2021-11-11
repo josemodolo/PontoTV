@@ -17,7 +17,7 @@ const Img = styled.img`
   height: 100%;
 `
 
-const TextArea = styled.p`
+const TextArea = styled.div`
   position: absolute;   
   color: white; 
   display: flex;    
@@ -26,13 +26,17 @@ const TextArea = styled.p`
   flex-direction: column;
 `
 
+const Ptext = styled.p`
+  font-size: 1.3vw;
+`
+
 function Footer (){
   return(
     <FooterDiv>
       <Img src= {FootImg}/>
         <TextArea>
-          <p>pontotvpublicidade@gmail.com</p>
-          <p> © Ponto TV Publicidade 2013 - 2021 | Todos os direitos reservados.</p>
+          <Ptext>pontotvpublicidade@gmail.com</Ptext>
+          <Ptext> © Ponto TV Publicidade 2013 - 2021 | Todos os direitos reservados.</Ptext>
         </TextArea>
     </FooterDiv>
   )

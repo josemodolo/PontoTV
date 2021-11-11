@@ -5,6 +5,7 @@ import DadosImg from '../../img/imghome/dados/dados.jpg'
 const DadosArea = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
 `
 
 const Img = styled.img`

@@ -248,12 +248,12 @@ function SejaFranqueado () {
           <Ps>continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadosText>
         </DivTextRafael>
         <DivTextAyla>
-          <FranqueadosText><strong>Antes</strong> da <strong>Ponto TV</strong>, tinhamos receio sobre o <strong>modelo</strong> de <strong>franquia</strong>, desde o medo
-          da falta de <strong>suporte</strong>, até o medo de não dar certo!</FranqueadosText>
-          <FranqueadosText><strong>Porém</strong>, desde o <strong>primeiro contato</strong>, a <strong>Ponto TV</strong> nos passou <strong>segurança</strong>, e <strong>ganhou</strong>
-          nossa <strong>confiança</strong>! O <strong>modelo</strong> de <strong>negócio</strong> é <strong>simples</strong>, <strong>direto</strong> e <strong>lucrativo</strong>!</FranqueadosText>
-          <FranqueadosText>O <strong>suporte</strong> é <strong>prático</strong>, ativo e <strong>confiável</strong>!</FranqueadosText>
-          <FranqueadosText><strong>Hoje sabemos</strong> que a <strong>Ponto TV</strong> é um <strong>meio econômico</strong> para <strong>qualquer empresa</strong> anunciar seu <strong>negócio</strong>.</FranqueadosText>
+          <FranqueadosText><Ps>Antes</Ps> da <Ps>Ponto TV</Ps>, tinhamos receio sobre o <Ps>modelo</Ps> de <Ps>franquia</Ps>, desde o medo
+          da falta de <Ps>suporte</Ps>, até o medo de não dar certo!</FranqueadosText>
+          <FranqueadosText><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou</Ps>
+          nossa <Ps>confiança</Ps>! O <Ps>modelo</Ps> de <Ps>negócio</Ps> é <Ps>simples</Ps>, <Ps>direto</Ps> e <Ps>lucrativo</Ps>!</FranqueadosText>
+          <FranqueadosText>O <Ps>suporte</Ps> é <Ps>prático</Ps>, ativo e <Ps>confiável</Ps>!</FranqueadosText>
+          <FranqueadosText><Ps>Hoje sabemos</Ps> que a <Ps>Ponto TV</Ps> é um <Ps>meio econômico</Ps> para <Ps>qualquer empresa</Ps> anunciar seu <Ps>negócio</Ps>.</FranqueadosText>
         </DivTextAyla>       
       </CasesDiv>
 

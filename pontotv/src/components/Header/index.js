@@ -74,7 +74,7 @@ const BttnContact = styled.button`
   cursor: pointer;
   outline: none;
   scroll-behavior: smooth;
-  transition: 0.9s;
+  transition: 0s;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;
