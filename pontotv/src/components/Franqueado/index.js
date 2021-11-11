@@ -169,12 +169,15 @@ const Img7 = styled.img`
 
 const YoutubeDiv = styled.div`
   width: 100%;
-  height: 0 auto;
+  height: 100%;
   background-color: #0072c0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 `
 
 const Ps = styled.span`
-  font-weight: 700;
+  
   `
 
 
@@ -188,20 +191,20 @@ function SejaFranqueado () {
           <FranquiaTextDiv>
             <FranquiaText>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
               pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaText>
-              <FranquiaText>A <Ps>Franquia de Midia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata</Ps>
-              que traz um <Ps>modelo</Ps> de <Ps>negócios lucrativo</Ps>, com <Ps>maturidade</Ps>
+              <FranquiaText>A <Ps>Franquia de Midia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>
+              que traz um <Ps>modelo</Ps> de <Ps>negócios lucrativo</Ps>, com <Ps>maturidade </Ps>
               de <Ps>mercado</Ps> e <Ps>estratégias</Ps> de <Ps>atuação eficientes</Ps> dentro do <Ps>ramo</Ps>
               de <Ps>publicidade indoor</Ps>.</FranquiaText>
               <FranquiaText><Ps>Além</Ps> do lucro por meio da <Ps>publicidade</Ps>, os <Ps>franqueados</Ps> podem
-              <Ps>rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
-              <Ps>dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento</Ps>
+              <Ps> rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
+              <Ps> dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento</Ps>
               e <Ps>baixo custo</Ps> de <Ps>operação</Ps>.</FranquiaText>
               <FranquiaText><Ps>Inicialmente</Ps>, a <Ps>rotina</Ps> de negócios <Ps>possibilita</Ps> que o <Ps>franqueado</Ps>
               <Ps>atue sozinho</Ps>, realizando a <Ps>venda</Ps> e <Ps>publicação</Ps> de <Ps>anúndios</Ps>,
               que são <Ps>desenvolvidos</Ps> por uma <Ps>equipe preparada</Ps>, que é
               <Ps>disponibilizada</Ps> pela <Ps>franqueadora</Ps>.</FranquiaText>
               <FranquiaText><Ps>Não há limite</Ps> de <Ps>idade</Ps> nem <Ps>restrição de gênero</Ps> para quem irá
-              <Ps>investir</Ps> na <Ps>franquia</Ps>, e a franqueadora <Ps>não exige educação formal</Ps>,
+              <Ps> investir</Ps> na <Ps>franquia</Ps>, e a franqueadora <Ps>não exige educação formal</Ps>,
               contudo, boas <Ps>habilidades</Ps> de <Ps>comunicação</Ps> são <Ps>essenciais</Ps>.</FranquiaText>
           </FranquiaTextDiv>
       </FranquiaDiv>
@@ -230,7 +233,7 @@ function SejaFranqueado () {
           
         </DivTextRodrigo>
         <DivTextSolange>
-          <FranqueadosText>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro</Ps>
+          <FranqueadosText>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro </Ps>
           e <Ps>descomplicado</Ps>.</FranqueadosText>
           <FranqueadosText>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
           <Ps>mais</Ps> e melhor que a <Ps>concorrência</Ps>.</FranqueadosText>
@@ -245,12 +248,12 @@ function SejaFranqueado () {
           <FranqueadosText>Dai a <Ps>razão</Ps> de ser franqueado <Ps>Ponto TV</Ps>!</FranqueadosText>
           <FranqueadosText>O fato de ser <Ps>lotérico</Ps> a <Ps>mais de 10 anos</Ps>, também <Ps>ajudou</Ps> muito a <Ps>trabalhar</Ps> com a <Ps>franquia</Ps>.</FranqueadosText>
           <FranqueadosText><Ps>Sempre</Ps> que tenho alguma <Ps>necessidade</Ps>, a <Ps>franqueadora</Ps> me <Ps>ajuda</Ps> no que eu <Ps>preciso</Ps> para
-          <Ps>continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadosText>
+          <Ps> continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadosText>
         </DivTextRafael>
         <DivTextAyla>
           <FranqueadosText><Ps>Antes</Ps> da <Ps>Ponto TV</Ps>, tinhamos receio sobre o <Ps>modelo</Ps> de <Ps>franquia</Ps>, desde o medo
           da falta de <Ps>suporte</Ps>, até o medo de não dar certo!</FranqueadosText>
-          <FranqueadosText><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou</Ps>
+          <FranqueadosText><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou </Ps>
           nossa <Ps>confiança</Ps>! O <Ps>modelo</Ps> de <Ps>negócio</Ps> é <Ps>simples</Ps>, <Ps>direto</Ps> e <Ps>lucrativo</Ps>!</FranqueadosText>
           <FranqueadosText>O <Ps>suporte</Ps> é <Ps>prático</Ps>, ativo e <Ps>confiável</Ps>!</FranqueadosText>
           <FranqueadosText><Ps>Hoje sabemos</Ps> que a <Ps>Ponto TV</Ps> é um <Ps>meio econômico</Ps> para <Ps>qualquer empresa</Ps> anunciar seu <Ps>negócio</Ps>.</FranqueadosText>

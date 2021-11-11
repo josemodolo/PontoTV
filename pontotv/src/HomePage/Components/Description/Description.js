@@ -32,7 +32,7 @@ const Ptext = styled.p`
 
 
 const Ps = styled.span`
-  font-weight: 700;
+  
 `
 
 

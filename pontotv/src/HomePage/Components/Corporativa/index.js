@@ -61,7 +61,7 @@ const Img = styled.img`
  `
 
 const Ps = styled.span`
-font-weight: 700;
+
 `
 
 function Corporativa () {
@@ -71,12 +71,12 @@ function Corporativa () {
       <TextDiv>
         <Hash>#PARASUAEMPRESA</Hash>
         <TextTitle>TV CORPORATIVA</TextTitle>
-        <Ptext>Nesta <Ps>categoria</Ps> voce <Ps>aproveita TV's</Ps> presentes em <Ps>salas</Ps> de <Ps>espera</Ps>
+        <Ptext>Nesta <Ps>categoria</Ps> voce <Ps>aproveita TV's</Ps> presentes em <Ps>salas</Ps> de <Ps>espera </Ps>
         e <Ps>filas de atendimento</Ps>, e <Ps>apresenta</Ps> um <Ps>conteúdo</Ps> 100% personalizado,
-        divulgando <Ps>informações</Ps>, <Ps>produtos</Ps> e <Ps>serviços</Ps> da <Ps>própria empresa</Ps>
+        divulgando <Ps>informações</Ps>, <Ps>produtos</Ps> e <Ps>serviços</Ps> da <Ps>própria empresa </Ps>
         para os seus <Ps>próprios clientes</Ps>, ou até mesmo <Ps>funcionários</Ps>.
-        Além de ter seu <Ps>próprio canal interno</Ps> com <Ps>notícias diversas</Ps>, <Ps>previsão</Ps>
-        do <Ps>tempo</Ps> e <Ps>cotação da bolsa de valores</Ps>, a <Ps>Ponto TV</Ps> cria <Ps>conteúdos</Ps>
+        Além de ter seu <Ps>próprio canal interno</Ps> com <Ps>notícias diversas</Ps>, <Ps>previsão </Ps>
+        do <Ps>tempo</Ps> e <Ps>cotação da bolsa de valores</Ps>, a <Ps>Ponto TV</Ps> cria <Ps>conteúdos </Ps>
         em <Ps>vídeo</Ps> com <Ps>foco</Ps> em <Ps>sua empresa</Ps>, seja com destaque <Ps>institucional</Ps>,
         em <Ps>produtos</Ps>, <Ps>ofertas</Ps>, ou <Ps>serviços especificos</Ps>.</Ptext>
         <ListTitle>VANTAGENS:</ListTitle>

@@ -57,7 +57,7 @@ const Bttn = styled.button`
   color: white;
   cursor: pointer;
   outline: none;
-  transition: 0.9s;
+  transition: 0.3s;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;
@@ -74,7 +74,7 @@ const BttnContact = styled.button`
   cursor: pointer;
   outline: none;
   scroll-behavior: smooth;
-  transition: 0s;
+  transition: 0.3s;
   &:hover{
     border: 5px solid #e8952b;
     border-radius: 10px;

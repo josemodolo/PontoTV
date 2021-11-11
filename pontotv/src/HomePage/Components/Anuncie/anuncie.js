@@ -37,8 +37,6 @@ const TextDiv = styled.div`
    padding-bottom:0.9em;
    color: #505050 ;
    margin-top: 1vw;
-  
-   
  `
 
  const ListTitle = styled.h2`
@@ -60,7 +58,7 @@ const TextDiv = styled.div`
     height: 100%;
   `
   const Ps = styled.span`
-  font-weight: 700;
+    font-weight: ;
   `
 
 function Anuncie (){

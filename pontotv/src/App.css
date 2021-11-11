@@ -9,7 +9,7 @@
 }
 
 .font-gb{
-  font-family: "GilroyHeavy";
+  font-family: "GilroyBold";
 }
 
 @keyframes fadeIn {
@@ -24,6 +24,11 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+span{
+  font-family:"GilroyHeavy";
+  
 }
 
 

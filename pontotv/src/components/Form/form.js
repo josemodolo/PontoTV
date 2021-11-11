@@ -10,7 +10,7 @@ const FormDiv = styled.div`
   position: absolute;
   width: 40%;
   height: 0 auto;
-  padding: 1vw;
+  //padding: 1vw;
   margin-right: 2vw;
 `
 
