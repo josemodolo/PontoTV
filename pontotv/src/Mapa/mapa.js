@@ -1,54 +1,55 @@
 import React, { useState } from 'react'
-import { Header, WhatsApp } from '../components'
+import { FranchiseCard, Header, WhatsApp } from '../components'
 import styled from 'styled-components'
 import BrazilMap from './Map'
 import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
 import Bg from '../img/imghome/conteudomap/bg.jpg'
-
-
-
-
+import { franchisees } from './franchisees'
 
 const MapDiv = styled.div`
-  width: 100vh;
-  height: 80vh;
+  width: 100vw;
+  height: calc(100vh - 148px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-image: url(${Bg});
-  background-size: 100% 100%;
-  background-size: cover;  
+  background-size: cover;
 `
 
 const Slider = styled.div`
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 0;
   width: 400px;
-  border-left: 2px solid black;
-  background-color: grey;
-  height: 100vh;
+  overflow: auto;
+  height: 80%;
 `
 
 function Franqueados (props) {
-  const [showSlider, setShowSlider] = useState (false)
-  // const [selectedState, setSelecetedState] = useState ('')
+  const [selectedState, setSelectedState] = useState ('')
 
-  function divLateral () {
-    setShowSlider(true)
+  function handleLocationClick (e) {
+    setSelectedState(e.target.id)
   }
 
-
-  return(
+  return (
     <div>
       <Header/>
-      
-        <MapDiv>      
-          <BrazilMap onLocationClick={divLateral}/>
-          {showSlider && <Slider></Slider>}    
-        </MapDiv>        
+        <MapDiv>
+          <BrazilMap
+            onLocationClick={handleLocationClick}
+          />
+          <Slider>
+            {franchisees[selectedState]?.map((franquia) => {
+              return (
+                <FranchiseCard
+                  name={franquia.name}
+                  email={franquia.email}
+                  phone={franquia.phone}
+                />
+              )
+            })
+            }
+          </Slider>
+        </MapDiv>
         <Footer />
         <WhatsApp/>
     </div>

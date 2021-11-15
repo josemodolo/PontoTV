@@ -10,43 +10,27 @@ import Icon04 from '../../img/iconimg/icon04.png'
 
 const HeaderMenu = styled.header`
   width: 100%;
-  height: 0 auto;
+  height: 80px;
   display: flex;
-  justify-content: flex-end;
-  background:url(${Headerback});  
-  padding: 5px;
+  justify-content: space-evenly;
+  padding: 0 5;
+  background: url(${Headerback});
   position: sticky;
   top: 0;
-  z-index: 1;  
+  z-index: 1;
   background-color: #0072c0;
-  
 `
 
- const ImgDiv = styled.div`
-  
-   /* padding: 1vw ; */
-   height: 0 auto;
-   display: flex;
-   width: 15vw;
-   margin-right: 1vw;
-   
- `
-
-const ImgPtv = styled.img ` 
-  width: 100%;
-  height: 0 auto;
-  
+const ImgPtv = styled.img`
+  width: 200px;
 `
 
 const DivBttn = styled.div `
   width: 44%;
-  height: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  
-  
 `
 
 const Bttn = styled.button`
@@ -83,7 +67,7 @@ const BttnContact = styled.button`
 `
 
 const DivIcon = styled.div`
-  
+
   width: 20%;
   display: flex;
   justify-content: space-evenly;
@@ -97,7 +81,7 @@ const DivIcon = styled.div`
 
 const IconImg = styled.img`
   width: 2vw;
-  
+
 `
 
 function Header(){
@@ -105,9 +89,7 @@ function Header(){
 
   return(
     <HeaderMenu>
-      <ImgDiv>
-        <ImgPtv src= {logoptv} className='ImgPtv'/>
-      </ImgDiv>
+      <ImgPtv src= {logoptv}/>
       <DivBttn>
         <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
         <Bttn onClick = {()=> history.push('/Unidades')}>UNIDADES</Bttn>

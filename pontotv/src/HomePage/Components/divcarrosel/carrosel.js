@@ -62,38 +62,38 @@ const Whiteborderdiv = styled.div`
 const Carousel = () => {
   const carouselRef = useRef(null)
   let resetTimeout
-  
+
   return (
     <DivCarousel>
       <Whiteborderdiv>
         <Whiteborder>
         </Whiteborder>
       </Whiteborderdiv>
-      <ReactCarousel 
+      <ReactCarousel
         ref={carouselRef}
         enableAutoPlay
-        emulateTouch              
-        autoPlaySpeed={4000}          
+        emulateTouch
+        autoPlaySpeed={4000}
         pagination={false}
         onNextEnd={({ index }) => {
           clearTimeout(resetTimeout)
           if (index + 1 === 5) {
              resetTimeout = setTimeout(() => {
-                carouselRef.current.goTo(0)
+                carouselRef?.current?.goTo(0)
             }, 3000)
           }
      }}
-      >           
+      >
         <ImgCarousel src= {Carimg1}/>
         <ImgCarousel src= {Carimg2}/>
         <ImgCarousel src= {Carimg3}/>
         <ImgCarousel src= {Carimg4}/>
-        <ImgCarousel src= {Carimg5}/>           
+        <ImgCarousel src= {Carimg5}/>
       </ReactCarousel>
       <Whiteborderdiv>
       <Whiteborder></Whiteborder>
-      </Whiteborderdiv>       
-    </DivCarousel>      
+      </Whiteborderdiv>
+    </DivCarousel>
   )
 }
 

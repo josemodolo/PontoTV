@@ -5,11 +5,13 @@ import "react-svg-map/lib/index.css"
 import './map.css'
 
 function BrazilMap (props) {
-  return (   
-    <SVGMap 
-      map={Brazil} 
+  return (
+    <SVGMap
+      {...props}
+      map={Brazil}
       className="BrMap"
-    />  
+      locationClassName="locations"
+    />
   )
 }
 

@@ -1,4 +1,16 @@
 .BrMap{
-  width: 70%;
-  margin-left: 20px;
+  width: 50%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.locations {
+  fill: #0072c0;
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.locations:hover {
+  fill: #f9af40;
 }

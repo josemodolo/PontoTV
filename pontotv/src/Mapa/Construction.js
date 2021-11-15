@@ -1,4 +1,4 @@
-import react from "react";
+// import react from "react";
 import styled from "styled-components";
 import ConstructionBg from './construction.jpg'
 import { Header } from "../components";
