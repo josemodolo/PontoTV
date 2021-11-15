@@ -6,6 +6,7 @@ import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
 import Bg from '../img/imghome/conteudomap/bg.jpg'
 import { franchisees } from './franchisees'
+import TitleIcon from './icon1.png'
 
 const MapDiv = styled.div`
   width: 100vw;
@@ -23,6 +24,8 @@ const Slider = styled.div`
   height: 80%;
 `
 
+
+
 function Franqueados (props) {
   const [selectedState, setSelectedState] = useState ('')
 
@@ -34,6 +37,7 @@ function Franqueados (props) {
     <div>
       <Header/>
         <MapDiv>
+          
           <BrazilMap
             onLocationClick={handleLocationClick}
           />
@@ -41,9 +45,14 @@ function Franqueados (props) {
             {franchisees[selectedState]?.map((franquia) => {
               return (
                 <FranchiseCard
-                  name={franquia.name}
-                  email={franquia.email}
-                  phone={franquia.phone}
+                  representantes={franquia.representantes}
+                  estado={franquia.estado}
+                  nome={franquia.nome}
+                  local={franquia.local}
+                  franqueado={franquia.franqueado}
+                  telefone={franquia.telefone}
+                  facebook={franquia.facebook}
+                  instagram={franquia.instagram}
                 />
               )
             })
