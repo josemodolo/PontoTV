@@ -6,24 +6,35 @@ import Footer from '../HomePage/footer'
 import "react-svg-map/lib/index.css"
 import Bg from '../img/imghome/conteudomap/bg.jpg'
 import { franchisees } from './franchisees'
-import TitleIcon from './icon1.png'
+import Imgunidades from './imgunidades.png'
+
 
 const MapDiv = styled.div`
-  width: 100vw;
-  height: calc(100vh - 148px);
+  width: 100%;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   background-image: url(${Bg});
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+  
 `
 
 const Slider = styled.div`
-  width: 400px;
+  width: 25vw;
   overflow: auto;
   height: 80%;
 `
 
+const ImgUni = styled.img`
+  width: 15vw;
+`
+
+// const TitleDiv = styled.div`
+//   position: absolute;
+//   margin-bottom: 45vw;
+//   color: white;
+// `
 
 
 function Franqueados (props) {
@@ -36,11 +47,14 @@ function Franqueados (props) {
   return (
     <div>
       <Header/>
+        
         <MapDiv>
-          
+        
+        <ImgUni src= {Imgunidades}/>
           <BrazilMap
-            onLocationClick={handleLocationClick}
-          />
+            onLocationClick={handleLocationClick} />
+            
+         
           <Slider>
             {franchisees[selectedState]?.map((franquia) => {
               return (
@@ -49,6 +63,7 @@ function Franqueados (props) {
                   estado={franquia.estado}
                   nome={franquia.nome}
                   local={franquia.local}
+                  franqueada={franquia.franqueada}
                   franqueado={franquia.franqueado}
                   telefone={franquia.telefone}
                   facebook={franquia.facebook}

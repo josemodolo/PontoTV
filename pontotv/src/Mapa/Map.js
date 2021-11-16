@@ -6,6 +6,7 @@ import './map.css'
 
 function BrazilMap (props) {
   return (
+    
     <SVGMap
       {...props}
       map={Brazil}

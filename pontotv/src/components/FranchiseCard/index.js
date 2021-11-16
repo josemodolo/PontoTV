@@ -6,15 +6,17 @@ import Unidicoman from './unidicoman.png'
 import Whatsicon from './whatsicon.png'
 import Instaicon from './instaicon.png'
 import Faceico from './faceico.png'
+import Unidicowom from './unidicowom.png'
 
 const StateDiv = styled.div`
   background-color: #0071c0;
   border-radius: 5px;
-  width: 25vw;
+  width: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding: 0.3vw;
 `
 
 const DescriptionDiv = styled.div`
@@ -24,13 +26,13 @@ const DescriptionDiv = styled.div`
 
 const IconImg = styled.img `
   width: 1.3vw;
+  display: inline;
 `
 
 const Representantes = styled.span`
   font-size: 1.4vw;
   color: #ffb131;
-  margin-right: 12vw;
-  margin-top: 0.6vh;
+  
 `
 
 const Estado = styled.span`
@@ -44,10 +46,15 @@ const Nome = styled.span`
 `
 
 const Local = styled.p`
-  
+  font-size: 1vw;
 `
 
 const Franqueado = styled.p`
+  font-size: 1.4vw;
+  margin-top: 0.6vh;
+`
+
+const Franqueada = styled.p`
   font-size: 1.4vw;
   margin-top: 0.6vh;
 `
@@ -67,24 +74,29 @@ const Instagram = styled.p`
   margin-top: 0.6vh;
 `
 
+const Card = styled.div`
+  
+  color: white;
+`
 
-const FranchiseCard = ({ representantes, estado, nome, local, franqueado, telefone, facebook, instagram }) => {
+
+const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqueada, telefone, facebook, instagram }) => {
   return (
-    <div style={{ padding: '8px', margin: '16px 0', color: 'white' }}>
-      <StateDiv>
+    <Card>
+      {representantes &&(<StateDiv>
         <Representantes>{representantes}</Representantes>
         <Estado>{estado}</Estado>
-      </StateDiv>
+      </StateDiv>)}
       <DescriptionDiv>    
-        <IconImg src={Favicon}/> <Nome> &nbsp;{nome}</Nome>
-        <p><IconImg src={Unidico}/> &nbsp;{local}</p>
-        <Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>
-        <Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>
-        <Facebook><IconImg src={Faceico}/> &nbsp;{facebook}</Facebook>
-        <Instagram><IconImg src={Instaicon}/> &nbsp;{instagram}</Instagram>
-      </DescriptionDiv>  
-      
-    </div>
+        {nome &&(<Nome><IconImg src={Favicon}/> &nbsp;{nome}</Nome>)}
+        {local &&(<Local><IconImg src={Unidico}/> &nbsp;{local}</Local>)}
+        {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>)}
+        {franqueada &&(<Franqueada><IconImg src={Unidicowom}/>{franqueada}</Franqueada>)}
+        {telefone &&(<Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>)}
+        {facebook &&(<Facebook><IconImg src={Faceico}/> &nbsp;{facebook}</Facebook>)}
+        {instagram &&(<Instagram><IconImg src={Instaicon}/> &nbsp;{instagram}</Instagram>)}
+      </DescriptionDiv>
+    </Card>
   )
 }
 
