@@ -10,6 +10,7 @@ import Carimg5 from '../../../img/carrosel05.jpg'
 const DivCarousel = styled.div`
   width: 100%;
   position: relative;
+  
   & .rec-arrow {
     position: absolute;
    // height: 100%;
@@ -39,10 +40,10 @@ const DivCarousel = styled.div`
 `
 const ImgCarousel = styled.img`
   width: 100%;
-  height: 100%vh;
-    @media (max-width: 767px){
+  height: 100%;
+    @media (max-width: 480px){
       width: 100%;
-      height: 20vh;
+      height: 100%;
     }
 `
 

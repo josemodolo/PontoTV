@@ -6,13 +6,30 @@ const FormDiv = styled.div`
   color: white;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
+  justify-content: center;
   position: absolute;
   width: 40%;
   height: 0 auto;
-  //padding: 1vw;
-  margin-right: 2vw;
+  margin-right: 12vw;
+  @media only screen and (max-width: 769px){
+    height: 35%;
+  }
+  
 `
+
+// const FormDivMob = styled.div`
+//   color: white;
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row-reverse;
+//   position: absolute;
+//   width: 40%;
+//   height: 0 auto;
+//   margin-right: 12vw;
+//     @media (max-width: 490px){
+      
+//     }
+// `
 
 const FormStyle = styled.form`
   display: flex;
@@ -20,6 +37,7 @@ const FormStyle = styled.form`
   align-items: center;
   color: white;  
   height: 0 auto;
+  
 `
 
 const InputDiv = styled.input`
@@ -27,19 +45,32 @@ const InputDiv = styled.input`
   border: none;
   width: 32vw;
   padding: 0.5vw;
-  height: 0 auto;
+  height: 2.1vw;
   font-size: 1.3vw;
+  @media (max-width: 490px){
+      width: 81vw;
+      height: 2.8vw;
+      font-size: 3vw;
+    }
 `
 
 const Label = styled.label`
   margin-top: 1vw;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
+  @media (max-width: 490px){
+    font-size: 3vw;
+  }
 `
 
 const TextBox = styled.textarea`
   border-radius: 0.2vw;
-  width: 40vw;
-  height: 10vh;
+  width: 32vw;
+  height: 0 auto;
+  @media (max-width: 490px){
+    width: 82vw;
+    height: 11vw;
+  }
+  
 `
 
 const Bttn = styled.input`
@@ -57,8 +88,7 @@ const Bttn = styled.input`
    }
    margin-top: 1vw;
    width: 15vw;
-   height: 6vh;
-   
+   height: 0 auto;
 `
 
 const Select = styled.select`
@@ -66,6 +96,11 @@ const Select = styled.select`
   width: 32vw;
   padding: 0.5vw;
   font-size: 1.3vw;
+  @media (max-width: 490px){
+    width: 82vw;
+    height: 2.8vh;
+    font-size: 3vw;
+  }
 `
 
 const formatPhone = (value) => {

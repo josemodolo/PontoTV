@@ -58,7 +58,7 @@ export const franchisees = {
       instagram: '@pontotv.slz'
     },
     {      
-      nome: 'Ponto TV São Luís',
+      nome: 'Ponto TV Tutóia',
       local: 'Tutóia',
       franqueado: 'Wanderson da Silva',
       telefone: '(98) 99992-5290',      
@@ -163,6 +163,14 @@ export const franchisees = {
       instagram: '@pontotvcascavel '
     },
     { 
+      nome: 'Ponto TV Colombo',
+      local: 'Colombo',
+      franqueado: 'Helthon Feldmann',
+      telefone: '(41) 99623-3663',
+      facebook: '@pontotvcolombo',      
+      instagram: '@pontotvcolombo'
+    },
+    { 
       nome: 'Ponto TV Pinhais',
       local: 'Pinhais',
       franqueado: 'Matheus Almeida da Silva',
@@ -174,6 +182,35 @@ export const franchisees = {
     {
     representantes: 'REPRESENTANTES',
     estado: 'RIO DE JANEIRO | RJ',
+    nome: 'Ponto TV Techno Mais',
+    local: 'Cachoeiras de Macacu',
+    franqueado: 'Rodrigo Amaral',
+    telefone: '(21) 97005-3870',
+    facebook: '@pontotvtechnomais',
+    instagram: '@pontotv_technomais'
+    },
+    { 
+      nome: 'Ponto TV Duque de Caxias',
+      local: 'Duque de Caxias',
+      franqueado: 'Henrique Silva',
+      telefone: '(21) 97013-7760',
+      facebook: '@pontotvduquedecaxias',      
+      instagram: '@pontotvduquedecaxias'
+    },
+    { 
+      nome: 'Ponto TV Macaé',
+      local: 'Macaé',
+      franqueado: 'Thiago Guerra Marques',
+      telefone: '(21) 97141-9611',      
+      instagram: '@pontotvmacae'
+    },
+    { 
+      nome: 'Ponto TV Rio Norte',
+      local: 'Região Norte do Rio de Janeiro',
+      franqueado: 'Alessandro Freitas',
+      telefone: '(21) 98180-9374',
+      facebook: '@pontotvrionorte',      
+      instagram: '@pontotvrionorte'
     },
   ],
   rn: [
@@ -222,4 +259,10 @@ export const franchisees = {
       estado: 'TOCANTINS | TO',
       },
   ],
+  bsb: [
+    {
+      representantes: 'REPRESENTANTES',
+      estado: 'BRASILIA | BSB',
+      },
+  ]
 }

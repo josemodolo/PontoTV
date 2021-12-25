@@ -10,17 +10,25 @@ import Anunciantes from '../HomePage/Anunciantes/index'
 import Dados from '../HomePage/Dados/index'
 import Parceiros from '../HomePage/parceiros/index'
 import Footer from './footer'
+import styled from 'styled-components'
+import DownloadFile from '../components/DownloadFile'
 
+const Container = styled.div`
+@media (max-width: 490px){
+  overflow-x: hidden;
+  }
+`
 
 function Home() {
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column'}}>
+    <Container style={{ display: 'flex', flexDirection: 'column',}}>
       <Header />
       <App />
       <Description />
       <WhatsApp />
       <Anuncie />
+      <DownloadFile />
       <Publicitaria />
       <Corporativa />
       <Anunciantes />
@@ -28,7 +36,7 @@ function Home() {
       <Dados />
       <Contato />
       <Footer />
-    </div>
+    </Container>
   )
 }
 

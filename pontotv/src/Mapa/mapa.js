@@ -28,6 +28,7 @@ const Slider = styled.div`
 
 const ImgUni = styled.img`
   width: 15vw;
+  position: absolute;
 `
 
 // const TitleDiv = styled.div`
@@ -36,6 +37,16 @@ const ImgUni = styled.img`
 //   color: white;
 // `
 
+const Container = styled.div`
+@media (max-width: 490px){
+  overflow-x: hidden;
+  }
+`
+
+const MapArea = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+`
 
 function Franqueados (props) {
   const [selectedState, setSelectedState] = useState ('')
@@ -45,16 +56,15 @@ function Franqueados (props) {
   }
 
   return (
-    <div>
+    <Container>
       <Header/>
         
         <MapDiv>
-        
-        <ImgUni src= {Imgunidades}/>
+          <MapArea>
+          <ImgUni src= {Imgunidades}/>
           <BrazilMap
             onLocationClick={handleLocationClick} />
-            
-         
+          </MapArea>
           <Slider>
             {franchisees[selectedState]?.map((franquia) => {
               return (
@@ -76,7 +86,7 @@ function Franqueados (props) {
         </MapDiv>
         <Footer />
         <WhatsApp/>
-    </div>
+    </Container>
   )
 }
 

@@ -11,6 +11,8 @@ import InteressadoImg from '../../img/imgfranc/interessado.jpg'
 import styled from 'styled-components'
 import Footer from '../../HomePage/footer'
 import YoutubeEmbed from '../Youtube'
+import FranquiaMob from '../../img/imgMobileHome/franquiaimg/franquia.png'
+import DownloadFile2 from '../DownloadFile2'
 
 
 //area da franquia
@@ -19,6 +21,9 @@ const FranquiaDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
+  @media only screen and (max-width: 490px){
+    display: none;
+  }
 `
 
 const Img1 = styled.img`
@@ -49,6 +54,7 @@ const FranquiaTextDiv = styled.div`
 const OferecemosDiv = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
 `
 
 const Img2 = styled.img`
@@ -60,6 +66,7 @@ const Img2 = styled.img`
 const VantagensDiv = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
 `
 
 const Img3 = styled.img`
@@ -118,21 +125,14 @@ const Img7 = styled.img`
   height: 100%;
 `
 
-//  const FranquiaText = styled.p`
-//    color: white;
-  
-//    font-size: clamp(1.5rem, 2.5vw, 4rem);
-//  `
-
- const DivTextRodrigo = styled.div`
-   display: flex;
-   position: absolute;
-   width: 55%;
-   height: 0 auto;
-   margin-top: 13vw;
-   margin-left: 26vw;
-   flex-direction: column;
-   
+const DivTextRodrigo = styled.div`
+  display: flex;
+  position: absolute;
+  width: 55%;
+  height: 0 auto;
+  margin-top: 13vw;
+  margin-left: 26vw;
+  flex-direction: column;
  `
 
  const DivTextSolange = styled.div`
@@ -170,7 +170,7 @@ const Img7 = styled.img`
 const YoutubeDiv = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #0072c0;
+  background-color: #E6E6E6;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -178,31 +178,91 @@ const YoutubeDiv = styled.div`
 
 const Ps = styled.span`
   
-  `
+`
+
+const Container = styled.div`
+@media (max-width: 490px){
+  overflow-x: hidden;
+  }
+`
+
+//=========================================MOBILE=================================================
+
+const FranquiaDivMob = styled.div`
+  @media only screen and (min-width: 490px){
+    display: none;
+  }
+  @media only screen and (max-width: 490px){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+`
+
+const Img1Mob = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+const FranquiaTextDivMob = styled.div`
+   position: absolute;
+   width: 50vw;
+   height: 40vh;
+   height: 0 auto;
+   border: 1px solid white;
+   
+`
+
+const FranquiaTextMob = styled.p`
+   color: white;
+   font-weight: 400;
+   font-size: 2.5vw;
+   padding: 1vw;
+`
 
 
 function SejaFranqueado () {
   return(
     <div>
-            
-      <Header/>      
+      <Container>
+      <Header/>
+      {/* <FranquiaTextMob></FranquiaTextMob> */}
+      {/* MOBILE */}
+      <FranquiaDivMob>
+        <Img1Mob src= {FranquiaMob}/>
+          <FranquiaTextDivMob>
+            <FranquiaTextMob>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
+              pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaTextMob>
+            <FranquiaTextMob>A <Ps>Franquia de Mídia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>
+              que traz um <Ps>modelo</Ps> de <Ps>negócio lucrativo</Ps>, com <Ps>maturidade </Ps>
+              de <Ps>mercado</Ps> e <Ps>estratégias</Ps> de <Ps>atuações eficientes</Ps> dentro do <Ps>ramo </Ps>
+              de <Ps>publicidade Indoor</Ps>.</FranquiaTextMob>
+            <FranquiaTextMob><Ps>Além</Ps> do <Ps>lucro</Ps> por meio da <Ps>publicidade</Ps>, os <Ps>franqueados</Ps> podem
+              <Ps> rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
+              <Ps> dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento </Ps>
+              e <Ps>baixo custo</Ps> de <Ps>operação</Ps>.</FranquiaTextMob>
+          </FranquiaTextDivMob>
+      </FranquiaDivMob>
+      {/* MOBILE       */}
       <FranquiaDiv>
         <Img1 src= {FranquiaOque}/>
           <FranquiaTextDiv>
             <FranquiaText>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
               pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaText>
-              <FranquiaText>A <Ps>Franquia de Midia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>
-              que traz um <Ps>modelo</Ps> de <Ps>negócios lucrativo</Ps>, com <Ps>maturidade </Ps>
-              de <Ps>mercado</Ps> e <Ps>estratégias</Ps> de <Ps>atuação eficientes</Ps> dentro do <Ps>ramo</Ps>
-              de <Ps>publicidade indoor</Ps>.</FranquiaText>
-              <FranquiaText><Ps>Além</Ps> do lucro por meio da <Ps>publicidade</Ps>, os <Ps>franqueados</Ps> podem
+              <FranquiaText>A <Ps>Franquia de Mídia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>
+              que traz um <Ps>modelo</Ps> de <Ps>negócio lucrativo</Ps>, com <Ps>maturidade </Ps>
+              de <Ps>mercado</Ps> e <Ps>estratégias</Ps> de <Ps>atuações eficientes</Ps> dentro do <Ps>ramo </Ps>
+              de <Ps>publicidade Indoor</Ps>.</FranquiaText>
+              <FranquiaText><Ps>Além</Ps> do <Ps>lucro</Ps> por meio da <Ps>publicidade</Ps>, os <Ps>franqueados</Ps> podem
               <Ps> rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
-              <Ps> dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento</Ps>
+              <Ps> dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento </Ps>
               e <Ps>baixo custo</Ps> de <Ps>operação</Ps>.</FranquiaText>
-              <FranquiaText><Ps>Inicialmente</Ps>, a <Ps>rotina</Ps> de negócios <Ps>possibilita</Ps> que o <Ps>franqueado</Ps>
-              <Ps>atue sozinho</Ps>, realizando a <Ps>venda</Ps> e <Ps>publicação</Ps> de <Ps>anúndios</Ps>,
+              <FranquiaText><Ps>Inicialmente</Ps>, a <Ps>rotina</Ps> de negócio <Ps>possibilita</Ps> que o <Ps>franqueado </Ps>
+              <Ps>atue sozinho</Ps>, realizando a <Ps>venda</Ps> e <Ps>publicação</Ps> de <Ps>anúncios</Ps>,
               que são <Ps>desenvolvidos</Ps> por uma <Ps>equipe preparada</Ps>, que é
-              <Ps>disponibilizada</Ps> pela <Ps>franqueadora</Ps>.</FranquiaText>
+              <Ps> disponibilizada</Ps> pela <Ps>franqueadora</Ps>.</FranquiaText>
               <FranquiaText><Ps>Não há limite</Ps> de <Ps>idade</Ps> nem <Ps>restrição de gênero</Ps> para quem irá
               <Ps> investir</Ps> na <Ps>franquia</Ps>, e a franqueadora <Ps>não exige educação formal</Ps>,
               contudo, boas <Ps>habilidades</Ps> de <Ps>comunicação</Ps> são <Ps>essenciais</Ps>.</FranquiaText>
@@ -223,7 +283,7 @@ function SejaFranqueado () {
         <DivTextRodrigo>
           <FranqueadosText>A <Ps>escolha</Ps> pela <Ps>franquia Ponto TV</Ps> foi muito <Ps>assertiva</Ps>, <Ps>iniciei</Ps> com o <Ps>Kit Básico</Ps> e em <Ps>apenas 1 mês </Ps>
            já <Ps>estava</Ps> com <Ps>todos</Ps> os <Ps>pontos instalados</Ps>. Com <Ps>poucos meses</Ps> de <Ps>operação</Ps> já <Ps>possuo 10 pontos </Ps>
-          e percebi que o <Ps>modelo</Ps> de <Ps>negócios</Ps> era <Ps>promissor</Ps> e que <Ps>rapidamente</Ps> renderia <Ps>lucros</Ps> e haveria
+          e percebi que o <Ps>modelo</Ps> de <Ps>negócio</Ps> era <Ps>promissor</Ps> e que <Ps>rapidamente</Ps> renderia <Ps>lucros</Ps> e haveria
           o <Ps>retorno</Ps> do <Ps>investimento</Ps>.</FranqueadosText>
           <FranqueadosText>A <Ps>equipe</Ps> nos dá todo o <Ps>suporte necessário</Ps>, seja na <Ps>parte técnica</Ps> ou na <Ps>comercial</Ps>, desta forma
           as <Ps>metas diárias</Ps> se tornaram mas <Ps>eficazes</Ps> e <Ps>sucesso</Ps> de <Ps>empreendimento</Ps> foi <Ps>garantido</Ps>.</FranqueadosText>
@@ -236,7 +296,7 @@ function SejaFranqueado () {
           <FranqueadosText>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro </Ps>
           e <Ps>descomplicado</Ps>.</FranqueadosText>
           <FranqueadosText>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
-          <Ps>mais</Ps> e melhor que a <Ps>concorrência</Ps>.</FranqueadosText>
+          <Ps> mais</Ps> e melhor que a <Ps>concorrência</Ps>.</FranqueadosText>
           <FranqueadosText>A <Ps>gestão</Ps> do <Ps>negócio</Ps> é <Ps>simples</Ps> e a <Ps>franqueadora</Ps> fornece <Ps>treinamentos</Ps> e <Ps>suporte</Ps> para <Ps>rede</Ps>.</FranqueadosText>
           <FranqueadosText>Logo, para o <Ps>negócio prosperar</Ps> só <Ps>depende de nós</Ps>, colocando <Ps>energia</Ps> e <Ps>foco</Ps>,
           o <Ps>sucesso</Ps> é <Ps>questão de tempo</Ps>!</FranqueadosText>
@@ -268,7 +328,8 @@ function SejaFranqueado () {
       </KitDiv>
       <YoutubeDiv>
         <YoutubeEmbed/>
-      </YoutubeDiv>      
+      </YoutubeDiv>
+      <DownloadFile2 />      
       <InteressadoDiv>
         <Img7 src = {InteressadoImg}/>
       </InteressadoDiv>
@@ -276,6 +337,8 @@ function SejaFranqueado () {
       <WhatsApp/>
       <Footer/>
 
+      </Container>      
+      
     </div>
   )
 }

@@ -8,6 +8,9 @@ import Icon02 from '../../img/iconimg/icon02.png'
 import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
 
+import './style.css'
+
+
 const HeaderMenu = styled.header`
   width: 100%;
   height: 80px;
@@ -19,70 +22,36 @@ const HeaderMenu = styled.header`
   top: 0;
   z-index: 1;
   background-color: #0072c0;
+  
+  
 `
 
 const ImgPtv = styled.img`
-  width: 200px;
-`
-
-const DivBttn = styled.div `
-  width: 44%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-`
-
-const Bttn = styled.button`
-  padding: 10px;
-  background-color: transparent;
-  border: 5px solid transparent;
-  border-radius: 2px;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  transition: 0.3s;
-  &:hover{
-    border: 5px solid #e8952b;
-    border-radius: 10px;
-  }
-  font-size: 1.4vw;
-`
-
-const BttnContact = styled.button`
-  padding: 10px;
-  background-color: transparent;
-  border: 5px solid transparent;
-  border-radius: 2px;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  scroll-behavior: smooth;
-  transition: 0.3s;
-  &:hover{
-    border: 5px solid #e8952b;
-    border-radius: 10px;
-  }
-  font-size: 1.4vw;
+  height: 4rem;
+  margin-left: 17vw;
+  margin-top: 0.5vw;
+    @media (max-width: 490px){
+      margin-left: 1vw;
+      width: 20vw;
+      height: 5vh;
+    }
 `
 
 const DivIcon = styled.div`
-
-  width: 20%;
   display: flex;
+  width: 15vw;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
-  //width: 12vw;
-  //height: 0 auto;
-  //display: flex;
-  //justify-content: space-around;
-  //margin-top: 13px;
-  //margin-left: 150px ;
+  @media (max-width: 490px){
+    display: none;
+  }
 `
 
 const IconImg = styled.img`
   width: 2vw;
+  margin-top: 1vw;
+  `
 
-`
 
 function Header(){
   const history = useHistory()
@@ -90,18 +59,24 @@ function Header(){
   return(
     <HeaderMenu>
       <ImgPtv src= {logoptv}/>
-      <DivBttn>
-        <Bttn onClick = {()=> history.push('/')}>HOME</Bttn>
-        <Bttn onClick = {()=> history.push('/Unidades')}>UNIDADES</Bttn>
-        <Bttn onClick = {()=> history.push('/Franqueados')}>SEJA UM FRANQUEADO</Bttn>
-        <a href="#formSection"><BttnContact>CONTATO</BttnContact></a>
-      </DivBttn>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div class="nav-list">
+        <button onClick = {()=> history.push('/')}>HOME</button>
+        <button onClick = {()=> history.push('/unidades')}>UNIDADES</button>
+        <button onClick = {()=> history.push('/sejaumfranqueado')}>SEJA UM FRANQUEADO</button>
+        <a href="#formSection"><button class="contact">CONTATO</button></a>
+      </div>
       <DivIcon>
         <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
         <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
         <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
         <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
       </DivIcon>
+      
     </HeaderMenu>
   )
 }

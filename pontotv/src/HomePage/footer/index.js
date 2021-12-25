@@ -8,7 +8,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-color: white;
 text-align: center;
 `
 
@@ -18,8 +17,7 @@ const Img = styled.img`
 `
 
 const TextArea = styled.div`
-  position: absolute;   
-  color: white; 
+  position: absolute;
   display: flex;    
   width: 50vw;
   height: 0 auto;
@@ -27,16 +25,16 @@ const TextArea = styled.div`
 `
 
 const Ptext = styled.p`
-  font-size: 1.3vw;
+  font-size: 1.2vw;
+  color: white; 
 `
 
 function Footer (){
   return(
     <FooterDiv>
       <Img src= {FootImg}/>
-        <TextArea>
-          <Ptext>pontotvpublicidade@gmail.com</Ptext>
-          <Ptext> © Ponto TV Publicidade 2013 - 2021 | Todos os direitos reservados.</Ptext>
+        <TextArea>          
+          <Ptext> © Ponto TV Publicidade 2013 - 2022 | Todos os direitos reservados.</Ptext>
         </TextArea>
     </FooterDiv>
   )

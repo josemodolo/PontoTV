@@ -32,7 +32,6 @@ const IconImg = styled.img `
 const Representantes = styled.span`
   font-size: 1.4vw;
   color: #ffb131;
-  
 `
 
 const Estado = styled.span`
@@ -47,6 +46,9 @@ const Nome = styled.span`
 
 const Local = styled.p`
   font-size: 1vw;
+  width: 20vw;
+  display: flex;
+  text-align: center;
 `
 
 const Franqueado = styled.p`
@@ -75,8 +77,11 @@ const Instagram = styled.p`
 `
 
 const Card = styled.div`
-  
   color: white;
+`
+
+const IconDiv = styled.div`
+  
 `
 
 
@@ -88,8 +93,8 @@ const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqu
         <Estado>{estado}</Estado>
       </StateDiv>)}
       <DescriptionDiv>    
-        {nome &&(<Nome><IconImg src={Favicon}/> &nbsp;{nome}</Nome>)}
-        {local &&(<Local><IconImg src={Unidico}/> &nbsp;{local}</Local>)}
+        {nome &&(<Nome><IconImg src={Favicon}/>&nbsp;{nome}</Nome>)}
+        {local &&(<Local><IconDiv><IconImg src={Unidico}/></IconDiv>{local}</Local>)}
         {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>)}
         {franqueada &&(<Franqueada><IconImg src={Unidicowom}/>&nbsp;{franqueada}</Franqueada>)}
         {telefone &&(<Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>)}

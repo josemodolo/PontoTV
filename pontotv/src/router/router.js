@@ -10,8 +10,8 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact component={Home} path = '/' />
-        <Route exact component={Mapa} path = '/Unidades' />
-        <Route exact component={Franqueados} path = '/Franqueados' />
+        <Route exact component={Mapa} path = '/unidades' />
+        <Route exact component={Franqueados} path = '/sejaumfranqueado' />
       </Switch>
     </Router>
   )

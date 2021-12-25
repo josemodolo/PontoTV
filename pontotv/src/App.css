@@ -3,10 +3,22 @@
   src: url("./fonts/Gilroy-Bold.ttf") format("truetype"); 
 }
 
+@font-face{
+  font-family:"GilroySemiBold";
+  src: url("./fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+@font-face{
+  font-family:"GilroyExtraBold";
+  src: url("./fonts/Gilroy-ExtraBold.ttf") format("truetype");
+}
+
 @font-face {
   font-family:"GilroyHeavy";
   src: url("./fonts/Gilroy-Heavy.ttf") format("truetype");
 }
+
+
 
 .font-gb{
   font-family: "GilroyBold";
@@ -18,22 +30,18 @@
 }
 
 *  {
-  
+ 
   margin: 0;
-  font-family:"GilroyBold";
+  font-family:"GilroySemiBold";
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 span{
-  font-family:"GilroyHeavy";
+  font-family: GilroyExtraBold ;
   
 }
-
-
-
-
 
 *:focus {
   outline: none;
@@ -68,5 +76,4 @@ span{
 html {
   scroll-behavior: smooth;
 }
-
 
