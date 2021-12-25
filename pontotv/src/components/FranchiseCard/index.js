@@ -84,6 +84,11 @@ const IconDiv = styled.div`
   
 `
 
+const StyledLocal= styled.span`
+  text-align: start;
+  margin-left: 8px;
+`
+
 
 const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqueada, telefone, facebook, instagram }) => {
   return (
@@ -94,7 +99,7 @@ const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqu
       </StateDiv>)}
       <DescriptionDiv>    
         {nome &&(<Nome><IconImg src={Favicon}/>&nbsp;{nome}</Nome>)}
-        {local &&(<Local><IconDiv><IconImg src={Unidico}/></IconDiv>{local}</Local>)}
+        {local &&(<Local><IconDiv><IconImg src={Unidico}/></IconDiv><StyledLocal>{local}</StyledLocal></Local>)}
         {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>)}
         {franqueada &&(<Franqueada><IconImg src={Unidicowom}/>&nbsp;{franqueada}</Franqueada>)}
         {telefone &&(<Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>)}
