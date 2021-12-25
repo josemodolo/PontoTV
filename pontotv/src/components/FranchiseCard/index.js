@@ -86,7 +86,7 @@ const IconDiv = styled.div`
 
 const StyledLocal= styled.span`
   text-align: start;
-  margin-left: 8px;
+  margin-left: 14px;
 `
 
 
