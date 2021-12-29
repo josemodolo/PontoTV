@@ -21,7 +21,7 @@ const MapDiv = styled.div`
 `
 
 const Slider = styled.div`
-  width: 25vw;
+  width: 30vw;
   overflow: auto;
   height: 80%;
 `

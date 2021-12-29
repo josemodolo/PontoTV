@@ -15,6 +15,13 @@ export const franchisees = {
     {
       representantes: 'REPRESENTANTES',
       estado: 'AMAZONAS | AM',
+      nome: 'Ponto TV Manaus',
+      local: 'Manaus',
+      franqueada: 'Anderson Silva',
+      telefone: '(92) 98127-4297',
+      facebook: '@pontotvmanaus',      
+      instagram: '@pontotvmanaus'
+      
       },
   ],
   ap: [
@@ -51,6 +58,13 @@ export const franchisees = {
     {
       representantes: 'REPRESENTANTES',
       estado: 'MARANHÃO | MA',
+      nome: 'Ponto TV Colinas',
+      local: 'Colinas',
+      franqueada: 'Luiz Filho',
+      telefone: '(99) 98176-2772',      
+      instagram: '@pontotvcolinas'
+    },
+    {      
       nome: 'Ponto TV São Luís',
       local: 'São Luís',
       franqueada: 'Ayla Menezes',
@@ -137,7 +151,7 @@ export const franchisees = {
       franqueado: 'Juliano Pimentel',
       telefone: '(41) 99501-8102',
       facebook: '@pontotv',
-      instagram: '@pontotvgrandourados'
+      instagram: '@pontotvpublicidade'
     },
     { 
       nome: 'Ponto TV Almirante Talmandaré',
@@ -169,6 +183,13 @@ export const franchisees = {
       telefone: '(41) 99623-3663',
       facebook: '@pontotvcolombo',      
       instagram: '@pontotvcolombo'
+    },
+    { 
+      nome: 'Ponto TV Costa Oeste',
+      local: 'São Miguel do Iguaçu',
+      franqueado: 'Ismael Boschi',
+      telefone: '(45) 99121-6107',      
+      instagram: '@pontotvcostaoeste'
     },
     { 
       nome: 'Ponto TV Pinhais',
@@ -211,6 +232,13 @@ export const franchisees = {
       telefone: '(21) 98180-9374',
       facebook: '@pontotvrionorte',      
       instagram: '@pontotvrionorte'
+    },
+    { 
+      nome: 'Ponto TV Rio Oeste',
+      local: 'Região Oeste do Rio de Janeiro',
+      franqueado: 'Atlas Monteiro',
+      telefone: '(21) 99227-9260',  
+      instagram: '@pontotvriooeste'
     },
   ],
   rn: [

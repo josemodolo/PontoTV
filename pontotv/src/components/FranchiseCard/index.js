@@ -11,7 +11,7 @@ import Unidicowom from './unidicowom.png'
 const StateDiv = styled.div`
   background-color: #0071c0;
   border-radius: 5px;
-  width: 0 auto;
+  
   display: flex;
   align-items: flex-start;
   justify-content: center;
