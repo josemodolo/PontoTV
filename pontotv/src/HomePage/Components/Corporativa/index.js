@@ -24,7 +24,7 @@ const Img = styled.img`
   width: 47%;
   height: 0 auto;
   flex-direction: column;
-  margin-top: 0.5vw;  
+  margin-top: 1.5vw;  
   margin-right: 2.2vw;
   @media (max-width: 490px){
     width: 80%;
@@ -49,7 +49,6 @@ const Img = styled.img`
   font-family: GilroyHeavy;
   font-weight: 500;
   font-size: 4vw;
-  margin-top: 0.5vw;
   @media (max-width: 490px){
      font-size: 6.7vw;
    }

@@ -53,7 +53,7 @@ const Img = styled.img`
   font-family: GilroyHeavy;
   font-weight: 500;
   font-size: 4vw;
-  margin-top: 0.5vw;
+  
   @media (max-width: 490px){
     font-size: 6.7vw;
     margin-bottom: 63.2vw;
@@ -82,6 +82,7 @@ const Img = styled.img`
 
 const OrderText = styled.ul`
 font-size: 1.4vw;
+margin-left: 0.3vw;
 @media (max-width: 490px){
     margin-left: 2vw;
     font-size: 3vmin;
