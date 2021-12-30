@@ -26,7 +26,7 @@ const Img = styled.img`
   height: 0 auto;
   flex-direction: column;
   margin-left: 4.2vw;
-  margin-top: 2vw;
+  margin-top: 1.5vw;
   @media (max-width: 490px){
     width: 80vw;
     height: 0 auto;
@@ -40,6 +40,8 @@ const Img = styled.img`
 
  const Hash = styled.h4`
    color: white;
+   display: flex;
+   flex-direction: ;
    font-size: 1.5vw;
    margin-top: 1vw;
    @media (max-width: 490px){
@@ -53,7 +55,7 @@ const Img = styled.img`
   font-family: GilroyHeavy;
   font-weight: 500;
   font-size: 4vw;
-  
+  margin-bottom: 0.4vw;
   @media (max-width: 490px){
     font-size: 6.7vw;
     margin-bottom: 63.2vw;
@@ -64,6 +66,7 @@ const Img = styled.img`
  const Ptext = styled.p`
    color: white;
    font-size: 1.4vw;
+   margin-bottom: 0.9vw;
    @media (max-width: 490px){
     font-size: 3.1vmin;
   }
@@ -74,7 +77,7 @@ const Img = styled.img`
  const OrderList = styled.p`
    color: white;
    
-   margin-top: 0.5vw;
+   margin-top: 0.7vw;
    margin-left: 1.1vw;
    
    
@@ -82,7 +85,7 @@ const Img = styled.img`
 
 const OrderText = styled.ul`
 font-size: 1.4vw;
-margin-left: 0.3vw;
+margin-left: 0.2vw;
 @media (max-width: 490px){
     margin-left: 2vw;
     font-size: 3vmin;

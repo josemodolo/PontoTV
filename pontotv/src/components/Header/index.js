@@ -103,7 +103,7 @@ function Header(){
 
 
   return(
-    <HeaderMenu>
+    <HeaderMenu id="/">
       <ImgPtv src= {logoptv}/>
       <div class="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
         <div class="line1"></div>
@@ -112,9 +112,9 @@ function Header(){
       </div>
       
         <NavList isOpen={isOpen}>
-        <StyledButton onClick = {()=> history.push('/')}>HOME</StyledButton>
-        <StyledButton onClick = {()=> history.push('/unidades')}>UNIDADES</StyledButton>
-        <StyledButton onClick = {()=> history.push('/sejaumfranqueado')}>SEJA UM FRANQUEADO</StyledButton>
+        <a href='/'><StyledButton onClick = {()=> history.push('/')}>HOME</StyledButton></a>
+        <a href='/unidades'><StyledButton onClick = {()=> history.push('/unidades')}>UNIDADES</StyledButton></a>
+        <a href='/sejaumfranqueado'><StyledButton onClick = {()=> history.push('/sejaumfranqueado')}>SEJA UM FRANQUEADO</StyledButton></a>
         <a href="#formSection"><StyledButton class="contact">CONTATO</StyledButton></a>
       </NavList>
       
