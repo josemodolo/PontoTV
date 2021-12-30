@@ -119,14 +119,19 @@ const userAlert = () => {
 const Mailer = () => {
   const [telefone, setTelefone] = useState (""); // estados sempre no inicio
 
+  const clearInput = () => {
+    document.getElementById("myForm").reset();
+  }
+
   function sendEmail(e) {
     e.preventDefault();
     emailjs.sendForm('service_mtbyfmf','template_0ldod4l',e.target,'user_cJxNni3aYaBfWmtphIclr').then(res=>{console.log(res)}).catch(err=> console.log(err));
+    clearInput()
   }
 
   return (
     <FormDiv>
-      <FormStyle onSubmit={sendEmail} >
+      <FormStyle onSubmit={sendEmail} id="myForm">
         <Label>Nome</Label>
         <InputDiv type='text' name='name' placeholder='Nome' required/>
         <Label>E-mail</Label>
