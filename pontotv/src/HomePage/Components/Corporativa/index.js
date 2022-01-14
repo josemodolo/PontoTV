@@ -21,11 +21,12 @@ const Img = styled.img`
   position: absolute;   
   color: white; 
   //display: flex;    
-  width: 47%;
+  width: 43%;
   height: 0 auto;
   flex-direction: column;
-  margin-top: 1.5vw;  
-  margin-right: 2.2vw;
+  margin-top: 1vw;  
+  margin-right: 4.2vw;
+  
   @media (max-width: 490px){
     width: 80%;
     height: 0 auto;
@@ -38,7 +39,7 @@ const Img = styled.img`
  const Hash = styled.h4`
    color: #505050;
    font-size: 1.5vw;
-   margin-top: 1vw;
+   position: absolute;
    @media (max-width: 490px){
      font-size: 3vw;
    }
@@ -49,6 +50,7 @@ const Img = styled.img`
   font-family: GilroyHeavy;
   font-weight: 500;
   font-size: 4vw;
+  margin-top: 1vw;
   @media (max-width: 490px){
      font-size: 6.7vw;
    }
@@ -59,9 +61,11 @@ const Img = styled.img`
    color: #505050;
    font-weight: 500;
    font-size: 1.4vw;
+   margin-top: 0vw;
+   line-height: 1.7vw;
    @media (max-width: 490px){
      font-size: 3vw;
-     margin-top: 62vw;
+     margin-top: 65vw;
    }
    
  `
@@ -89,6 +93,11 @@ const Img = styled.img`
 
 const Ps = styled.span`
 
+`
+
+const TextAreaHash = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 //MOBILE
@@ -137,8 +146,10 @@ function Corporativa () {
       <DivCorp>
       <Img src={ImgCorp}/>
       <TextDiv>
-        <Hash>#PARASUAEMPRESA</Hash>
-        <TextTitle>TV CORPORATIVA</TextTitle>
+        <TextAreaHash>
+          <Hash>#PARASUAEMPRESA</Hash>
+          <TextTitle>TV CORPORATIVA</TextTitle>
+        </TextAreaHash>
         <Ptext>Nesta <Ps>categoria</Ps> você <Ps>aproveita TV's</Ps> presentes em <Ps>salas</Ps> de <Ps>espera </Ps>
         e <Ps>filas de atendimento</Ps>, e <Ps>apresenta</Ps> um <Ps>conteúdo</Ps> 100% personalizado,
         divulgando <Ps>informações</Ps>, <Ps>produtos</Ps> e <Ps>serviços</Ps> da <Ps>própria empresa </Ps>

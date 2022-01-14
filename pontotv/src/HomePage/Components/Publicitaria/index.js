@@ -22,10 +22,10 @@ const Img = styled.img`
   position: absolute;   
   color: white; 
   //display: flex;    
-  width: 47%;
+  width: 42%;
   height: 0 auto;
   flex-direction: column;
-  margin-left: 4.2vw;
+  margin-left: 4.1vw;
   margin-top: 1.5vw;
   @media (max-width: 490px){
     width: 80vw;
@@ -44,6 +44,7 @@ const Img = styled.img`
    flex-direction: ;
    font-size: 1.5vw;
    margin-top: 1vw;
+   position: absolute;
    @media (max-width: 490px){
      font-size: 2vw;
    }
@@ -56,6 +57,7 @@ const Img = styled.img`
   font-weight: 500;
   font-size: 4vw;
   margin-bottom: 0.4vw;
+  margin-top: 2.3vw;
   @media (max-width: 490px){
     font-size: 6.7vw;
     margin-bottom: 63.2vw;
@@ -110,6 +112,11 @@ const Ps = styled.span`
 
 `
 
+const TextAreaHash = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 // MOBILE
 
 const DivPubMb = styled.div`
@@ -130,8 +137,10 @@ function Publicitaria () {
     <DivPub>
       <Img src={ImgPub}/>
       <TextDiv>
-        <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
-        <TextTitle>TV PUBLICITÁRIA</TextTitle>
+        <TextAreaHash>
+          <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
+          <TextTitle>TV PUBLICITÁRIA</TextTitle>
+        </TextAreaHash>
         <Ptext>Nesta <Ps>categoria</Ps> seu <Ps>estabelecimento</Ps> pode ser um <Ps>parceiro Ponto TV</Ps>,
         oferecendo <Ps>espaços publicitários</Ps> para <Ps>qualquer anunciante</Ps> que queira
         <Ps> divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>videos</Ps>, além de <Ps>oferecer </Ps>
