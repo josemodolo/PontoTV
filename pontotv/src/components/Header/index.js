@@ -7,7 +7,6 @@ import Icon01 from '../../img/iconimg/icon01.png'
 import Icon02 from '../../img/iconimg/icon02.png'
 import Icon03 from '../../img/iconimg/icon03.png'
 import Icon04 from '../../img/iconimg/icon04.png'
-
 import './style.css'
 
 

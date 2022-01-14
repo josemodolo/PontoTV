@@ -13,7 +13,11 @@ import Footer from '../../HomePage/footer'
 import YoutubeEmbed from '../Youtube'
 import FranquiaMob from '../../img/imgMobileHome/franquiaimg/franquia.png'
 import DownloadFile2 from '../DownloadFile2'
-
+import OQueOferecemosMob from '../../img/imgMobileHome/franquiaimg/oferecemosmob.png'
+import VantagensMob from '../../img/imgMobileHome/franquiaimg/vantagens.png'
+import InvestimentoMob from '../../img/imgMobileHome/franquiaimg/investimentomob.png'
+import KitFranquiaMob from '../../img/imgMobileHome/franquiaimg/kitfranquia.png'
+import InteressadoMob from '../../img/imgMobileHome/franquiaimg/interessadomob.png'
 
 //area da franquia
 const FranquiaDiv = styled.div`
@@ -55,6 +59,9 @@ const OferecemosDiv = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  @media only screen and (max-width: 490px){
+    display: none;
+  }
 `
 
 const Img2 = styled.img`
@@ -67,6 +74,9 @@ const VantagensDiv = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  @media only screen and (max-width: 490px){
+    display: none;
+  }
 `
 
 const Img3 = styled.img`
@@ -93,6 +103,9 @@ const InvestimentoDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  @media only screen and (max-width: 490px){
+      display: none;
+    }
 `
 
 const Img5 = styled.img`
@@ -106,6 +119,9 @@ const KitDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  @media only screen and (max-width: 490px){
+      display: none;
+    }
 `
 
 const Img6 = styled.img`
@@ -118,6 +134,9 @@ const InteressadoDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  @media only screen and (max-width: 490px){
+        display: none;
+      }
 `
 
 const Img7 = styled.img`
@@ -201,6 +220,50 @@ const FranquiaDivMob = styled.div`
   }
 `
 
+const OferecemosMob = styled.div`
+  @media only screen and (min-width: 490px){
+    display: none;
+  }
+  @media only screen and (max-width: 490px){
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+`
+
+const VantagensDivMob = styled.div`
+  @media only screen and (min-width: 490px){
+    display: none;
+  }
+  @media only screen and (max-width: 490px){
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+`
+
+const InvestimentoMobDiv = styled.div`
+  @media only screen and (min-width: 490px){
+      display: none;
+    }
+    @media only screen and (max-width: 490px){
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+`
+
+const KitDivMob = styled.div`
+  @media only screen and (min-width: 490px){
+        display: none;
+      }
+      @media only screen and (max-width: 490px){
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+`
+
 const Img1Mob = styled.img`
   width: 100%;
   height: 100%;
@@ -208,19 +271,33 @@ const Img1Mob = styled.img`
 
 const FranquiaTextDivMob = styled.div`
    position: absolute;
-   width: 50vw;
-   height: 40vh;
-   height: 0 auto;
-   border: 1px solid white;
-   
+   width: 80vw;
+   height: 62vw;
+   height: 0 auto;   
+   margin-bottom: 18vw;
+   margin-right: 3vw;
 `
 
 const FranquiaTextMob = styled.p`
    color: white;
    font-weight: 400;
-   font-size: 2.5vw;
+   font-size: 2.7vw;
    padding: 1vw;
+   margin-bottom: 1vw;
 `
+
+const InteressadoDivMob = styled.div`
+  @media only screen and (min-width: 490px){
+        display: none;
+      }
+      @media only screen and (max-width: 490px){
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+`
+
+ //<FranquiaTextMob></FranquiaTextMob>
 
 
 function SejaFranqueado () {
@@ -243,6 +320,13 @@ function SejaFranqueado () {
               <Ps> rentabilizar</Ps> também <Ps>através</Ps> da <Ps>TV Corporativa</Ps>, tudo isso,
               <Ps> dentro</Ps> de um <Ps>modelo "home based"</Ps>, com <Ps>baixo investimento </Ps>
               e <Ps>baixo custo</Ps> de <Ps>operação</Ps>.</FranquiaTextMob>
+            <FranquiaTextMob><Ps>Inicialmente</Ps>, a <Ps>rotina</Ps> de negócio <Ps>possibilita</Ps> que o <Ps>franqueado </Ps>
+              <Ps>atue sozinho</Ps>, realizando a <Ps>venda</Ps> e <Ps>publicação</Ps> de <Ps>anúncios</Ps>,
+              que são <Ps>desenvolvidos</Ps> por uma <Ps>equipe preparada</Ps>, que é
+              <Ps> disponibilizada</Ps> pela <Ps>franqueadora</Ps>.</FranquiaTextMob>
+            <FranquiaTextMob><Ps>Não há limite</Ps> de <Ps>idade</Ps> nem <Ps>restrição de gênero</Ps> para quem irá
+              <Ps> investir</Ps> na <Ps>franquia</Ps>, e a franqueadora <Ps>não exige educação formal</Ps>,
+              contudo, boas <Ps>habilidades</Ps> de <Ps>comunicação</Ps> são <Ps>essenciais</Ps>.</FranquiaTextMob>
           </FranquiaTextDivMob>
       </FranquiaDivMob>
       {/* MOBILE       */}
@@ -274,9 +358,17 @@ function SejaFranqueado () {
         <Img2 src = {OQueOferecemos}/>
       </OferecemosDiv>
 
+      <OferecemosMob>
+        <Img1Mob src= {OQueOferecemosMob}/>
+      </OferecemosMob>
+
       <VantagensDiv>
         <Img3 src= {VantagensImg}/>
       </VantagensDiv>
+
+      <VantagensDivMob>
+        <Img1Mob src= {VantagensMob}/>
+      </VantagensDivMob>
 
       <CasesDiv>
         <Img4 src = {CasesImg}/>
@@ -317,22 +409,39 @@ function SejaFranqueado () {
           nossa <Ps>confiança</Ps>! O <Ps>modelo</Ps> de <Ps>negócio</Ps> é <Ps>simples</Ps>, <Ps>direto</Ps> e <Ps>lucrativo</Ps>!</FranqueadosText>
           <FranqueadosText>O <Ps>suporte</Ps> é <Ps>prático</Ps>, ativo e <Ps>confiável</Ps>!</FranqueadosText>
           <FranqueadosText><Ps>Hoje sabemos</Ps> que a <Ps>Ponto TV</Ps> é um <Ps>meio econômico</Ps> para <Ps>qualquer empresa</Ps> anunciar seu <Ps>negócio</Ps>.</FranqueadosText>
-        </DivTextAyla>       
+        </DivTextAyla>
       </CasesDiv>
 
       <InvestimentoDiv>
         <Img5 src = {InvestimentoImg}/>
       </InvestimentoDiv>
+
+      <InvestimentoMobDiv>
+        <Img1Mob src= {InvestimentoMob}/>
+      </InvestimentoMobDiv>
+
       <KitDiv>
         <Img6 src= {KitImg}/>
       </KitDiv>
+
+      <KitDivMob>
+        <Img1Mob src= {KitFranquiaMob}/>
+      </KitDivMob>
+
       <YoutubeDiv>
         <YoutubeEmbed/>
       </YoutubeDiv>
-      <DownloadFile2 />      
+      <DownloadFile2 />
+
       <InteressadoDiv>
         <Img7 src = {InteressadoImg}/>
       </InteressadoDiv>
+
+      <InteressadoDivMob>
+        <Img1Mob src= {InteressadoMob}/>
+      </InteressadoDivMob>
+
+
       <Contato/>
       <WhatsApp/>
       <Footer/>

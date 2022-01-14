@@ -127,6 +127,7 @@ const Mailer = () => {
     e.preventDefault();
     emailjs.sendForm('service_mtbyfmf','template_0ldod4l',e.target,'user_cJxNni3aYaBfWmtphIclr').then(res=>{console.log(res)}).catch(err=> console.log(err));
     clearInput()
+    setTelefone()
   }
 
   return (
