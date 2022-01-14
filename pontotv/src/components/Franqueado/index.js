@@ -38,10 +38,12 @@ const Img1 = styled.img`
 const FranquiaTextDiv = styled.div`
    //display: flex;
    position: absolute;
-   width: 50%;
+   width: 45%;
    height: 0 auto;
    flex-direction: column;
-   margin-top: 0.7vw;
+   margin-top: 1vw;
+   margin-right: 3.5vw;
+   
    
 `
 
@@ -50,8 +52,9 @@ const FranquiaTextDiv = styled.div`
    width: 100%;
    height: 0 auto;
    font-weight: 400;
-   font-size: 1.4vw;
-   padding: 1vw;
+   font-size: 1.3vw;
+   padding: 0.6vw;
+   line-height: 1.7vw;
  `
 
 //area oferecemos
