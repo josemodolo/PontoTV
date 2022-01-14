@@ -15,8 +15,11 @@ const HeaderMenu = styled.header`
   height: 80px;
   display: flex;
   justify-content: space-evenly;
+  background-image: url(${Headerback});
+  background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
   padding: 0 5;
-  background: url(${Headerback});
   position: sticky;
   top: 0;
   z-index: 2;
@@ -103,6 +106,7 @@ function Header(){
 
   return(
     <HeaderMenu id="/">
+
       <ImgPtv src= {logoptv}/>
       <div class="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
         <div class="line1"></div>
