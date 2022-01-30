@@ -10,13 +10,13 @@ import Unidicowom from './unidicowom.png'
 
 const StateDiv = styled.div`
   background-color: #0071c0;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   padding: 0.3vw;
+  display: inline-block;
 `
 
 const DescriptionDiv = styled.div`
@@ -78,6 +78,7 @@ const Instagram = styled.p`
 
 const Card = styled.div`
   color: white;
+  
 `
 
 const IconDiv = styled.div`
@@ -94,7 +95,7 @@ const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqu
   return (
     <Card>
       {representantes &&(<StateDiv>
-        <Representantes>{representantes}</Representantes>
+        <Representantes>{representantes}</Representantes><br/>
         <Estado>{estado}</Estado>
       </StateDiv>)}
       <DescriptionDiv>    

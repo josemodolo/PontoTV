@@ -7,6 +7,7 @@ import "react-svg-map/lib/index.css"
 import Bg from '../img/imghome/conteudomap/bg.jpg'
 import { franchisees } from './franchisees'
 import Imgunidades from './imgunidades.png'
+import Arrow from '../Mapa/icon1.png'
 
 
 const MapDiv = styled.div`
@@ -43,6 +44,16 @@ const Container = styled.div`
   }
 `
 
+const Titlediv = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  color: white; 
+  justify-content: center;
+  margin-top: 0.6vw;
+`
+
 const MapArea = styled.div`
   display: flex;
   flex-direction: column-reverse;
@@ -58,10 +69,14 @@ function Franqueados (props) {
   return (
     <Container>
       <Header/>
-        
+        <Titlediv>
+            <img src= {Arrow}/><h1>SELECIONE SEU ESTADO</h1>
+          </Titlediv>    
         <MapDiv>
+              
           <MapArea>
           <ImgUni src= {Imgunidades}/>
+          
           <BrazilMap
             onLocationClick={handleLocationClick} />
           </MapArea>

@@ -12,7 +12,8 @@ const FormDiv = styled.div`
   height: 0 auto;
   margin-right: 12vw;
   @media only screen and (max-width: 769px){
-    height: 35%;
+    margin-bottom: 4vw;
+    margin-left: 13vw;
   }
   
 `
@@ -48,7 +49,8 @@ const InputDiv = styled.input`
   height: 2.1vw;
   font-size: 1.3vw;
   @media (max-width: 490px){
-      width: 81vw;
+      width: 82vw;
+      padding: 3vw;
       height: 2.8vw;
       font-size: 3vw;
     }
@@ -58,7 +60,7 @@ const Label = styled.label`
   margin-top: 1vw;
   font-size: 1.3vw;
   @media (max-width: 490px){
-    font-size: 3vw;
+    font-size: 3.7vw;
   }
 `
 
@@ -68,7 +70,7 @@ const TextBox = styled.textarea`
   height: 0 auto;
   @media (max-width: 490px){
     width: 82vw;
-    height: 11vw;
+    height: 20vw;
   }
   
 `
@@ -82,13 +84,31 @@ const Bttn = styled.input`
   outline: none;
   background-color: #e8952b;  
   font-weight: bold;
-  font-size: 1.3vw;
    &:hover{
      background-color: blue;
    }
-   margin-top: 1vw;
-   width: 15vw;
-   height: 0 auto;
+   margin-top: 2vw;
+   width: 19vw;
+   height: 4vw;
+   font-size: 2vw;
+   @media (max-width: 490px){
+      background-color: transparent;
+      border: 5px solid transparent;
+      border-radius: 0.5vw;
+      color: white;
+      cursor: pointer;
+      outline: none;
+      background-color: #e8952b;  
+      font-weight: bold;
+      
+      &:hover{
+        background-color: blue;
+      }
+      margin-top: 2vw;
+      width: 50vw;
+      height: 10vw;
+      font-size: 5vw;
+  }
 `
 
 const Select = styled.select`
@@ -98,7 +118,7 @@ const Select = styled.select`
   font-size: 1.3vw;
   @media (max-width: 490px){
     width: 82vw;
-    height: 2.8vh;
+    height: 8vw;
     font-size: 3vw;
   }
 `

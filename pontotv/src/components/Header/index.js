@@ -12,7 +12,7 @@ import './style.css'
 
 const HeaderMenu = styled.header`
   width: 100%;
-  height: 80px;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   background-image: url(${Headerback});
@@ -27,20 +27,21 @@ const HeaderMenu = styled.header`
 `
 
 const ImgPtv = styled.img`
-  height: 4rem;
+  height: 4.5vw;
   margin-left: 17vw;
   margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
     @media (max-width: 490px){
-      margin-left: 1vw;
-      width: 20vw;
-      height: 5vh;
+      margin-left: 5vw;
+      height: 8vh;
+      margin-top: 1vw;
     }
 `
 
 const DivIcon = styled.div`
   display: flex;
   width: 15vw;
-  flex-direction: row-reverse;
+  
   justify-content: space-evenly;
   @media (max-width: 490px){
     display: none;
@@ -122,8 +123,8 @@ function Header(){
       </NavList>
       
       <DivIcon>
-        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
         <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
+        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
         <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
         <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
       </DivIcon>

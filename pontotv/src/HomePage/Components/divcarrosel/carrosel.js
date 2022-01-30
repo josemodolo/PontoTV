@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Carimg1 from '../../../img/carrosel01.jpg'
 import Carimg2 from '../../../img/carrosel02.jpg'
 import Carimg3 from '../../../img/carrosel03.jpg'
-import Carimg4 from '../../../img/carrosel04.jpg'
 import Carimg5 from '../../../img/carrosel05.jpg'
 
 const DivCarousel = styled.div`
@@ -88,7 +87,6 @@ const Carousel = () => {
         <ImgCarousel src= {Carimg1}/>
         <ImgCarousel src= {Carimg2}/>
         <ImgCarousel src= {Carimg3}/>
-        <ImgCarousel src= {Carimg4}/>
         <ImgCarousel src= {Carimg5}/>
       </ReactCarousel>
       <Whiteborderdiv>

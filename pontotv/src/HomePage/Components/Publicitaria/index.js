@@ -46,7 +46,7 @@ const Img = styled.img`
    margin-top: 1vw;
    position: absolute;
    @media (max-width: 490px){
-     font-size: 2vw;
+     font-size: 2.6vw;
    }
    ;
  `
@@ -60,8 +60,8 @@ const Img = styled.img`
   margin-top: 2.3vw;
   @media (max-width: 490px){
     font-size: 6.7vw;
-    margin-bottom: 63.2vw;
-    
+    margin-bottom: 64vw;
+    margin-top: 3vw;
   }
 `
 

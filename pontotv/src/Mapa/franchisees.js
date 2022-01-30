@@ -179,8 +179,8 @@ export const franchisees = {
     { 
       nome: 'Ponto TV Colombo',
       local: 'Colombo',
-      franqueado: 'Helthon Feldmann',
-      telefone: '(41) 99623-3663',
+      franqueada: 'Solange Galbiati',
+      telefone: '(41) 92000-7880',
       facebook: '@pontotvcolombo',      
       instagram: '@pontotvcolombo'
     },
