@@ -10,13 +10,14 @@ import Unidicowom from './unidicowom.png'
 
 const StateDiv = styled.div`
   background-color: #0071c0;
-  border-radius: 5px;  
+  border-radius: 10px;  
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 0.3vw;
+  padding: 0.9vw;
   display: inline-block;
+  line-height: 1.7vw;
 `
 
 const DescriptionDiv = styled.div`
@@ -31,11 +32,13 @@ const IconImg = styled.img `
 
 const Representantes = styled.span`
   font-size: 1.4vw;
+  font-weight: 600;
   color: #ffb131;
 `
 
 const Estado = styled.span`
-  font-size: 1.9vw;
+  font-size: 1.8vw;
+  font-weight: 600;
 `
 
 /*second div*/
