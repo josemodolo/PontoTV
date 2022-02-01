@@ -71,7 +71,6 @@ function DownloadFile2 (){
         <ImgBgMob src={FranquiaBg}/>
         <ImgArrowMob src={FranquiaArrow}/>
         <a href="/midiaKitFranquia.pdf" download><ImgButtonMob src={FranquiaBtn}/></a>
-
       </DivDownMob>
     <DivDown>
       <ImgBg src={ImgVenBg}/>

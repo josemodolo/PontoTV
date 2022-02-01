@@ -171,8 +171,8 @@ export const franchisees = {
     { 
       nome: 'Ponto TV Cascavel',
       local: 'Cascavel',
-      franqueado: 'Rafael Gomes',
-      telefone: '(45) 99902-5217',
+      franqueado: 'Juliano Pimentel',
+      telefone: '(41) 99501-8102',
       facebook: '@pontotvcascavel',
       instagram: '@pontotvcascavel '
     },

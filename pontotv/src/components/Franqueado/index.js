@@ -18,6 +18,7 @@ import VantagensMob from '../../img/imgMobileHome/franquiaimg/vantagens.png'
 import InvestimentoMob from '../../img/imgMobileHome/franquiaimg/investimentomob.png'
 import KitFranquiaMob from '../../img/imgMobileHome/franquiaimg/kitfranquia.png'
 import InteressadoMob from '../../img/imgMobileHome/franquiaimg/interessadomob.png'
+import CaseImgMob from '../../img/imgfranc/casesmob.png'
 
 //area da franquia
 const FranquiaDiv = styled.div`
@@ -94,6 +95,9 @@ const CasesDiv = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  @media only screen and (max-width: 490px){
+    display: none;
+  }
 `
 
 const Img4 = styled.img`
@@ -155,6 +159,12 @@ const DivTextRodrigo = styled.div`
   margin-top: 13vw;
   margin-left: 26vw;
   flex-direction: column;
+  @media only screen and (max-width: 490px){
+    margin-top: 75vw;
+    text-align: center;
+    width: 80vw;
+    margin-left: 10.5vw;
+  }
  `
 
  const DivTextSolange = styled.div`
@@ -163,6 +173,12 @@ const DivTextRodrigo = styled.div`
   height: 0 auto;
   margin-top: 37.3vw;
   margin-left: 36vw;
+  @media only screen and (max-width: 490px){
+    margin-top: 206vw;
+    margin-left: 10vw;
+    text-align: center;
+    width: 80vw;
+  }
  `
 
  const DivTextRafael = styled.div`  
@@ -170,7 +186,13 @@ const DivTextRodrigo = styled.div`
    width: 49%;
    height: 0 auto;
    margin-top: 59.5vw;
-   margin-left: 26vw;   
+   margin-left: 26vw; 
+   @media only screen and (max-width: 490px){
+    margin-top: 315vw;
+    margin-left: 10vw;
+    text-align: center;
+    width: 80vw;
+  }  
  `
 
  const DivTextAyla = styled.div`
@@ -179,6 +201,12 @@ const DivTextRodrigo = styled.div`
    height: 0 auto;
    margin-top: 84.6vw;
    margin-left: 36vw;
+   @media only screen and (max-width: 490px){
+    margin-top: 435vw;
+    margin-left: 10vw;
+    text-align: center;
+    width: 80vw;
+  }
  `
 
  const FranqueadosText = styled.p`
@@ -186,7 +214,7 @@ const DivTextRodrigo = styled.div`
  font-size: 1.2vw;
  font-weight: 500;
  padding: 1vw;
- 
+  
  `
 
 const YoutubeDiv = styled.div`
@@ -298,6 +326,26 @@ const InteressadoDivMob = styled.div`
         height: 100%;
         display: flex;
       }
+`
+const CasesDivMob = styled.div`
+@media only screen and (min-width: 490px){
+        display: none;
+      }
+      @media only screen and (max-width: 490px){
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+`
+
+const FranqueadoTextMob = styled.p`
+ color: white;
+ font-size: 2.9vw;
+ font-weight: 500;
+ padding: 1vw;
 `
 
  //<FranquiaTextMob></FranquiaTextMob>
@@ -414,6 +462,54 @@ function SejaFranqueado () {
           <FranqueadosText><Ps>Hoje sabemos</Ps> que a <Ps>Ponto TV</Ps> é um <Ps>meio econômico</Ps> para <Ps>qualquer empresa</Ps> anunciar seu <Ps>negócio</Ps>.</FranqueadosText>
         </DivTextAyla>
       </CasesDiv>
+
+      <CasesDivMob>
+        <Img4 src = {CaseImgMob}/>
+        <DivTextRodrigo>
+          <FranqueadoTextMob>A <Ps>escolha</Ps> pela <Ps>franquia Ponto TV</Ps> foi muito <Ps>assertiva</Ps>, <Ps>iniciei</Ps> com o <Ps>Kit Básico</Ps> e em <Ps>apenas 1 mês </Ps>
+           já <Ps>estava</Ps> com <Ps>todos</Ps> os <Ps>pontos instalados</Ps>.</FranqueadoTextMob> 
+          <FranqueadoTextMob>Com <Ps>poucos meses</Ps> de <Ps>operação</Ps> já <Ps>possuo 10 pontos </Ps>
+          e percebi que o <Ps>modelo</Ps> de <Ps>negócio</Ps> era <Ps>promissor</Ps> e que <Ps>rapidamente</Ps> renderia <Ps>lucros</Ps> e haveria
+          o <Ps>retorno</Ps> do <Ps>investimento</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>A <Ps>equipe</Ps> nos dá todo o <Ps>suporte necessário</Ps>, seja na <Ps>parte técnica</Ps> ou na <Ps>comercial</Ps>, desta forma
+          as <Ps>metas diárias</Ps> se tornaram mas <Ps>eficazes</Ps> e <Ps>sucesso</Ps> de <Ps>empreendimento</Ps> foi <Ps>garantido</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>A <Ps>Ponto TV</Ps>, sem dúvida é um <Ps>excelente investimento</Ps> para quem tem foco e <Ps>determinação</Ps>,
+          pois <Ps>reúne</Ps> em um só produto <Ps>várias possibilidades</Ps> de <Ps>ganhos</Ps>, <Ps>abrindo</Ps> as <Ps>portas</Ps> para
+          um <Ps>negócio local</Ps> de <Ps>sucesso</Ps>... Estou <Ps>muito satisfeito</Ps> com os <Ps>resultados</Ps>!</FranqueadoTextMob>
+          
+        </DivTextRodrigo>
+
+        <DivTextSolange>
+        <FranqueadoTextMob>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro </Ps>
+          e <Ps>descomplicado</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
+          <Ps> mais</Ps> e melhor que a <Ps>concorrência</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>A <Ps>gestão</Ps> do <Ps>negócio</Ps> é <Ps>simples</Ps> e a <Ps>franqueadora</Ps> fornece <Ps>treinamentos</Ps> e <Ps>suporte</Ps> para <Ps>rede</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>Logo, para o <Ps>negócio prosperar</Ps> só <Ps>depende de nós</Ps>, colocando <Ps>energia</Ps> e <Ps>foco</Ps>,
+          o <Ps>sucesso</Ps> é <Ps>questão de tempo</Ps>!</FranqueadoTextMob>
+        </DivTextSolange>
+
+        <DivTextRafael>
+          <FranqueadoTextMob>Ser um <Ps>franqueado</Ps> da <Ps>Ponto TV</Ps> me traz duas <Ps>satisfações</Ps> importantes.</FranqueadoTextMob>
+          <FranqueadoTextMob>A primeira é a <Ps>possibilidade</Ps> de <Ps>contribuir</Ps> com <Ps>empresas</Ps> que <Ps>precisam divulgar</Ps> mais
+          os <Ps>seus serviços</Ps>, e a segunda é a <Ps>rentabilidade</Ps> do <Ps>négocio</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob>Dai a <Ps>razão</Ps> de ser franqueado <Ps>Ponto TV</Ps>!</FranqueadoTextMob>
+          <FranqueadoTextMob>O fato de ser <Ps>lotérico</Ps> a <Ps>mais de 10 anos</Ps>, também <Ps>ajudou</Ps> muito a <Ps>trabalhar</Ps> com a <Ps>franquia</Ps>.</FranqueadoTextMob>
+          <FranqueadoTextMob><Ps>Sempre</Ps> que tenho alguma <Ps>necessidade</Ps>, a <Ps>franqueadora</Ps> me <Ps>ajuda</Ps> no que eu <Ps>preciso</Ps> para
+          <Ps> continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadoTextMob>
+        </DivTextRafael>
+
+        <DivTextAyla>
+          <FranqueadoTextMob><Ps>Antes</Ps> da <Ps>Ponto TV</Ps>, tinhamos receio sobre o <Ps>modelo</Ps> de <Ps>franquia</Ps>, desde o medo
+          da falta de <Ps>suporte</Ps>, até o medo de não dar certo!</FranqueadoTextMob>
+          <FranqueadoTextMob><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou </Ps>
+          nossa <Ps>confiança</Ps>! O <Ps>modelo</Ps> de <Ps>negócio</Ps> é <Ps>simples</Ps>, <Ps>direto</Ps> e <Ps>lucrativo</Ps>!</FranqueadoTextMob>
+          <FranqueadoTextMob>O <Ps>suporte</Ps> é <Ps>prático</Ps>, ativo e <Ps>confiável</Ps>!</FranqueadoTextMob>
+          <FranqueadoTextMob><Ps>Hoje sabemos</Ps> que a <Ps>Ponto TV</Ps> é um <Ps>meio econômico</Ps> para <Ps>qualquer empresa</Ps> anunciar seu <Ps>negócio</Ps>.</FranqueadoTextMob>
+        </DivTextAyla>
+      </CasesDivMob>
+
+      
 
       <InvestimentoDiv>
         <Img5 src = {InvestimentoImg}/>
