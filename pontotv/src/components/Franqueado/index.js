@@ -348,9 +348,6 @@ const FranqueadoTextMob = styled.p`
  padding: 1vw;
 `
 
- //<FranquiaTextMob></FranquiaTextMob>
-
-
 function SejaFranqueado () {
   return(
     <div>

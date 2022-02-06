@@ -32,8 +32,7 @@ const Img = styled.img`
     height: 0 auto;
     margin-top: 0;
     margin-right: 0;
-  }
-  
+  }  
  `
 
  const Hash = styled.h4`
@@ -55,8 +54,7 @@ const Img = styled.img`
   @media (max-width: 490px){
      font-size: 6.7vw;
      margin-top: 4vw;
-   }
-  
+   }  
  `
 
  const Ptext = styled.p`
@@ -69,8 +67,7 @@ const Img = styled.img`
      font-size: 3vw;
      margin-top: 64.5vw;
      line-height: 3.5vw;
-   }
-   
+   }   
  `
 
   const OrderList = styled.p`
@@ -116,8 +113,6 @@ const TextAreaHash = styled.div`
      justify-content: center;
    }
  `
-
-
 
 function Corporativa () {
   return (

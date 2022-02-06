@@ -31,7 +31,7 @@ const Ptext = styled.p`
 
 function Footer (){
   return(
-    <FooterDiv>
+    <FooterDiv id="formSection">
       <Img src= {FootImg}/>
         <TextArea>          
           <Ptext> © Ponto TV Publicidade 2013 - 2022 | Todos os direitos reservados.</Ptext>

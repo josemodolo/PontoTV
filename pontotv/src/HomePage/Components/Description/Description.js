@@ -3,7 +3,6 @@ import styled from "styled-components";
 import HistoryImg from '../../../img/imghome/historia/historia.jpg'
 import HistoryImgMobile from '../../../img/imgMobileHome/HistoryMobile.png'
 
-
 const DivHistory = styled.div`
   width: 100%;
   display: flex;
@@ -55,8 +54,6 @@ const DivHistoryMob = styled.div`
     display: none;
   }
 `
-
-
 
 function Description () {
   return(

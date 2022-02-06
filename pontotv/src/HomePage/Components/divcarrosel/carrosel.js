@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Carimg1 from '../../../img/carrosel01.jpg'
 import Carimg2 from '../../../img/carrosel02.jpg'
 import Carimg3 from '../../../img/carrosel03.jpg'
-import Carimg5 from '../../../img/carrosel05.jpg'
+import Carimg4 from '../../../img/carrosel05.jpg'
 
 const DivCarousel = styled.div`
   width: 100%;
@@ -77,7 +77,7 @@ const Carousel = () => {
         pagination={false}
         onNextEnd={({ index }) => {
           clearTimeout(resetTimeout)
-          if (index + 1 === 5) {
+          if (index + 1 === 4) {
              resetTimeout = setTimeout(() => {
                 carouselRef?.current?.goTo(0)
             }, 3000)
@@ -87,7 +87,7 @@ const Carousel = () => {
         <ImgCarousel src= {Carimg1}/>
         <ImgCarousel src= {Carimg2}/>
         <ImgCarousel src= {Carimg3}/>
-        <ImgCarousel src= {Carimg5}/>
+        <ImgCarousel src= {Carimg4}/>
       </ReactCarousel>
       <Whiteborderdiv>
       <Whiteborder></Whiteborder>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FranchiseCard, Header, WhatsApp } from '../components'
+import { FranchiseCard, WhatsApp } from '../components'
 import styled from 'styled-components'
 import BrazilMap from './Map'
 import Footer from '../HomePage/footer'
@@ -8,7 +8,9 @@ import Bg from '../img/imghome/conteudomap/bg.jpg'
 import { franchisees } from './franchisees'
 import Imgunidades from './imgunidades.png'
 import Arrow from '../Mapa/icon1.png'
-
+import Header2 from '../components/Header map/index'
+import BgMob from '../Mapa/unidadesBgMob.png'
+import Accordion from './Accordion Menu/index'
 
 const MapDiv = styled.div`
   width: 100%;
@@ -18,25 +20,27 @@ const MapDiv = styled.div`
   background-size: cover;
   align-items: center;
   justify-content: center;
-  
+  @media only screen and (max-width: 490px){
+  display: none;
+}  
 `
 
 const Slider = styled.div`
   width: 30vw;
   overflow: auto;
   height: 80%;
+  @media only screen and (max-width: 490px){
+  display: none;
+}  
 `
 
 const ImgUni = styled.img`
   width: 15vw;
   position: absolute;
+  @media only screen and (max-width: 490px){
+  display: none;
+}  
 `
-
-// const TitleDiv = styled.div`
-//   position: absolute;
-//   margin-bottom: 45vw;
-//   color: white;
-// `
 
 const Container = styled.div`
 @media (max-width: 490px){
@@ -52,12 +56,42 @@ const Titlediv = styled.div`
   color: white; 
   justify-content: center;
   margin-top: 0.6vw;
+  @media only screen and (max-width: 490px){
+  display: none;
+}  
 `
 
 const MapArea = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  @media only screen and (max-width: 490px){
+  display: none;
+}  
 `
+
+const MapMobArea = styled.div`
+@media only screen and (max-width: 490px){
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 490px){
+  display: none;
+}
+`
+
+const ImgBgMob = styled.img`
+@media only screen and (max-width: 490px){
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 490px){
+  display: none;
+}
+`
+
 
 function Franqueados (props) {
   const [selectedState, setSelectedState] = useState ('')
@@ -68,17 +102,19 @@ function Franqueados (props) {
 
   return (
     <Container>
-      <Header/>
+      <Header2/>
+        <MapMobArea>
+          <ImgBgMob src={BgMob}/>
+          <Accordion/>
+        </MapMobArea>
         <Titlediv>
-            <img src= {Arrow}/><h1>SELECIONE SEU ESTADO</h1>
-          </Titlediv>    
+          <img src= {Arrow} alt=""/><h1>SELECIONE SEU ESTADO</h1>
+        </Titlediv>
         <MapDiv>
-              
           <MapArea>
-          <ImgUni src= {Imgunidades}/>
-          
-          <BrazilMap
-            onLocationClick={handleLocationClick} />
+            <ImgUni src= {Imgunidades}/>
+            <BrazilMap
+              onLocationClick={handleLocationClick} />
           </MapArea>
           <Slider>
             {franchisees[selectedState]?.map((franquia) => {

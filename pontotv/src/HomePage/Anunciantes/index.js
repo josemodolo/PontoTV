@@ -33,7 +33,7 @@ function Anunciantes () {
   return(
     <div>
       <DivCentral>
-      <Img src = {AnunImg} />
+      <Img src = {AnunImg}/>
     </DivCentral>
     <DivCentral>
       <ImgMob src = {AnunMob} />

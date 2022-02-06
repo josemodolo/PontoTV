@@ -18,20 +18,6 @@ const FormDiv = styled.div`
   
 `
 
-// const FormDivMob = styled.div`
-//   color: white;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: row-reverse;
-//   position: absolute;
-//   width: 40%;
-//   height: 0 auto;
-//   margin-right: 12vw;
-//     @media (max-width: 490px){
-      
-//     }
-// `
-
 const FormStyle = styled.form`
   display: flex;
   flex-direction: column;

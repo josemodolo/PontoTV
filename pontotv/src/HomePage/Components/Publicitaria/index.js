@@ -71,18 +71,13 @@ const Img = styled.img`
    margin-bottom: 0.9vw;
    @media (max-width: 490px){
     font-size: 3.1vmin;
-  }
-   
-   
+  }   
  `
 
  const OrderList = styled.p`
-   color: white;
-   
+   color: white;   
    margin-top: 0.7vw;
    margin-left: 1.1vw;
-   
-   
  `
 
 const OrderText = styled.ul`
@@ -93,7 +88,6 @@ margin-left: 0.2vw;
     font-size: 3vmin;
     margin-top: 1vw;
   }
-   
 `
 
 const ListTitle = styled.h2`
@@ -135,7 +129,7 @@ function Publicitaria () {
   return(
     <div>
     <DivPub>
-      <Img src={ImgPub}/>
+      <Img src={ImgPub} />
       <TextDiv>
         <TextAreaHash>
           <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>

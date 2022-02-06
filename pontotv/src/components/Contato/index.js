@@ -54,16 +54,15 @@ const ImgMob = styled.img`
 function Contato (){
   return(
     <div>
-      <FormDiv id="formSection">
+      <FormDiv>
         <Img src = {ContImg}/>
         <Mailer />
       </FormDiv>
-      <FormDivMob id="formSection">
+      <FormDivMob>
         <ImgMob src={FormMob}/>
         <Mailer />
       </FormDivMob>
-    </div>
-    
+    </div>    
   )
 }
 
