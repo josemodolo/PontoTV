@@ -8,102 +8,104 @@ import Instaicon from './instaicon.png'
 import Faceico from './faceico.png'
 import Unidicowom from './unidicowom.png'
 
-const StateDiv = styled.div`
-  background-color: #0071c0;
-  border-radius: 10px;  
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0.9vw;
-  display: inline-block;
-  line-height: 1.7vw;
-`
-
 const DescriptionDiv = styled.div`
-  /* border: 1px solid red; */
   margin-top: 3vw;
 `
 
 const IconImg = styled.img `
-  width: 1.3vw;
-  display: inline;
-`
-
-const Representantes = styled.span`
-  font-size: 1.4vw;
-  font-weight: 600;
-  color: #ffb131;
-`
-
-const Estado = styled.span`
-  font-size: 1.8vw;
-  font-weight: 600;
+  width: 2.2vw;
+  height: 2vw;
+  @media (max-width: 490px){
+    width: 5vw;
+    height: 4vw;
+  }
 `
 
 /*second div*/
 const Nome = styled.span`
   color: #ffb131;
-  font-size: 1.8vw;
-`
-
-const Local = styled.p`
-  font-size: 1vw;
-  width: 20vw;
-  display: flex;
-  text-align: center;
+  font-size: 2.1vw;
+  font-family:"GilroyHeavy";
+  @media (max-width: 490px){
+    font-size: 5vw;
+  }
 `
 
 const Franqueado = styled.p`
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: bolder;
   margin-top: 0.6vh;
+  @media (max-width: 490px){
+    font-size: 4vw;
+  }
 `
 
 const Franqueada = styled.p`
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: bolder;
   margin-top: 0.2vw;
+  @media (max-width: 490px){
+    font-size: 4vw;
+  }
 `
 
 const Telefone = styled.p`
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: bolder;
   margin-top: 0.6vh;
+  @media (max-width: 490px){
+    font-size: 4vw;
+  }
 `
 
 const Facebook = styled.p`
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: bolder;
   margin-top: 0.6vh;
+  @media (max-width: 490px){
+    font-size: 4vw;
+  }
 `
 
 const Instagram = styled.p`
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: bolder;
   margin-top: 0.6vh;
+  @media (max-width: 490px){
+    font-size: 4vw;
+  }
 `
 
-const Card = styled.div`
-  color: white;
-  
-`
-
-const IconDiv = styled.div`
-  
+const Card = styled.div`  
+  color: white;  
 `
 
 const StyledLocal= styled.span`
+  font-size: 1.1vw;
   text-align: start;
-  margin-left: 9px;
+  margin-left: 1.3vw;
+  @media (max-width: 490px){
+    font-size: 2.6vw;
+    margin-left: 3vw;
+  }  
 `
 
-
-const FranchiseCard = ({ representantes, estado, nome, local, franqueado, franqueada, telefone, facebook, instagram }) => {
+const FranchiseCard = ({ 
+  data: { 
+    nome,
+    local, 
+    franqueado, 
+    franqueada, 
+    telefone, 
+    facebook, 
+    instagram 
+  }
+}) => {
   return (
     <Card>
-      {representantes &&(<StateDiv>
-        <Representantes>{representantes}</Representantes><br/>
-        <Estado>{estado}</Estado>
-      </StateDiv>)}
       <DescriptionDiv>    
-        {nome &&(<Nome><IconImg src={Favicon}/>&nbsp;{nome}</Nome>)}
-        {local &&(<Local><IconDiv><IconImg src={Unidico}/></IconDiv><StyledLocal>{local}</StyledLocal></Local>)}
+        {nome &&(<Nome><IconImg src={Favicon}/>&nbsp;&nbsp;&nbsp;{nome}</Nome>)}
+        {local &&(<div style={{display: 'flex'}}><IconImg src={Unidico}/><StyledLocal>{local}</StyledLocal></div>)}
         {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>)}
         {franqueada &&(<Franqueada><IconImg src={Unidicowom}/>&nbsp;&nbsp;{franqueada}</Franqueada>)}
         {telefone &&(<Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>)}

@@ -12,6 +12,31 @@ import Header2 from '../components/Header map/index'
 import BgMob from '../Mapa/unidadesBgMob.png'
 import Accordion from './Accordion Menu/index'
 
+const StateDiv = styled.div`
+  background-color: #0071c0;
+  border-radius: 10px;  
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.9vw;
+  display: inline-block;
+  line-height: 1.7vw;
+`
+
+const Representantes = styled.p`
+  font-size: 2vw;
+  font-family:"GilroyHeavy";
+  color: #ffb131;
+`
+
+const Estado = styled.p`
+  font-size: 1.8vw;
+  font-family:"GilroyHeavy";
+  color: white;
+`
+
+
 const MapDiv = styled.div`
   width: 100%;
   height: 100vh;
@@ -26,12 +51,12 @@ const MapDiv = styled.div`
 `
 
 const Slider = styled.div`
-  width: 30vw;
+  width: 36vw;
   overflow: auto;
   height: 80%;
   @media only screen and (max-width: 490px){
   display: none;
-}  
+} 
 `
 
 const ImgUni = styled.img`
@@ -100,6 +125,8 @@ function Franqueados (props) {
     setSelectedState(e.target.id)
   }
 
+  const selectedFranchise = franchisees.find((representante) => representante.id === selectedState)
+
   return (
     <Container>
       <Header2/>
@@ -117,22 +144,22 @@ function Franqueados (props) {
               onLocationClick={handleLocationClick} />
           </MapArea>
           <Slider>
-            {franchisees[selectedState]?.map((franquia) => {
-              return (
-                <FranchiseCard
-                  representantes={franquia.representantes}
-                  estado={franquia.estado}
-                  nome={franquia.nome}
-                  local={franquia.local}
-                  franqueada={franquia.franqueada}
-                  franqueado={franquia.franqueado}
-                  telefone={franquia.telefone}
-                  facebook={franquia.facebook}
-                  instagram={franquia.instagram}
-                />
-              )
-            })
-            }
+            {selectedFranchise && (
+              <>
+                <StateDiv>
+                  <Representantes>REPRESENTANTES</Representantes>
+                  <Estado>{selectedFranchise.estado}</Estado>
+                </StateDiv>
+                {
+                  selectedFranchise.representantes.map((data) => 
+                    <FranchiseCard
+                      key={data.nome}
+                      data={data}
+                    />
+                  )
+                }
+              </>
+              )}
           </Slider>
         </MapDiv>
         <Footer />
