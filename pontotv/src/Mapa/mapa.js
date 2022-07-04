@@ -45,7 +45,7 @@ const MapDiv = styled.div`
   background-size: cover;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
   display: none;
 }  
 `
@@ -54,7 +54,7 @@ const Slider = styled.div`
   width: 36vw;
   overflow: auto;
   height: 80%;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
   display: none;
 } 
 `
@@ -62,7 +62,7 @@ const Slider = styled.div`
 const ImgUni = styled.img`
   width: 15vw;
   position: absolute;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
   display: none;
 }  
 `
@@ -81,7 +81,7 @@ const Titlediv = styled.div`
   color: white; 
   justify-content: center;
   margin-top: 0.6vw;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
   display: none;
 }  
 `
@@ -89,32 +89,42 @@ const Titlediv = styled.div`
 const MapArea = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
   display: none;
 }  
 `
 
 const MapMobArea = styled.div`
-@media only screen and (max-width: 490px){
+@media (max-width: 490px){
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media only screen and (min-width: 490px){
+@media (min-width: 490px){
   display: none;
 }
 `
 
 const ImgBgMob = styled.img`
-@media only screen and (max-width: 490px){
+@media (max-width: 490px){
   width: 100%;
   height: 100%;
 }
-@media only screen and (min-width: 490px){
+@media (min-width: 490px){
   display: none;
 }
+`
+
+const TitleMap = styled.h1`
+  font-size: 1.8vw;
+  margin-top: 0.6vw;
+`
+
+const ArrowImg = styled.img`
+  width: 2vw;
+  margin-top: 0.5vw;
 `
 
 
@@ -135,7 +145,7 @@ function Franqueados (props) {
           <Accordion/>
         </MapMobArea>
         <Titlediv>
-          <img src= {Arrow} alt=""/><h1>SELECIONE SEU ESTADO</h1>
+          <ArrowImg src= {Arrow} alt=""/>&nbsp;&nbsp;<TitleMap>SELECIONE SEU ESTADO</TitleMap>
         </Titlediv>
         <MapDiv>
           <MapArea>

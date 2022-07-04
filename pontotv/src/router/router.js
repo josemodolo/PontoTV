@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from '../HomePage/HomePage'
 import Mapa from '../Mapa/mapa'
 import Franqueados from "../components/Franqueado/index";
+import Mailer from "../components/Form/form";
 // import Construction from '../Mapa/Construction'
 
 

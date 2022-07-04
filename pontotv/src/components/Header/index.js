@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState, useRef  } from 'react'
 import styled from 'styled-components'
 import logoptv from '../../img/01.png'
 import { useHistory } from 'react-router-dom'
@@ -22,13 +22,13 @@ const HeaderMenu = styled.header`
   padding: 0 5;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 99;
   background-color: #0072c0;
 `
 
 const ImgPtv = styled.img`
-  height: 4.5vw;
-  margin-left: 17vw;
+  height: 4vw;
+  margin-left: 12vw;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
     @media (max-width: 490px){
@@ -49,7 +49,7 @@ const DivIcon = styled.div`
 `
 
 const IconImg = styled.img`
-  width: 2vw;
+  width: 1.8vw;
   margin-top: 1vw;
   `
 
@@ -60,7 +60,7 @@ const NavList = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-left: 1vw;
+  margin-left: 0.1vw;
   right: 0px;
   transition: right 0.5s ease-in-out;
   @media (max-width: 490px){
@@ -80,8 +80,8 @@ const NavList = styled.div`
 `
 
 const StyledButton = styled.button`
-font-weight: bold;
-  padding: 10px;
+  font-weight: bold;
+  padding: 2px;
   background-color: transparent;
   border: 5px solid transparent;
   border-radius: 2px;
@@ -94,8 +94,14 @@ font-weight: bold;
   border: 5px solid #f9ae42;
   border-radius: 10px;
   }
-  @media (max-width: 490px){
-    font-size: 3vw;
+  h1{
+    font-size: 1.4vw;
+    margin-top: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    @media (max-width: 490px){
+    font-size: 3.5vw;
+  }
   }
 `
 
@@ -104,22 +110,34 @@ function Header(){
   const [isOpen, setIsOpen] = useState(false)
   const history = useHistory()
 
+const ScrollToBottom = () =>{
+  setIsOpen(false)
+  window.location.href="#form-section"
+}
+
+useEffect(() => {
+  if(window.location.href.includes("form-section")) {
+    console.log('teste')
+    window.location.href="#form-section"
+  }
+}, [window.location])
+
 
   return(
-    <HeaderMenu id="/">
+    <HeaderMenu>
 
       <ImgPtv src= {logoptv}/>
-      <div class="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div className="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
       
-        <NavList isOpen={isOpen}>
-        <a href='/'><StyledButton onClick = {()=> history.push('/')}>HOME</StyledButton></a>
-        <a href='/unidades'><StyledButton onClick = {()=> history.push('/unidades')}>UNIDADES</StyledButton></a>
-        <a href='/sejaumfranqueado'><StyledButton onClick = {()=> history.push('/sejaumfranqueado')}>SEJA UM FRANQUEADO</StyledButton></a>
-        <a href="#formSection"><StyledButton class="contact">CONTATO</StyledButton></a>
+      <NavList isOpen={isOpen}>
+        <a href='/'><StyledButton onClick = {()=> history.push('/')}><h1>HOME</h1></StyledButton></a>
+        <a href='/unidades'><StyledButton onClick = {()=> history.push('/unidades')}><h1>UNIDADES</h1></StyledButton></a>
+        <a href='/sejaumfranqueado'><StyledButton onClick = {()=> history.push('/sejaumfranqueado')}><h1>SEJA UM FRANQUEADO</h1></StyledButton></a>
+        <StyledButton onClick = {ScrollToBottom}><h1>CONTATO</h1></StyledButton>
       </NavList>
       
       <DivIcon>

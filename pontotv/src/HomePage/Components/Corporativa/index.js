@@ -8,7 +8,7 @@ const DivCorp = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     display: none;
   }
 `
@@ -70,10 +70,11 @@ const Img = styled.img`
    }   
  `
 
-  const OrderList = styled.p`
+  const OrderList = styled.ul`
     color: #505050;
     font-size: 1.4vw;
     margin-top: 0.5vw;
+    margin-left: 1vw;
     @media (max-width: 490px){
      font-size: 3vw;
    }
@@ -106,10 +107,10 @@ const TextAreaHash = styled.div`
    width: 100%;
    height: 100%;
    display: flex;
-   @media only screen and (min-width: 490px) {
+   @media (min-width: 490px) {
      display: none;
    }
-   @media only screen and (max-width: 490px) {
+   @media (max-width: 490px) {
      justify-content: center;
    }
  `
@@ -129,7 +130,7 @@ function Corporativa () {
         Além de ter seu <Ps>próprio canal interno</Ps> com <Ps>notícias diversas</Ps>, <Ps>previsão </Ps>
         do <Ps>tempo</Ps> e <Ps>cotação da bolsa de valores</Ps>, a <Ps>Ponto TV</Ps> cria <Ps>conteúdos </Ps>
         em <Ps>vídeo</Ps> com <Ps>foco</Ps> em <Ps>sua empresa</Ps>, seja com destaque <Ps>institucional</Ps>,
-        em <Ps>produtos</Ps>, <Ps>ofertas</Ps>, ou <Ps>serviços especificos</Ps>.</Ptext>
+        em <Ps>produtos</Ps>, <Ps>ofertas</Ps>, ou <Ps>serviços específicos</Ps>.</Ptext>
         <ListTitle>VANTAGENS:</ListTitle>
           <OrderList>
             <li><Ps>Fortaleça</Ps> o <Ps>relacionamento</Ps> entre <Ps>empresa</Ps> e <Ps>funcionários/clientes</Ps>.</li>

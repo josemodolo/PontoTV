@@ -26,7 +26,7 @@ const FranquiaDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     display: none;
   }
 `
@@ -63,7 +63,7 @@ const OferecemosDiv = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     display: none;
   }
 `
@@ -78,7 +78,7 @@ const VantagensDiv = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     display: none;
   }
 `
@@ -95,7 +95,7 @@ const CasesDiv = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     display: none;
   }
 `
@@ -110,7 +110,7 @@ const InvestimentoDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
       display: none;
     }
 `
@@ -126,7 +126,7 @@ const KitDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
       display: none;
     }
 `
@@ -141,7 +141,7 @@ const InteressadoDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
         display: none;
       }
 `
@@ -159,7 +159,7 @@ const DivTextRodrigo = styled.div`
   margin-top: 13vw;
   margin-left: 26vw;
   flex-direction: column;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     margin-top: 75vw;
     text-align: center;
     width: 80vw;
@@ -173,7 +173,7 @@ const DivTextRodrigo = styled.div`
   height: 0 auto;
   margin-top: 37.3vw;
   margin-left: 36vw;
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     margin-top: 206vw;
     margin-left: 10vw;
     text-align: center;
@@ -187,7 +187,7 @@ const DivTextRodrigo = styled.div`
    height: 0 auto;
    margin-top: 59.5vw;
    margin-left: 26vw; 
-   @media only screen and (max-width: 490px){
+   @media (max-width: 490px){
     margin-top: 315vw;
     margin-left: 10vw;
     text-align: center;
@@ -201,7 +201,7 @@ const DivTextRodrigo = styled.div`
    height: 0 auto;
    margin-top: 84.6vw;
    margin-left: 36vw;
-   @media only screen and (max-width: 490px){
+   @media (max-width: 490px){
     margin-top: 435vw;
     margin-left: 10vw;
     text-align: center;
@@ -239,10 +239,10 @@ const Container = styled.div`
 //=========================================MOBILE=================================================
 
 const FranquiaDivMob = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
     display: none;
   }
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     width: 100%;
     height: 100%;
     display: flex;
@@ -252,10 +252,10 @@ const FranquiaDivMob = styled.div`
 `
 
 const OferecemosMob = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
     display: none;
   }
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     width: 100%;
     height: 100%;
     display: flex;
@@ -263,10 +263,10 @@ const OferecemosMob = styled.div`
 `
 
 const VantagensDivMob = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
     display: none;
   }
-  @media only screen and (max-width: 490px){
+  @media (max-width: 490px){
     width: 100%;
     height: 100%;
     display: flex;
@@ -274,10 +274,10 @@ const VantagensDivMob = styled.div`
 `
 
 const InvestimentoMobDiv = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
       display: none;
     }
-    @media only screen and (max-width: 490px){
+    @media (max-width: 490px){
       width: 100%;
       height: 100%;
       display: flex;
@@ -285,10 +285,10 @@ const InvestimentoMobDiv = styled.div`
 `
 
 const KitDivMob = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
         display: none;
       }
-      @media only screen and (max-width: 490px){
+      @media (max-width: 490px){
         width: 100%;
         height: 100%;
         display: flex;
@@ -318,20 +318,20 @@ const FranquiaTextMob = styled.p`
 `
 
 const InteressadoDivMob = styled.div`
-  @media only screen and (min-width: 490px){
+  @media (min-width: 490px){
         display: none;
       }
-      @media only screen and (max-width: 490px){
+      @media (max-width: 490px){
         width: 100%;
         height: 100%;
         display: flex;
       }
 `
 const CasesDivMob = styled.div`
-@media only screen and (min-width: 490px){
+@media (min-width: 490px){
         display: none;
       }
-      @media only screen and (max-width: 490px){
+      @media (max-width: 490px){
         display: flex;
         width: 100%;
         height: 100%;
@@ -346,6 +346,14 @@ const FranqueadoTextMob = styled.p`
  font-size: 2.9vw;
  font-weight: 500;
  padding: 1vw;
+`
+
+const HashtagFirstDiv = styled.h1`
+  font-family:"GilroyExtraBold";
+  color: #f9ae42;
+  font-size: 2.3vw;
+  margin-top: 0.3vw;
+  margin-left: 0.5vw;
 `
 
 function SejaFranqueado () {
@@ -381,6 +389,7 @@ function SejaFranqueado () {
       <FranquiaDiv>
         <Img1 src= {FranquiaOque}/>
           <FranquiaTextDiv>
+          <HashtagFirstDiv>#SEJAAPONTOTVNASUACIDADE</HashtagFirstDiv>
             <FranquiaText>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
               pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaText>
               <FranquiaText>A <Ps>Franquia de Mídia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>

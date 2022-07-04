@@ -38,7 +38,7 @@ function AccordionItem({title, representantes}) {
       {isOpen && (
         <div>
           {representantes.map(representante => (
-            <FranchiseCard data={representante}/>
+            <FranchiseCard key={`${representante.nome}${representante.local}`} data={representante}/>
           ))}
         </div>
       )}

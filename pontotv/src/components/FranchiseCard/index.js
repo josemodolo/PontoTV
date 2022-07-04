@@ -10,13 +10,17 @@ import Unidicowom from './unidicowom.png'
 
 const DescriptionDiv = styled.div`
   margin-top: 3vw;
+  @media (max-width: 490px){
+    margin-bottom: 10vw ;
+  }
+  
 `
 
 const IconImg = styled.img `
-  width: 2.2vw;
+  width: 2vw;
   height: 2vw;
   @media (max-width: 490px){
-    width: 5vw;
+    width: 4vw;
     height: 4vw;
   }
 `

@@ -9,7 +9,7 @@ const DivHistory = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     display: none;
   }
 `
@@ -49,8 +49,9 @@ const DivHistoryMob = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 100%;
-  @media only screen and (min-width: 490px) {
+  @media (min-width: 490px) {
     display: none;
   }
 `
@@ -62,10 +63,10 @@ function Description () {
       <Img src={HistoryImg}/>
       <TextDiv>
         <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps> no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps> é oferecida<br/>
-        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>videos</Ps> que são <Ps>exibidos</Ps> em <Ps>TV's</Ps>,<br/>
+        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>vídeos</Ps> que são <Ps>exibidos</Ps> em <Ps>TV's</Ps>,<br/>
         <Ps>instaladas</Ps> dentro de <Ps>estabelecimentos comerciais</Ps> com <Ps>grande concentração</Ps> de <Ps>pessoas</Ps>.<br/><br/>
-        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>190 pontos</Ps> de <Ps>TV's</Ps><br/>
-        pelo <Ps>Brasil</Ps>, distribuidos em <Ps>10 estados</Ps>, ao longo de <Ps>35 cidades</Ps>.<br/><br/>
+        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>220 pontos</Ps> de <Ps>TV's</Ps><br/>
+        pelo <Ps>Brasil</Ps>, distribuídos em <Ps>10 estados</Ps>, ao longo de <Ps>40 cidades</Ps>.<br/><br/>
         Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta 80 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades exibidas</Ps> nas TV's,<br/>
         que por sua vez, são <Ps>estrategicamente instaladas</Ps> em restaurantes, academias, cartórios,<br/>
         lotéricas, hospitais, farmácias, dentre outros.</Ptext>
@@ -74,14 +75,14 @@ function Description () {
     <DivHistoryMob>
       <Img src={HistoryImgMobile}/>
       <TextDiv>
-        <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps> no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps> é oferecida<br/>
-        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>videos</Ps> que são <Ps>exibidos</Ps> em <Ps>TV's</Ps>,<br/>
-        <Ps>instaladas</Ps> dentro de <Ps>estabelecimentos comerciais</Ps> com <Ps>grande concentração</Ps> de <Ps>pessoas</Ps>.<br/><br/>
-        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>190 pontos</Ps> de <Ps>TV's</Ps><br/>
-        pelo <Ps>Brasil</Ps>, distribuidos em <Ps>10 estados</Ps>, ao longo de <Ps>35 cidades</Ps>.<br/><br/>
-        Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta 80 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades exibidas</Ps> nas TV's,<br/>
-        que por sua vez, são <Ps>estrategicamente instaladas</Ps> em restaurantes, academias, cartórios,<br/>
-        lotéricas, hospitais, farmácias, dentre outros.</Ptext>
+        <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps></Ptext> <Ptext>no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps></Ptext> <Ptext>é oferecida
+        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps></Ptext> <Ptext>seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>vídeos</Ps> que são</Ptext> <Ptext><Ps>exibidos</Ps> em <Ps>TV's</Ps>,
+        <Ps>instaladas</Ps> dentro de</Ptext> <Ptext><Ps>estabelecimentos comerciais</Ps> com <Ps>grande</Ps></Ptext> <Ptext><Ps>concentração</Ps> de <Ps>pessoas</Ps>.</Ptext><br/>
+        <Ptext><Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região</Ptext> <Ptext>metropolitana, <Ps>hoje</Ps> contamos com mais de</Ptext><Ptext><Ps>220 pontos</Ps> de <Ps>TV's</Ps>
+        pelo <Ps>Brasil</Ps>, distribuídos</Ptext> <Ptext>em <Ps>10 estados</Ps>, ao longo de <Ps>40 cidades</Ps>.</Ptext><br/>
+        <Ptext>Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta</Ps></Ptext> <Ptext><Ps>80 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades</Ps></Ptext> <Ptext><Ps>exibidas</Ps> nas TV's,
+        que por sua vez, são</Ptext> <Ptext><Ps>estrategicamente instaladas</Ps> em restaurantes,</Ptext> <Ptext>academias, cartórios,
+        lotéricas, hospitais,</Ptext> <Ptext>farmácias, dentre outros.</Ptext>
       </TextDiv>
     </DivHistoryMob>
     </div>

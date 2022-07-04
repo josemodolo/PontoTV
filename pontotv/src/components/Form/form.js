@@ -1,17 +1,22 @@
 import styled from "styled-components";
 import emailjs from 'emailjs-com'
 import React, { useState } from 'react'
+import Icon01 from '../../img/iconimg/icon01.png'
+import Icon02 from '../../img/iconimg/icon02.png'
+import Icon03 from '../../img/iconimg/icon03.png'
+import Icon04 from '../../img/iconimg/icon04.png'
 
 const FormDiv = styled.div`
   color: white;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
-  width: 40%;
+  width: 40vw;
   height: 0 auto;
   margin-right: 12vw;
-  @media only screen and (max-width: 769px){
+  @media (max-width: 769px){
     margin-bottom: 4vw;
     margin-left: 13vw;
   }
@@ -56,7 +61,7 @@ const TextBox = styled.textarea`
   height: 0 auto;
   @media (max-width: 490px){
     width: 82vw;
-    height: 20vw;
+    height: 12vw;
   }
   
 `
@@ -109,6 +114,28 @@ const Select = styled.select`
   }
 `
 
+// ICONS MOB
+
+const DivIcon = styled.div`
+  margin-top: 1vw;
+  display: flex;
+  width: 68vw;
+  height:7vw ;
+  justify-content: space-evenly;
+  @media (min-width: 490px){
+    display: none;
+  }
+`
+
+const IconImg = styled.img`
+  width: 1.8vw;
+  margin-top: 1vw;
+  @media (max-width: 490px){
+    margin-top: 2.7vw;
+    width: 5vw;
+  }
+  `
+
 const formatPhone = (value) => {
   return value
     .replace(/\D/g, '')
@@ -137,13 +164,13 @@ const Mailer = () => {
   }
 
   return (
-    <FormDiv>
+    <FormDiv id="form-section">
       <FormStyle onSubmit={sendEmail} id="myForm">
         <Label>Nome</Label>
         <InputDiv type='text' name='name' placeholder='Nome' required/>
         <Label>E-mail</Label>
         <InputDiv type='email' name='user_email' placeholder='E-mail' required/>
-        <Label for='phone'>WhatsApp</Label>
+        <Label htmlFor='phone'>WhatsApp</Label>
         <InputDiv
           type="tel"
           id="phone"
@@ -157,7 +184,7 @@ const Mailer = () => {
             setTelefone(newValue)
           }}
         />
-        <Label for="Select">Assunto</Label>
+        <Label htmlFor="Select">Assunto</Label>
           <Select id="select" name="select">
             <option value="QUERO ANUNCIAR">QUERO ANUNCIAR</option>
             <option value="QUERO SABER SOBRE A FRANQUIA">QUERO SABER SOBRE A FRANQUIA</option>
@@ -167,6 +194,12 @@ const Mailer = () => {
         <TextBox name='message' rows='4'/>
         <Bttn type='submit' value='ENVIAR' onClick={userAlert}/>
       </FormStyle>
+      <DivIcon>
+        <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
+        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
+        <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
+        <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
+      </DivIcon>
     </FormDiv>
   );
 }

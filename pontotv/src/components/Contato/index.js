@@ -9,59 +9,30 @@ const FormDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
-  @media only screen and (max-width: 490px) {
-    display: none;
+
+  @media (max-width: 490px) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
   }
 `
 
 const Img = styled.img`
   width: 100%;
   height: 100%;
-  @media (max-width: 490px){
-    display: none;
-  }
 `
 
-//MOBILE
+function Contato () {
+  const isMobile = window.innerWidth <= 490
 
-const FormDivMob = styled.div`
-    @media only screen and (min-width: 490px) {
-      display: none;
-    }
-  @media only screen and (max-width: 490px) {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  //justify-content: end;
-  align-items: center;
-  flex-direction: column-reverse;
-    
-  }
-`
-
-const ImgMob = styled.img`
-  width: 100%;
-  height: 100%;
-  @media (min-width: 490px){
-    width: 100%;
-    height: 100%;
-  }
-  @media (min-width: 490px){
-   display: none ;
-  }
-`
-
-function Contato (){
   return(
     <div>
       <FormDiv>
-        <Img src = {ContImg}/>
+        <Img src = {isMobile ? FormMob : ContImg}/>
         <Mailer />
       </FormDiv>
-      <FormDivMob>
-        <ImgMob src={FormMob}/>
-        <Mailer />
-      </FormDivMob>
     </div>    
   )
 }

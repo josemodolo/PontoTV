@@ -8,11 +8,14 @@ const WhatsLogo = styled.img`
   left: 20px;
   bottom: 20px;
   z-index: 1;
+  @media (max-width: 490px){
+    height: 6%;
+  }
 `
 
 function WhatsApp () {
   return (
-    <a href= "https://api.whatsapp.com/send?phone=5541995018102">
+    <a href= "https://api.whatsapp.com/send?phone=554192576534">
       <WhatsLogo src= {WpLogo}/>
     </a>
   )

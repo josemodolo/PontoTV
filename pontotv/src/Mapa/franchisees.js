@@ -7,7 +7,7 @@ export const franchisees = [
         nome: 'Ponto TV Curitiba',
         local: 'Curitiba e Região Metropolitana, Campo Largo, Campo Magro, Arapongas, Foz do Iguaçu, Londrina, Rolândia e São José dos Pinhais',
         franqueado: 'Juliano Pimentel',
-        telefone: '(41) 99501-8102',
+        telefone: '(41) 99257-6534',
         facebook: '@pontotv',
         instagram: '@pontotvpublicidade'
       },
@@ -30,7 +30,7 @@ export const franchisees = [
         nome: 'Ponto TV Cascavel',
         local: 'Cascavel',
         franqueado: 'Juliano Pimentel',
-        telefone: '(41) 99501-8102',
+        telefone: '(41) 99257-6534',
         facebook: '@pontotvcascavel',
         instagram: '@pontotvcascavel '
       },
@@ -52,9 +52,10 @@ export const franchisees = [
       { 
         nome: 'Ponto TV Pinhais',
         local: 'Pinhais',
-        franqueado: 'Matheus Almeida da Silva',
-        telefone: '(41) 98855-3650',      
-        instagram: '@pontotvpinhais'
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotv',      
+        instagram: '@pontotvpublicidade',
       },
     ]
   },
@@ -65,7 +66,7 @@ export const franchisees = [
       {
         nome: 'Ponto TV Manaus',
         local: 'Manaus',
-        franqueada: 'Anderson Silva',
+        franqueado: 'Anderson Silva',
         telefone: '(92) 98127-4297',
         facebook: '@pontotvmanaus',      
         instagram: '@pontotvmanaus'
@@ -79,16 +80,9 @@ export const franchisees = [
       {
         nome: 'Ponto TV Colinas',
         local: 'Colinas',
-        franqueada: 'Luiz Filho',
+        franqueado: 'Luiz Filho',
         telefone: '(99) 98176-2772',      
         instagram: '@pontotvcolinas'
-      },
-      {      
-        nome: 'Ponto TV São Luís',
-        local: 'São Luís',
-        franqueada: 'Ayla Menezes',
-        telefone: '(98) 99144-5959',      
-        instagram: '@pontotv.slz'
       },
       {      
         nome: 'Ponto TV Tutóia',
@@ -117,11 +111,18 @@ export const franchisees = [
     estado: 'MINAS GERAIS | MG',
     representantes: [
       {
-        nome: 'Ponto TV La Kasa',
-        local: 'Montalvânia',
-        franqueado: 'Klecius Leão Costa',
-        telefone: '(38) 99976-2801',      
-        instagram: '@pontotvlakasa'
+        nome: 'Ponto TV Ituiutaba',
+        local: 'Ituiutaba',
+        franqueado: 'Halysson Rezende',
+        telefone: '(34) 99664-4000'
+      },
+      {
+        nome: 'Ponto TV Contagem',
+        local: 'Contagem',
+        franqueado: 'Diego Henrique',
+        telefone: '(31) 98301-8922',
+        facebook: '@pontotvcontagem',
+        instagram: '@pontotvcontagem'
       },
     ]
   },
@@ -165,14 +166,6 @@ export const franchisees = [
         instagram: '@pontotv_technomais'
       },
       { 
-        nome: 'Ponto TV Duque de Caxias',
-        local: 'Duque de Caxias',
-        franqueado: 'Henrique Silva',
-        telefone: '(21) 97013-7760',
-        facebook: '@pontotvduquedecaxias',      
-        instagram: '@pontotvduquedecaxias'
-      },
-      { 
         nome: 'Ponto TV Macaé',
         local: 'Macaé',
         franqueado: 'Thiago Guerra Marques',
@@ -195,6 +188,33 @@ export const franchisees = [
         instagram: '@pontotvriooeste'
       },
     ]
+  },
+  {
+    id: 'sp',
+    estado: 'SÃO PAULO | SP',
+    representantes: [
+      {
+        nome: 'Ponto TV Indaiatuba',
+        local: 'Indaiatuba e regiões',
+        franqueado: 'José A. Machado',
+        telefone: '(19) 98937-8108',
+        instagram: '@pontotvindaiatuba'
+      },
+      {
+        nome: 'Ponto TV Itu',
+        local: 'Itu e regiões',
+        franqueado: 'Fernando Lima',
+        telefone: '(11) 94910-6571',
+        instagram: '@pontotvitu'
+      },
+      {
+        nome: 'Ponto TV Valinhos',
+        local: 'Valinhos e regiões',
+        franqueado: 'Fernando Lima',
+        telefone: '(11) 94910-6571',
+        instagram: '@pontotvvalinhos'
+      },
+    ]
   },   
   {
     id: 'ac',
@@ -204,7 +224,16 @@ export const franchisees = [
   {
     id: 'al',
     estado: 'ALAGOAS | AL',
-    representantes: []
+    representantes: [
+      { 
+        nome: 'Ponto TV Maceió',
+        local: 'Maceió',
+        franqueado: 'Gilliard Araújo',
+        telefone: '(82) 99407-4116',
+        facebook: 'Ponto TV Maceió ',      
+        instagram: '@pontotv_maceio'
+      },
+    ]
   },  
   {
     id: 'ap',
@@ -214,7 +243,15 @@ export const franchisees = [
   {
     id: 'ba',
     estado: 'BAHIA | BA',
-    representantes: []
+    representantes: [
+      { 
+        nome: 'Ponto TV Ipiaú',
+        local: 'Ipiaú',
+        franqueado: 'Uilliam Macedo',
+        telefone: '(73) 98182-5022',  
+        instagram: '@pontotvipiau'
+      },
+    ]
   },
   {
     id: 'ce',
@@ -276,11 +313,7 @@ export const franchisees = [
     estado: 'SERGIPE | SE',
     representantes: []
   },
-  {
-    id: 'sp',
-    estado: 'SÃO PAULO | SP',
-    representantes: []
-  },
+  
   {
     id: 'to',
     estado: 'TOCANTINS | TO',

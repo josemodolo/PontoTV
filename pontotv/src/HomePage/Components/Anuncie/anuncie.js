@@ -9,7 +9,7 @@ const DivAnuncie = styled.div`
   display: flex;
   height: 100%;
   flex-direction: row-reverse;
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     display: none;
   }
 `
@@ -93,7 +93,7 @@ const TextDiv = styled.div`
   display: flex;
   height: 100%;
   flex-direction: row-reverse;
-  @media only screen and (min-width: 490px) {
+  @media (min-width: 490px) {
     display: none;
   }
   `
@@ -119,15 +119,15 @@ function Anuncie (){
         </div>
         <div>
           <ListTitle>VANTAGENS</ListTitle>
-          <p>
+
             <OrderText>
               <li>Pacotes <Ps>personalizados</Ps>.</li>
-              <li>Nós <Ps>produzimos</Ps> o seu <Ps>video</Ps>.</li>
+              <li>Nós <Ps>produzimos</Ps> o seu <Ps>vídeo</Ps>.</li>
               <li><Ps>Foco</Ps> em <Ps>pontos estratégicos</Ps>.</li>
               <li><Ps>Foco</Ps> em <Ps>públicos diversificados</Ps>.</li>
               <li><Ps>Mídia limpa, 100% digital</Ps> e que <Ps>não polui</Ps> nem <Ps>agride</Ps> a <Ps>natureza</Ps>.</li>
             </OrderText>
-          </p>
+
         </div>
       </Details>
       </TextDiv>      
@@ -150,15 +150,15 @@ function Anuncie (){
         </div>
         <div>
           <ListTitle>VANTAGENS</ListTitle>
-          <p>
+
             <OrderText>
               <li>Pacotes <Ps>personalizados</Ps>.</li>
-              <li>Nós <Ps>produzimos</Ps> o seu <Ps>video</Ps>.</li>
+              <li>Nós <Ps>produzimos</Ps> o seu <Ps>vídeo</Ps>.</li>
               <li><Ps>Foco</Ps> em <Ps>pontos estratégicos</Ps>.</li>
               <li><Ps>Foco</Ps> em <Ps>públicos diversificados</Ps>.</li>
               <li><Ps>Mídia limpa, 100% digital</Ps> e que <Ps>não polui</Ps> nem <Ps>agride</Ps> a <Ps>natureza</Ps>.</li>
             </OrderText>
-          </p>
+
         </div>
       </Details>
       </TextDiv>  

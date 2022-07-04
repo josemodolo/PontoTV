@@ -11,7 +11,7 @@ const DivDown = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: row-reverse;
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     display: none;
   }
 `
@@ -40,7 +40,7 @@ const DivDownMob = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: column-reverse;
-  @media only screen and (min-width: 490px) {
+  @media (min-width: 490px) {
     display: none;
   }
 `
@@ -68,12 +68,12 @@ function DownloadFile (){
       <DivDownMob>
         <ImgArrowMob src={FranquiaArrow} />
         <ImgBgMob src={FranquiaBg} />
-        <a href= "/midiaKitVenda.pdf" download><ImgButtonMob src={FranquiaBtn} /></a>
+        <a href= "/midiaKitVenda.pdf" download="midiaKitVenda.pdf"><ImgButtonMob src={FranquiaBtn} /></a>
       </DivDownMob>
       <DivDown>
         <ImgBg src={ImgVenBg}/>
         <ImgArrow src={ImgVenArrow}/>
-        <a href= "/midiaKitVenda.pdf" download><ImgLink src ={ImgVenLink}/></a>
+        <a href= "/midiaKitVenda.pdf" download="midiaKitVenda.pdf"><ImgLink src ={ImgVenLink}/></a>
       </DivDown>
     </div>
   )

@@ -8,7 +8,7 @@ const DivPub = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     display: none;
   }
 `
@@ -74,7 +74,7 @@ const Img = styled.img`
   }   
  `
 
- const OrderList = styled.p`
+ const OrderList = styled.div`
    color: white;   
    margin-top: 0.7vw;
    margin-left: 1.1vw;
@@ -117,10 +117,10 @@ const DivPubMb = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  @media only screen and (min-width: 490px) {
+  @media (min-width: 490px) {
     display: none;
   }
-  @media only screen and (max-width: 490px) {
+  @media (max-width: 490px) {
     justify-content: center;
   }
 `
@@ -137,7 +137,7 @@ function Publicitaria () {
         </TextAreaHash>
         <Ptext>Nesta <Ps>categoria</Ps> seu <Ps>estabelecimento</Ps> pode ser um <Ps>parceiro Ponto TV</Ps>,
         oferecendo <Ps>espaços publicitários</Ps> para <Ps>qualquer anunciante</Ps> que queira
-        <Ps> divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>videos</Ps>, além de <Ps>oferecer </Ps>
+        <Ps> divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>vídeos</Ps>, além de <Ps>oferecer </Ps>
         aos <Ps>seus clientes</Ps> um <Ps>canal</Ps> de <Ps>informação</Ps> e <Ps>entretenimento</Ps> por meio
         de <Ps>notícias diversas, previsão do tempo, cotação</Ps> da <Ps>bolsa de valores </Ps>
         entre outros.</Ptext>
@@ -149,7 +149,7 @@ function Publicitaria () {
             <li><Ps>Programação</Ps> controlada via acesso <Ps>remoto</Ps>, podendo ser <Ps>alterada </Ps>
             <Ps>sempre</Ps> que <Ps>necessário</Ps>.</li>
             <li>Pode-se <Ps>utilizar</Ps> uma <Ps>TV</Ps> já <Ps>instalada</Ps> no <Ps>local</Ps>.</li>
-            <li>Modelo <Ps>compativel</Ps> com <Ps>diversos segmentos</Ps>.</li>
+            <li>Modelo <Ps>compatível</Ps> com <Ps>diversos segmentos</Ps>.</li>
           </OrderText>
         </OrderList>
       </TextDiv>
@@ -161,7 +161,7 @@ function Publicitaria () {
         <TextTitle>TV PUBLICITÁRIA</TextTitle>
         <Ptext>Nesta <Ps>categoria</Ps> seu <Ps>estabelecimento</Ps> pode ser um <Ps>parceiro Ponto TV</Ps>,
         oferecendo <Ps>espaços publicitários</Ps> para <Ps>qualquer anunciante</Ps> que queira
-        <Ps> divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>videos</Ps>, além de <Ps>oferecer </Ps>
+        <Ps> divulgar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps> através de <Ps>vídeos</Ps>, além de <Ps>oferecer </Ps>
         aos <Ps>seus clientes</Ps> um <Ps>canal</Ps> de <Ps>informação</Ps> e <Ps>entretenimento</Ps> por meio
         de <Ps>notícias diversas, previsão do tempo, cotação</Ps> da <Ps>bolsa de valores </Ps>
         entre outros.</Ptext>
@@ -173,7 +173,7 @@ function Publicitaria () {
             <li><Ps>Programação</Ps> controlada via acesso <Ps>remoto</Ps>, podendo ser <Ps>alterada </Ps>
             <Ps>sempre</Ps> que <Ps>necessário</Ps>.</li>
             <li>Pode-se <Ps>utilizar</Ps> uma <Ps>TV</Ps> já <Ps>instalada</Ps> no <Ps>local</Ps>.</li>
-            <li>Modelo <Ps>compativel</Ps> com <Ps>diversos segmentos</Ps>.</li>
+            <li>Modelo <Ps>compatível</Ps> com <Ps>diversos segmentos</Ps>.</li>
           </OrderText>
         </OrderList>
       </TextDiv>
