@@ -5,7 +5,7 @@ export const franchisees = [
     representantes: [
       {
         nome: 'Ponto TV Curitiba',
-        local: 'Curitiba e Região Metropolitana, Campo Largo, Campo Magro, Arapongas, Foz do Iguaçu, Londrina, Rolândia e São José dos Pinhais',
+        local: 'Curitiba e Região Metropolitana, Campo Largo, e São José dos Pinhais',
         franqueado: 'Juliano Pimentel',
         telefone: '(41) 99257-6534',
         facebook: '@pontotv',
@@ -17,14 +17,6 @@ export const franchisees = [
         franqueado: 'Joel Anselmo',
         telefone: '(41) 99660-9947',      
         instagram: '@pontotvtamandare'
-      },
-      { 
-        nome: 'Ponto TV Campos Gerais',
-        local: 'Araucária, Fazenda Rio Grande e Ponta Grossa',
-        franqueada: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',
-        facebook: '@pontotvcamposgerais',
-        instagram: '@pontotvcamposgerais'
       },
       { 
         nome: 'Ponto TV Cascavel',
@@ -56,6 +48,46 @@ export const franchisees = [
         telefone: '(41) 99257-6534',
         facebook: '@pontotv',      
         instagram: '@pontotvpublicidade',
+      },
+      {
+        nome: 'Ponto TV Londrina',
+        local: 'Londrina, Rolândia e Arapongas',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvlondrina',
+        instagram: '@pontotvlondrina'
+      },
+      {
+        nome: 'Ponto TV Foz do Iguaçu',
+        local: 'Curitiba e Região Metropolitana, Campo Largo, Arapongas, Foz do Iguaçu, Londrina, Rolândia e São José dos Pinhais',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvfozdoiguaçu',
+        instagram: '@pontotvfozdoiguaçu'
+      },
+      {
+        nome: 'Ponto TV Araucária',
+        local: 'Araucária',
+        franqueado: 'Solange Galbiati',
+        telefone: '(41) 92000-7880',
+        facebook: '@pontotvaraucariapr',
+        instagram: '@pontotvaraucariapr'
+      },
+      {
+        nome: 'Ponto TV Fazenda Rio Grande',
+        local: 'Fazenda Rio Grande',
+        franqueado: 'Solange Galbiati',
+        telefone: '(41) 92000-7880',
+        facebook: '@pontotvfazendariogrande',
+        instagram: '@pontotvfazendariogrande'
+      },
+      {
+        nome: 'Ponto TV Ponta Grossa',
+        local: 'Ponta Grossa',
+        franqueado: 'Solange Galbiati',
+        telefone: '(41) 92000-7880',
+        facebook: '@pontotvpg',
+        instagram: '@pontotvpontagrossa'
       },
     ]
   },
@@ -130,14 +162,6 @@ export const franchisees = [
     id: 'pa',
     estado: 'PARÁ | PA',
     representantes: [
-      {
-        nome: 'Ponto TV Vigia',
-        local: 'Vigia',
-        franqueado: 'Renan Pinheiro Barros',
-        telefone: '(91) 98408-8303',
-        facebook: '@pontotvvigia',
-        instagram: '@pontotvvigia'
-      },
     ]
   },
   {
