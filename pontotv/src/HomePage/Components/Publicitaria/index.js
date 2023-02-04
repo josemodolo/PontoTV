@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useEffect}from 'react'
 import styled from 'styled-components'
 import ImgPub from '../../../img/imghome/tvpublicitaria/tvpublicitaria.jpg'
 import '../../../fonts/Gilroy-Bold.ttf'
 import PubImgMb from '../../../img/imgMobileHome/publicitaria.png'
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const DivPub = styled.div`
   width: 100%;
@@ -126,11 +128,14 @@ const DivPubMb = styled.div`
 `
 
 function Publicitaria () {
+  useEffect(()=> {
+    Aos.init({duration: 3000});
+  }, []);
   return(
     <div>
     <DivPub>
       <Img src={ImgPub} />
-      <TextDiv>
+      <TextDiv data-aos="fade-in">
         <TextAreaHash>
           <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
           <TextTitle>TV PUBLICITÁRIA</TextTitle>
@@ -156,7 +161,7 @@ function Publicitaria () {
     </DivPub>
     <DivPubMb>
       <Img src= {PubImgMb}/>
-      <TextDiv>
+      <TextDiv data-aos="fade-in">
         <Hash>#SEJAUMAEMPRESAPARCEIRA</Hash>
         <TextTitle>TV PUBLICITÁRIA</TextTitle>
         <Ptext>Nesta <Ps>categoria</Ps> seu <Ps>estabelecimento</Ps> pode ser um <Ps>parceiro Ponto TV</Ps>,

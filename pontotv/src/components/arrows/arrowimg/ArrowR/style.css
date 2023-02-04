@@ -1,0 +1,55 @@
+.Arrow1{
+    animation: showAnimation1 2.1s infinite;
+}
+
+@keyframes  showAnimation1 {
+    0%{opacity: 0} 
+    10%{opacity: 0}
+    20%{opacity: 0}
+    30%{opacity: 0}
+    40%{opacity: 0}
+    50%{opacity: 0}
+    60%{opacity: 1}
+    70%{opacity: 1}
+    80%{opacity: 1}
+    90%{opacity: 0}
+    100%{opacity: 0}
+}
+
+.Arrow2{
+    animation: showAnimation2 2.1s infinite;
+}
+
+@keyframes  showAnimation2 {
+    0%{opacity: 0} 
+    10%{opacity: 0}
+    20%{opacity: 0}
+    30%{opacity: 0}
+    40%{opacity: 1}
+    50%{opacity: 1}
+    60%{opacity: 1}
+    70%{opacity: 1}
+    80%{opacity: 1}
+    90%{opacity: 0}
+    100%{opacity: 0}
+}
+
+.Arrow3{
+    animation: showAnimation3 2.1s infinite;
+}
+
+@keyframes  showAnimation3 {
+    0%{opacity: 0} 
+    10%{opacity: 0}
+    20%{opacity: 1}
+    30%{opacity: 1}
+    40%{opacity: 1}
+    50%{opacity: 1}
+    60%{opacity: 1}
+    70%{opacity: 1}
+    80%{opacity: 1}
+    90%{opacity: 0}
+    100%{opacity: 0}
+}
+
+

@@ -34,7 +34,7 @@ function Footer (){
     <FooterDiv>
       <Img src= {FootImg}/>
         <TextArea>          
-          <Ptext> © Ponto TV Publicidade 2013 - 2022 | Todos os direitos reservados.</Ptext>
+          <Ptext> © Ponto TV Publicidade 2013 - 2023 | Todos os direitos reservados.</Ptext>
         </TextArea>
     </FooterDiv>
   )

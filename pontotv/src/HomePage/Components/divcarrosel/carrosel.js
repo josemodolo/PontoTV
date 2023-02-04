@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
 import ReactCarousel from 'react-elastic-carousel'
 import styled from 'styled-components'
-import Carimg1 from '../../../img/carrosel01.jpg'
-import Carimg2 from '../../../img/carrosel02.jpg'
-import Carimg3 from '../../../img/carrosel03.jpg'
-import Carimg4 from '../../../img/carrosel05.jpg'
-import Carimg5 from '../../../img/carrosel06.jpg'
+import Carimg1 from '../../../img/carrosel01.png'
+import Carimg2 from '../../../img/carrosel02.png'
+import Carimg3 from '../../../img/carrosel03.png'
+import Carimg4 from '../../../img/carrosel04.png'
+import Carimg5 from '../../../img/carrosel05.png'
+import Carimg6 from '../../../img/carrosel06.png'
 
 const DivCarousel = styled.div`
   width: 100%;
@@ -74,14 +75,14 @@ const Carousel = () => {
         ref={carouselRef}
         enableAutoPlay
         emulateTouch
-        autoPlaySpeed={4000}
+        autoPlaySpeed={5000}
         pagination={false}
         onNextEnd={({ index }) => {
           clearTimeout(resetTimeout)
-          if (index + 1 === 5) {
+          if (index + 1 === 6) {
              resetTimeout = setTimeout(() => {
                 carouselRef?.current?.goTo(0)
-            }, 3000)
+            }, 9000)
           }
      }}
       >
@@ -90,6 +91,7 @@ const Carousel = () => {
         <ImgCarousel src= {Carimg3}/>
         <ImgCarousel src= {Carimg4}/>
         <ImgCarousel src= {Carimg5}/>
+        <ImgCarousel src= {Carimg6}/>
       </ReactCarousel>
       <Whiteborderdiv>
       <Whiteborder></Whiteborder>

@@ -1,12 +1,12 @@
-import React from 'react'
+import React, {useEffect}from 'react'
 import { Header, WhatsApp } from '../../components'
 import FranquiaOque from '../../img/imgfranc/franquia.jpg'
 import OQueOferecemos from '../../img/imgfranc/oferecemos.jpg'
-import VantagensImg from '../../img/imgfranc/vantagens.jpg'
+import VantagensImg from '../../img/imgfranc/vantagens.png'
 import CasesImg from '../../img/imgfranc/cases.jpg'
 import Contato from '../Contato'
-import InvestimentoImg from '../../img/imgfranc/investimento.jpg'
-import KitImg from '../../img/imgfranc/kit.jpg'
+import InvestimentoImg from '../../img/imgfranc/investimento.png'
+import KitImg from '../../img/imgfranc/kit.png'
 import InteressadoImg from '../../img/imgfranc/interessado.jpg'
 import styled from 'styled-components'
 import Footer from '../../HomePage/footer'
@@ -19,6 +19,8 @@ import InvestimentoMob from '../../img/imgMobileHome/franquiaimg/investimentomob
 import KitFranquiaMob from '../../img/imgMobileHome/franquiaimg/kitfranquia.png'
 import InteressadoMob from '../../img/imgMobileHome/franquiaimg/interessadomob.png'
 import CaseImgMob from '../../img/imgfranc/casesmob.png'
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 //area da franquia
 const FranquiaDiv = styled.div`
@@ -357,6 +359,11 @@ const HashtagFirstDiv = styled.h1`
 `
 
 function SejaFranqueado () {
+
+  useEffect(()=> {
+    Aos.init({duration: 2000});
+  }, []);
+
   return(
     <div>
       <Container>
@@ -365,7 +372,7 @@ function SejaFranqueado () {
       {/* MOBILE */}
       <FranquiaDivMob>
         <Img1Mob src= {FranquiaMob}/>
-          <FranquiaTextDivMob>
+          <FranquiaTextDivMob data-aos="fade-in">
             <FranquiaTextMob>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
               pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaTextMob>
             <FranquiaTextMob>A <Ps>Franquia de Mídia Indoor</Ps> da <Ps>Ponto TV</Ps>, é uma <Ps>franquia barata </Ps>
@@ -388,7 +395,7 @@ function SejaFranqueado () {
       {/* MOBILE       */}
       <FranquiaDiv>
         <Img1 src= {FranquiaOque}/>
-          <FranquiaTextDiv>
+          <FranquiaTextDiv data-aos="fade-in">
           <HashtagFirstDiv>#SEJAAPONTOTVNASUACIDADE</HashtagFirstDiv>
             <FranquiaText>A <Ps>Ponto TV</Ps> está em <Ps>expansão</Ps> para todo o <Ps>Brasil</Ps>, e você também
               pode <Ps>crescer</Ps> junto <Ps>conosco</Ps>!</FranquiaText>
@@ -429,7 +436,7 @@ function SejaFranqueado () {
 
       <CasesDiv>
         <Img4 src = {CasesImg}/>
-        <DivTextRodrigo>
+        <DivTextRodrigo data-aos="fade-in">
           <FranqueadosText>A <Ps>escolha</Ps> pela <Ps>franquia Ponto TV</Ps> foi muito <Ps>assertiva</Ps>, <Ps>iniciei</Ps> com o <Ps>Kit Básico</Ps> e em <Ps>apenas 1 mês </Ps>
            já <Ps>estava</Ps> com <Ps>todos</Ps> os <Ps>pontos instalados</Ps>. Com <Ps>poucos meses</Ps> de <Ps>operação</Ps> já <Ps>possuo 10 pontos </Ps>
           e percebi que o <Ps>modelo</Ps> de <Ps>negócio</Ps> era <Ps>promissor</Ps> e que <Ps>rapidamente</Ps> renderia <Ps>lucros</Ps> e haveria
@@ -441,7 +448,7 @@ function SejaFranqueado () {
           um <Ps>negócio local</Ps> de <Ps>sucesso</Ps>... Estou <Ps>muito satisfeito</Ps> com os <Ps>resultados</Ps>!</FranqueadosText>
           
         </DivTextRodrigo>
-        <DivTextSolange>
+        <DivTextSolange data-aos="fade-in">
           <FranqueadosText>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro </Ps>
           e <Ps>descomplicado</Ps>.</FranqueadosText>
           <FranqueadosText>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
@@ -450,7 +457,8 @@ function SejaFranqueado () {
           <FranqueadosText>Logo, para o <Ps>negócio prosperar</Ps> só <Ps>depende de nós</Ps>, colocando <Ps>energia</Ps> e <Ps>foco</Ps>,
           o <Ps>sucesso</Ps> é <Ps>questão de tempo</Ps>!</FranqueadosText>
         </DivTextSolange>
-        <DivTextRafael>
+
+        <DivTextRafael data-aos="fade-in">
           <FranqueadosText>Ser um <Ps>franqueado</Ps> da <Ps>Ponto TV</Ps> me traz duas <Ps>satisfações</Ps> importantes.</FranqueadosText>
           <FranqueadosText>A primeira é a <Ps>possibilidade</Ps> de <Ps>contribuir</Ps> com <Ps>empresas</Ps> que <Ps>precisam divulgar</Ps> mais
           os <Ps>seus serviços</Ps>, e a segunda é a <Ps>rentabilidade</Ps> do <Ps>négocio</Ps>.</FranqueadosText>
@@ -459,7 +467,8 @@ function SejaFranqueado () {
           <FranqueadosText><Ps>Sempre</Ps> que tenho alguma <Ps>necessidade</Ps>, a <Ps>franqueadora</Ps> me <Ps>ajuda</Ps> no que eu <Ps>preciso</Ps> para
           <Ps> continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadosText>
         </DivTextRafael>
-        <DivTextAyla>
+
+        <DivTextAyla data-aos="fade-in">
           <FranqueadosText><Ps>Antes</Ps> da <Ps>Ponto TV</Ps>, tinhamos receio sobre o <Ps>modelo</Ps> de <Ps>franquia</Ps>, desde o medo
           da falta de <Ps>suporte</Ps>, até o medo de não dar certo!</FranqueadosText>
           <FranqueadosText><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou </Ps>
@@ -471,7 +480,7 @@ function SejaFranqueado () {
 
       <CasesDivMob>
         <Img4 src = {CaseImgMob}/>
-        <DivTextRodrigo>
+        <DivTextRodrigo data-aos="fade-in">
           <FranqueadoTextMob>A <Ps>escolha</Ps> pela <Ps>franquia Ponto TV</Ps> foi muito <Ps>assertiva</Ps>, <Ps>iniciei</Ps> com o <Ps>Kit Básico</Ps> e em <Ps>apenas 1 mês </Ps>
            já <Ps>estava</Ps> com <Ps>todos</Ps> os <Ps>pontos instalados</Ps>.</FranqueadoTextMob> 
           <FranqueadoTextMob>Com <Ps>poucos meses</Ps> de <Ps>operação</Ps> já <Ps>possuo 10 pontos </Ps>
@@ -485,7 +494,7 @@ function SejaFranqueado () {
           
         </DivTextRodrigo>
 
-        <DivTextSolange>
+        <DivTextSolange data-aos="fade-in">
         <FranqueadoTextMob>Decidimos <Ps>investir</Ps> na <Ps>Ponto TV</Ps> por <Ps>entendermos</Ps> que <Ps>franquia</Ps> é um <Ps>negócio mais seguro </Ps>
           e <Ps>descomplicado</Ps>.</FranqueadoTextMob>
           <FranqueadoTextMob>Estamos em um <Ps>mercado</Ps> com <Ps>alto potencial</Ps> para <Ps>expansão</Ps> e com <Ps>possibilidade</Ps> de fazermos
@@ -495,7 +504,7 @@ function SejaFranqueado () {
           o <Ps>sucesso</Ps> é <Ps>questão de tempo</Ps>!</FranqueadoTextMob>
         </DivTextSolange>
 
-        <DivTextRafael>
+        <DivTextRafael data-aos="fade-in">
           <FranqueadoTextMob>Ser um <Ps>franqueado</Ps> da <Ps>Ponto TV</Ps> me traz duas <Ps>satisfações</Ps> importantes.</FranqueadoTextMob>
           <FranqueadoTextMob>A primeira é a <Ps>possibilidade</Ps> de <Ps>contribuir</Ps> com <Ps>empresas</Ps> que <Ps>precisam divulgar</Ps> mais
           os <Ps>seus serviços</Ps>, e a segunda é a <Ps>rentabilidade</Ps> do <Ps>négocio</Ps>.</FranqueadoTextMob>
@@ -505,7 +514,7 @@ function SejaFranqueado () {
           <Ps> continuar</Ps> nos <Ps>negócios</Ps>.</FranqueadoTextMob>
         </DivTextRafael>
 
-        <DivTextAyla>
+        <DivTextAyla data-aos="fade-in">
           <FranqueadoTextMob><Ps>Antes</Ps> da <Ps>Ponto TV</Ps>, tinhamos receio sobre o <Ps>modelo</Ps> de <Ps>franquia</Ps>, desde o medo
           da falta de <Ps>suporte</Ps>, até o medo de não dar certo!</FranqueadoTextMob>
           <FranqueadoTextMob><Ps>Porém</Ps>, desde o <Ps>primeiro contato</Ps>, a <Ps>Ponto TV</Ps> nos passou <Ps>segurança</Ps>, e <Ps>ganhou </Ps>

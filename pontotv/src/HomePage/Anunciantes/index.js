@@ -1,5 +1,5 @@
 import React from 'react'
-import AnunImg from '../../img/imghome/anunciantes/anunciantes.jpg'
+import AnunImg from '../../img/imghome/anunciantes/anunciantes.png'
 import styled from 'styled-components'
 import AnunMob from '../../img/imgMobileHome/anunciantes.png'
 

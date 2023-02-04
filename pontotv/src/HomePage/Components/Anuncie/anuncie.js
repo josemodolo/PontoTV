@@ -1,8 +1,9 @@
-import React from "react"
+import React, {useEffect} from "react"
 import styled from "styled-components"
 import ImgAnuncie from '../../../img/imghome/anuncie/anuncie.jpg'
 import AnuncieMob from '../../../img/imgMobileHome/AnuncieMobile.png'
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const DivAnuncie = styled.div`
   width: 100%;
@@ -99,11 +100,16 @@ const TextDiv = styled.div`
   `
 
 function Anuncie (){
+
+  useEffect(()=> {
+    Aos.init({duration: 3000, once: true,});
+  }, []);
+
   return(
     <div>
     <DivAnuncie>
       <Img src= {ImgAnuncie}/>
-      <TextDiv>
+      <TextDiv data-aos="fade-in" data-aos-duration="4000">
       <Details>
         <div>
           <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>
@@ -134,7 +140,7 @@ function Anuncie (){
     </DivAnuncie>
     <DivAnuncieMob>
       <Img src= {AnuncieMob}/>
-      <TextDiv>
+      <TextDiv data-aos="fade-in">
       <Details>
         <div>
           <TextTitle>ANUNCIAR NUNCA FOI TÃO FÁCIL!</TextTitle>

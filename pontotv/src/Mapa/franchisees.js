@@ -18,6 +18,14 @@ export const franchisees = [
         telefone: '(41) 99660-9947',      
         instagram: '@pontotvtamandare'
       },
+      {
+        nome: 'Ponto TV Araucária',
+        local: 'Araucária',
+        franqueado: 'Solange Galbiati',
+        telefone: '(41) 92000-7880',
+        facebook: '@pontotvaraucariapr',
+        instagram: '@pontotvaraucariapr'
+      },
       { 
         nome: 'Ponto TV Cascavel',
         local: 'Cascavel',
@@ -30,8 +38,7 @@ export const franchisees = [
         nome: 'Ponto TV Colombo',
         local: 'Colombo',
         franqueada: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',
-        facebook: '@pontotvcolombo',      
+        telefone: '(41) 92000-7880',   
         instagram: '@pontotvcolombo'
       },
       { 
@@ -58,22 +65,6 @@ export const franchisees = [
         instagram: '@pontotvlondrina'
       },
       {
-        nome: 'Ponto TV Foz do Iguaçu',
-        local: 'Curitiba e Região Metropolitana, Campo Largo, Arapongas, Foz do Iguaçu, Londrina, Rolândia e São José dos Pinhais',
-        franqueado: 'Juliano Pimentel',
-        telefone: '(41) 99257-6534',
-        facebook: '@pontotvfozdoiguaçu',
-        instagram: '@pontotvfozdoiguaçu'
-      },
-      {
-        nome: 'Ponto TV Araucária',
-        local: 'Araucária',
-        franqueado: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',
-        facebook: '@pontotvaraucariapr',
-        instagram: '@pontotvaraucariapr'
-      },
-      {
         nome: 'Ponto TV Fazenda Rio Grande',
         local: 'Fazenda Rio Grande',
         franqueado: 'Solange Galbiati',
@@ -81,6 +72,14 @@ export const franchisees = [
         facebook: '@pontotvfazendariogrande',
         instagram: '@pontotvfazendariogrande'
       },
+      {
+        nome: 'Ponto TV Foz do Iguaçu',
+        local: 'Foz do Iguaçu',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvfozdoiguaçu',
+        instagram: '@pontotvfozdoiguaçu'
+      },    
       {
         nome: 'Ponto TV Ponta Grossa',
         local: 'Ponta Grossa',
@@ -94,16 +93,7 @@ export const franchisees = [
   {
     id: 'am',
     estado:  'AMAZONAS | AM',
-    representantes: [
-      {
-        nome: 'Ponto TV Manaus',
-        local: 'Manaus',
-        franqueado: 'Anderson Silva',
-        telefone: '(92) 98127-4297',
-        facebook: '@pontotvmanaus',      
-        instagram: '@pontotvmanaus'
-      }
-    ]
+    representantes: []
   },
   {
     id: 'ma',
@@ -128,15 +118,7 @@ export const franchisees = [
   {
     id: 'ms',
     estado: 'MATO GROSSO DO SUL | MS',
-    representantes: [
-      {
-        nome: 'Ponto TV Dourados',
-        local: 'Dourados',
-        franqueado: 'Marcelo Ferreira',
-        telefone: '(67) 99629-7069',
-        instagram: '@pontotvgrandourados'
-      },
-    ]
+    representantes: []
   },
   {
     id: 'mg',
@@ -148,14 +130,6 @@ export const franchisees = [
         franqueado: 'Halysson Rezende',
         telefone: '(34) 99664-4000'
       },
-      {
-        nome: 'Ponto TV Contagem',
-        local: 'Contagem',
-        franqueado: 'Diego Henrique',
-        telefone: '(31) 98301-8922',
-        facebook: '@pontotvcontagem',
-        instagram: '@pontotvcontagem'
-      },
     ]
   },
   {
@@ -166,16 +140,8 @@ export const franchisees = [
   },
   {
     id: 'pe',
-    estado: 'PERNANBUCO | PE',
-    representantes: [
-      {
-        nome: 'Ponto TV Agreste',
-        local: 'Garanhus, Caruaru e Arcoverde',
-        franqueado: 'Júnior Santos',
-        telefone: '(87) 98179-5885',
-        instagram: '@pontotvagrestpe'
-      },
-    ]
+    estado: 'PERNAMBUCO | PE',
+    representantes: []
   },
   {
     id: 'rj',
@@ -195,28 +161,20 @@ export const franchisees = [
         franqueado: 'Thiago Guerra Marques',
         telefone: '(21) 97141-9611',      
         instagram: '@pontotvmacae'
-      },
-      { 
-        nome: 'Ponto TV Rio Norte',
-        local: 'Região Norte do Rio de Janeiro',
-        franqueado: 'Alessandro Freitas',
-        telefone: '(21) 98180-9374',
-        facebook: '@pontotvrionorte',      
-        instagram: '@pontotvrionorte'
-      },
-      { 
-        nome: 'Ponto TV Rio Oeste',
-        local: 'Região Oeste do Rio de Janeiro',
-        franqueado: 'Atlas Monteiro',
-        telefone: '(21) 99227-9260',  
-        instagram: '@pontotvriooeste'
-      },
+      },      
     ]
   },
   {
     id: 'sp',
     estado: 'SÃO PAULO | SP',
     representantes: [
+      {
+        nome: 'Ponto TV Campinas',
+        local: 'Campinas e regiões',
+        franqueado: 'Rodrigo Diniz',
+        telefone: '(19) 99430-0770',
+        instagram: '@pontotvcampinas'
+      },
       {
         nome: 'Ponto TV Indaiatuba',
         local: 'Indaiatuba e regiões',
@@ -248,16 +206,7 @@ export const franchisees = [
   {
     id: 'al',
     estado: 'ALAGOAS | AL',
-    representantes: [
-      { 
-        nome: 'Ponto TV Maceió',
-        local: 'Maceió',
-        franqueado: 'Gilliard Araújo',
-        telefone: '(82) 99407-4116',
-        facebook: 'Ponto TV Maceió ',      
-        instagram: '@pontotv_maceio'
-      },
-    ]
+    representantes: []
   },  
   {
     id: 'ap',

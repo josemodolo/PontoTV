@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import DadosImg from '../../img/imghome/dados/dados.jpg'
+import DadosImg from '../../img/imghome/dados/dados.png'
 import NumMob from '../../img/imgMobileHome/numeros.png'
 
 const DadosArea = styled.div`

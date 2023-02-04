@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import ImgVenBg from '../DownloadFile/DownloadImg/baixarfranquia1.png'
-import ImgVenArrow from '../DownloadFile/DownloadImg/baixarvenda2.png'
+import ImgVenArrow from '../DownloadFile/DownloadImg/baixarvenda2.gif'
 import ImgVenLink from '../DownloadFile/DownloadImg/baixarvenda3.png'
 import FranquiaBg from '../DownloadFile/DownloadImg/mobile/franquia1.png'
 import FranquiaArrow from '../DownloadFile/DownloadImg/mobile/franquia2.png'
 import FranquiaBtn from '../DownloadFile/DownloadImg/mobile/franquia3.png'
+import ArrowsBlink2 from "../../components/arrows/arrowimg/ArrowL/index";
+import ArrowsBlink from "../../components/arrows/arrowimg/ArrowR/index";
+import ButtonDownload from "../DownloadFile/ButtonDown/index";
 
 const DivDown = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   flex-direction: row-reverse;
@@ -39,6 +44,8 @@ const DivDownMob = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
   flex-direction: column-reverse;
   @media (min-width: 490px) {
     display: none;
@@ -62,6 +69,14 @@ const ImgButtonMob = styled.img`
   position: absolute;
 `
 
+const Container = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`
+
 
 
 function DownloadFile2 (){
@@ -69,13 +84,19 @@ function DownloadFile2 (){
     <div>
       <DivDownMob>
         <ImgBgMob src={FranquiaBg}/>
-        <ImgArrowMob src={FranquiaArrow}/>
-        <a href="/midiaKitFranquia.pdf" download="midiaKirFranquia"><ImgButtonMob src={FranquiaBtn}/></a>
+        <Container>
+          <ArrowsBlink/>           
+            <a href="/midiaKitFranquia.pdf" download="midiaKitFranquia.pdf"><ButtonDownload src ={ImgVenLink}/></a>
+          <ArrowsBlink2/>
+      </Container> 
       </DivDownMob>
     <DivDown>
-      <ImgBg src={ImgVenBg}/>
-      <ImgArrow src={ImgVenArrow}/>
-      <a href="/midiaKitFranquia.pdf" download="midiaKirFranquia"><ImgLink src ={ImgVenLink}/></a>
+    <ImgBg src={ImgVenBg}/>     
+      <Container>
+        <ArrowsBlink/>           
+        <a href="/midiaKitFranquia.pdf" download="midiaKitFranquia.pdf"><ButtonDownload src ={ImgVenLink}/></a>
+        <ArrowsBlink2/>
+      </Container>      
     </DivDown>
     </div>
     

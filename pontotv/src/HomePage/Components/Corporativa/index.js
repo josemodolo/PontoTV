@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useEffect}from "react";
 import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.jpg'
 import styled from "styled-components";
 import CorporativaImgBg from '../../../img/imgMobileHome/corporativa.png'
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 
 const DivCorp = styled.div`
   width: 100%;
@@ -116,11 +119,16 @@ const TextAreaHash = styled.div`
  `
 
 function Corporativa () {
+
+  useEffect(()=> {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <div>
       <DivCorpMob>
         <Img src={CorporativaImgBg}/>
-        <TextDiv>
+        <TextDiv data-aos="fade-in">
         <Hash>#PARASUAEMPRESA</Hash>
         <TextTitle>TV CORPORATIVA</TextTitle>
         <Ptext>Nesta <Ps>categoria</Ps> você <Ps>aproveita TV's</Ps> presentes em <Ps>salas</Ps> de <Ps>espera </Ps>
@@ -144,7 +152,7 @@ function Corporativa () {
 
       <DivCorp>
       <Img src={ImgCorp}/>
-      <TextDiv>
+      <TextDiv data-aos="fade-in">
         <TextAreaHash>
           <Hash>#PARASUAEMPRESA</Hash>
           <TextTitle>TV CORPORATIVA</TextTitle>

@@ -1,4 +1,4 @@
-import ParcImg from '../../img/imghome/parceiros/parceiros.jpg'
+import ParcImg from '../../img/imghome/parceiros/parceiros.png'
 import styled from "styled-components";
 import ParMob from '../../img/imgMobileHome/parceiros.png'
 

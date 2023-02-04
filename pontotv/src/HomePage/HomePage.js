@@ -12,6 +12,7 @@ import Parceiros from '../HomePage/parceiros/index'
 import Footer from './footer'
 import styled from 'styled-components'
 import DownloadFile from '../components/DownloadFile'
+import RedesSociais from '../../src/HomePage/Components/Redes/index'
 
 const Container = styled.div`
 @media (max-width: 490px){
@@ -34,6 +35,7 @@ function Home() {
       <Anunciantes />
       <Parceiros />
       <Dados />
+      <RedesSociais />
       <Contato />
       <Footer />
     </Container>
