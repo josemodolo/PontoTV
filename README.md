@@ -13,7 +13,7 @@ A primeira page possui um carrosel interativo com os produtos e serviçoes da em
 </div>
 
 <h1>Formulário</h1>
-O formulário da pode ser acessado por um link no header que o leva diretamente a sessão da página onde ele se encontra.
+O formulário pode ser acessado por um link no header que o leva diretamente a sessão da página onde ele se encontra.
 A integração com o emailjs fora utilizada para seu funcionamento.
 Outra forma de contato com a empresa é atraves do icone do whatsapp que se localiza no canto inferior esquerdo da página. Ao clicar o usuário é direcionado para o app, entrando em contato diretamente com a recepção da empresa.
 <div align="center">
