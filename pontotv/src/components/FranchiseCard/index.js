@@ -16,7 +16,7 @@ const DescriptionDiv = styled.div`
   
 `
 
-const IconImg = styled.img `
+const IconImg = styled.img `  
   width: 2vw;
   height: 2vw;
   @media (max-width: 490px){
@@ -26,7 +26,9 @@ const IconImg = styled.img `
 `
 
 /*second div*/
-const Nome = styled.span`
+const Nome = styled.div`
+  display: flex;
+  align-items: center;
   color: #ffb131;
   font-size: 2.1vw;
   font-family:"GilroyHeavy";
@@ -35,7 +37,8 @@ const Nome = styled.span`
   }
 `
 
-const Franqueado = styled.p`
+const Franqueado = styled.div`
+  display: flex;
   font-size: 1.7vw;
   font-weight: bolder;
   margin-top: 0.6vh;
@@ -44,7 +47,8 @@ const Franqueado = styled.p`
   }
 `
 
-const Franqueada = styled.p`
+const Franqueada = styled.div`
+  display: flex;
   font-size: 1.7vw;
   font-weight: bolder;
   margin-top: 0.2vw;
@@ -53,7 +57,7 @@ const Franqueada = styled.p`
   }
 `
 
-const Telefone = styled.p`
+const Telefone = styled.div`
   font-size: 1.7vw;
   font-weight: bolder;
   margin-top: 0.6vh;
@@ -62,7 +66,9 @@ const Telefone = styled.p`
   }
 `
 
-const Facebook = styled.p`
+const Facebook = styled.div`
+  display: flex;
+  alignt-items: center;
   font-size: 1.7vw;
   font-weight: bolder;
   margin-top: 0.6vh;
@@ -71,7 +77,8 @@ const Facebook = styled.p`
   }
 `
 
-const Instagram = styled.p`
+const Instagram = styled.div`
+  display: flex;
   font-size: 1.7vw;
   font-weight: bolder;
   margin-top: 0.6vh;
@@ -80,7 +87,9 @@ const Instagram = styled.p`
   }
 `
 
-const Card = styled.div`  
+const Card = styled.div`
+  display: flex;
+  align-items: center; 
   color: white;  
 `
 
@@ -110,11 +119,11 @@ const FranchiseCard = ({
       <DescriptionDiv>    
         {nome &&(<Nome><IconImg src={Favicon}/>&nbsp;&nbsp;&nbsp;{nome}</Nome>)}
         {local &&(<div style={{display: 'flex'}}><IconImg src={Unidico}/><StyledLocal>{local}</StyledLocal></div>)}
-        {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;{franqueado}</Franqueado>)}
+        {franqueado &&(<Franqueado><IconImg src={Unidicoman}/> &nbsp;&nbsp;{franqueado}</Franqueado>)}
         {franqueada &&(<Franqueada><IconImg src={Unidicowom}/>&nbsp;&nbsp;{franqueada}</Franqueada>)}
         {telefone &&(<Telefone><IconImg src={Whatsicon}/> &nbsp;{telefone}</Telefone>)}
-        {facebook &&(<Facebook><IconImg src={Faceico}/> &nbsp;{facebook}</Facebook>)}
-        {instagram &&(<Instagram><IconImg src={Instaicon}/> &nbsp;{instagram}</Instagram>)}
+        {facebook &&(<Facebook><IconImg src={Faceico}/> &nbsp;&nbsp;{facebook}</Facebook>)}
+        {instagram &&(<Instagram><IconImg src={Instaicon}/> &nbsp;&nbsp;{instagram}</Instagram>)}
       </DescriptionDiv>
     </Card>
   )

@@ -55,7 +55,7 @@ const IconImg = styled.img`
 
 const NavList = styled.div`
   ${({ isOpen }) => `
-  width: 44%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,13 +136,13 @@ useEffect(() => {
       <NavList isOpen={isOpen}>
         <a href='/'><StyledButton onClick = {()=> history.push('/')}><h1>HOME</h1></StyledButton></a>
         <a href='/unidades'><StyledButton onClick = {()=> history.push('/unidades')}><h1>UNIDADES</h1></StyledButton></a>
-        <a href='/sejaumfranqueado'><StyledButton onClick = {()=> history.push('/sejaumfranqueado')}><h1>SEJA UM FRANQUEADO</h1></StyledButton></a>
+        {/* <a href='/sejaumfranqueado'><StyledButton onClick = {()=> history.push('/sejaumfranqueado')}><h1>SEJA UM FRANQUEADO</h1></StyledButton></a> */}
         <StyledButton onClick = {ScrollToBottom}><h1>CONTATO</h1></StyledButton>
       </NavList>
       
       <DivIcon>
-        <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
-        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
+        <a href="https://www.instagram.com/pontotvcwb/"><IconImg src= {Icon02}/></a>
+        <a href="https://www.facebook.com/pontotvcwb"><IconImg src= {Icon01}/></a>
         <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
         <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
       </DivIcon>

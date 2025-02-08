@@ -1,5 +1,5 @@
 import React, {useEffect}from "react";
-import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.jpg'
+import ImgCorp from '../../../img/imghome/tvcorporativa/tvcorporativa.png'
 import styled from "styled-components";
 import CorporativaImgBg from '../../../img/imgMobileHome/corporativa.png'
 import Aos from 'aos';

@@ -77,24 +77,24 @@ function Description () {
         <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps> no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps> é oferecida<br/>
         a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>vídeos</Ps> que são <Ps>exibidos</Ps> em <Ps>TV's</Ps>,<br/>
         <Ps>instaladas</Ps> dentro de <Ps>estabelecimentos comerciais</Ps> com <Ps>grande concentração</Ps> de <Ps>pessoas</Ps>.<br/><br/>
-        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>250 pontos</Ps> de <Ps>TV's</Ps><br/>
-        pelo <Ps>Brasil</Ps>, distribuídos em <Ps>14 estados</Ps>, ao longo de <Ps>40 cidades</Ps>.<br/><br/>
+        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>300 pontos</Ps> de <Ps>TV's</Ps><br/>
+        pelo <Ps>Brasil</Ps>, distribuídos em <Ps>8 estados</Ps>, ao longo de <Ps>35 cidades</Ps>.<br/><br/>
         Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta 100 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades exibidas</Ps> nas TV's,<br/>
-        que por sua vez, são <Ps>estrategicamente instaladas</Ps> em restaurantes, academias, cartórios,<br/>
-        lotéricas, hospitais, farmácias, dentre outros.</Ptext>
+        que por sua vez, são <Ps>estrategicamente instaladas</Ps> em academias, lotéricas,<br/>
+        cartórios, restaurantes, hospitais, farmácias, shoppings, dentre outros.</Ptext>
       </TextDiv>
     </DivHistory>
     <DivHistoryMob>
       <Img src={HistoryImgMobile}/>
       <TextDiv data-aos="fade-in">
-        <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps></Ptext> <Ptext>no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps></Ptext> <Ptext>é oferecida
-        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps></Ptext> <Ptext>seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>vídeos</Ps> que são</Ptext> <Ptext><Ps>exibidos</Ps> em <Ps>TV's</Ps>,
-        <Ps>instaladas</Ps> dentro de</Ptext> <Ptext><Ps>estabelecimentos comerciais</Ps> com <Ps>grande</Ps></Ptext> <Ptext><Ps>concentração</Ps> de <Ps>pessoas</Ps>.</Ptext><br/>
-        <Ptext><Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região</Ptext> <Ptext>metropolitana, <Ps>hoje</Ps> contamos com mais de</Ptext><Ptext><Ps>250 pontos</Ps> de <Ps>TV's</Ps>
-        pelo <Ps>Brasil</Ps>, distribuídos</Ptext> <Ptext>em <Ps>14 estados</Ps>, ao longo de <Ps>40 cidades</Ps>.</Ptext><br/>
-        <Ptext>Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta</Ps></Ptext> <Ptext><Ps>100 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades</Ps></Ptext> <Ptext><Ps>exibidas</Ps> nas TV's,
-        que por sua vez, são</Ptext> <Ptext><Ps>estrategicamente instaladas</Ps> em restaurantes,</Ptext> <Ptext>academias, cartórios,
-        lotéricas, hospitais,</Ptext> <Ptext>farmácias, dentre outros.</Ptext>
+        <Ptext>A <Ps>Ponto TV</Ps> surgiu em <Ps>2013</Ps> visando ser <Ps>referência</Ps> no mercado de <Ps>mídia indoor</Ps>, onde a <Ps>publicidade</Ps> é oferecida<br/>
+        a qualquer <Ps>empresa</Ps> que queira <Ps>anunciar</Ps> seus <Ps>produtos</Ps> e <Ps>serviços</Ps>, através de <Ps>vídeos</Ps> que são <Ps>exibidos</Ps> em <Ps>TV's</Ps>,<br/>
+        <Ps>instaladas</Ps> dentro de <Ps>estabelecimentos comerciais</Ps> com <Ps>grande concentração</Ps> de <Ps>pessoas</Ps>.<br/><br/>
+        <Ps>Inicialmente</Ps> atuando em <Ps>Curitiba</Ps> (PR) e região metropolitana, <Ps>hoje</Ps> contamos com mais de <Ps>300 pontos</Ps> de <Ps>TV's</Ps><br/>
+        pelo <Ps>Brasil</Ps>, distribuídos em <Ps>8 estados</Ps>, ao longo de <Ps>35 cidades</Ps>.<br/><br/>
+        Dentro desta <Ps>proporção</Ps>, nossa rede <Ps>impacta 100 mil</Ps> pessoas <Ps>diariamente</Ps> com as <Ps>publicidades exibidas</Ps> nas TV's,<br/>
+        que por sua vez, são <Ps>estrategicamente instaladas</Ps> em academias, lotéricas,<br/>
+        cartórios, restaurantes, hospitais, farmácias, shoppings, dentre outros.</Ptext>
       </TextDiv>
     </DivHistoryMob>
     </div>

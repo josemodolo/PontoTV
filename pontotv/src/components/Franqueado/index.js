@@ -3,7 +3,7 @@ import { Header, WhatsApp } from '../../components'
 import FranquiaOque from '../../img/imgfranc/franquia.jpg'
 import OQueOferecemos from '../../img/imgfranc/oferecemos.jpg'
 import VantagensImg from '../../img/imgfranc/vantagens.png'
-import CasesImg from '../../img/imgfranc/cases.jpg'
+import CasesImg from '../../img/imgfranc/cases.png'
 import Contato from '../Contato'
 import InvestimentoImg from '../../img/imgfranc/investimento.png'
 import KitImg from '../../img/imgfranc/kit.png'
@@ -542,9 +542,9 @@ function SejaFranqueado () {
         <Img1Mob src= {KitFranquiaMob}/>
       </KitDivMob>
 
-      <YoutubeDiv>
+      {/* <YoutubeDiv>
         <YoutubeEmbed/>
-      </YoutubeDiv>
+      </YoutubeDiv> */}
       <DownloadFile2 />
 
       <InteressadoDiv>

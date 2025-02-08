@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import ContImg from '../../img/imghome/contato/contato.jpg'
+import ContImg from '../../img/imghome/contato/contato.png'
 import Mailer from '../Form/form';
 import FormMob from '../../img/imgMobileHome/contato.png'
 

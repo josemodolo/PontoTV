@@ -187,7 +187,7 @@ const Mailer = () => {
         <Label htmlFor="Select">Assunto</Label>
           <Select id="select" name="select">
             <option value="QUERO ANUNCIAR">QUERO ANUNCIAR</option>
-            <option value="QUERO SABER SOBRE A FRANQUIA">QUERO SABER SOBRE A FRANQUIA</option>
+            {/* <option value="QUERO SABER SOBRE A FRANQUIA">QUERO SABER SOBRE A FRANQUIA</option> */}
             <option value="OUTROS">OUTROS</option>            
           </Select>
         <Label>Mensagem</Label>
@@ -195,8 +195,8 @@ const Mailer = () => {
         <Bttn type='submit' value='ENVIAR' onClick={userAlert}/>
       </FormStyle>
       <DivIcon>
-        <a href="https://www.instagram.com/pontotvpublicidade/"><IconImg src= {Icon02}/></a>
-        <a href="https://www.facebook.com/pontotv/"><IconImg src= {Icon01}/></a>
+        <a href="https://www.instagram.com/pontotvcwb/"><IconImg src= {Icon02}/></a>
+        <a href="https://www.facebook.com/pontotvcwb"><IconImg src= {Icon01}/></a>
         <a href="https://www.linkedin.com/company/51617579/admin/"><IconImg src= {Icon03}/></a>
         <a href="https://www.youtube.com/channel/UC2eJE7n3w57f2uoNierKAYQ/videos"><IconImg src= {Icon04}/></a>
       </DivIcon>

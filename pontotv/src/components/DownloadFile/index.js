@@ -83,7 +83,7 @@ function DownloadFile (){
         <ImgBgMob src={FranquiaBg} />
         <Container>
           <ArrowsBlink/>              
-            <a href= "/midiaKitVenda.pdf" download="midiaKitVenda.pdf"><ButtonDownload/></a>
+            <a href= "/Midia Kit Vendas.pdf" download="Midia Kit Ponto TV.pdf"><ButtonDownload/></a>
           <ArrowsBlink2/>
         </Container>  
       </DivDownMob>
@@ -91,7 +91,7 @@ function DownloadFile (){
         <ImgBg src={ImgVenBg}/>
         <Container>
           <ArrowsBlink/>              
-            <a href= "/midiaKitVenda.pdf" download="midiaKitVenda.pdf"><ButtonDownload/></a>
+            <a href= "/Midia Kit Vendas.pdf" download="Midia Kit Ponto TV.pdf"><ButtonDownload/></a>
           <ArrowsBlink2/>
         </Container>      
       </DivDown>

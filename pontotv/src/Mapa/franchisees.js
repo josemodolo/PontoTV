@@ -3,91 +3,85 @@ export const franchisees = [
     id: 'pr',
     estado: 'PARANÁ | PR',
     representantes: [
+      
       {
         nome: 'Ponto TV Curitiba',
-        local: 'Curitiba e Região Metropolitana, Campo Largo, e São José dos Pinhais',
+        local: 'Curitiba, Araucária, Campina Grande do Sul e Campo Largo',
         franqueado: 'Juliano Pimentel',
         telefone: '(41) 99257-6534',
-        facebook: '@pontotv',
-        instagram: '@pontotvpublicidade'
-      },
-      { 
-        nome: 'Ponto TV Almirante Talmandaré',
-        local: 'Almirante Tamandaré, Rio Branco do Sul e Itaperuçu',
-        franqueado: 'Joel Anselmo',
-        telefone: '(41) 99660-9947',      
-        instagram: '@pontotvtamandare'
-      },
-      {
-        nome: 'Ponto TV Araucária',
-        local: 'Araucária',
-        franqueado: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',
-        facebook: '@pontotvaraucariapr',
-        instagram: '@pontotvaraucariapr'
-      },
-      { 
-        nome: 'Ponto TV Cascavel',
-        local: 'Cascavel',
-        franqueado: 'Juliano Pimentel',
-        telefone: '(41) 99257-6534',
-        facebook: '@pontotvcascavel',
-        instagram: '@pontotvcascavel '
+        facebook: '@pontotvcwb',
+        instagram: '@pontotvcwb'
       },
       { 
         nome: 'Ponto TV Colombo',
         local: 'Colombo',
-        franqueada: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',   
-        instagram: '@pontotvcolombo'
-      },
-      { 
-        nome: 'Ponto TV Costa Oeste',
-        local: 'São Miguel do Iguaçu',
-        franqueado: 'Ismael Boschi',
-        telefone: '(45) 99121-6107',      
-        instagram: '@pontotvcostaoeste'
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvcwb',        
+        instagram: '@pontotvcwb'
       },
       { 
         nome: 'Ponto TV Pinhais',
         local: 'Pinhais',
         franqueado: 'Juliano Pimentel',
         telefone: '(41) 99257-6534',
-        facebook: '@pontotv',      
-        instagram: '@pontotvpublicidade',
+        facebook: '@pontotvcwb',      
+        instagram: '@pontotvcwb',
       },
-      {
-        nome: 'Ponto TV Londrina',
-        local: 'Londrina, Rolândia e Arapongas',
+      { 
+        nome: 'Ponto TV São José dos Pinhais',
+        local: 'São José dos Pinhais ',
         franqueado: 'Juliano Pimentel',
-        telefone: '(41) 99257-6534',
-        facebook: '@pontotvlondrina',
-        instagram: '@pontotvlondrina'
+        telefone: '(41) 99257-6534',      
+        instagram: '@pontotvtamandare'
+      },  
+      { 
+        nome: 'Ponto TV Almirante Tamandaré',
+        local: 'Almirante Tamandaré, Itaperuçu e Rio Branco do Sul ',
+        franqueado: 'Joel Anselmo',
+        telefone: '(41) 99828-7119',      
+        instagram: '@pontotvtamandare'
       },
       {
         nome: 'Ponto TV Fazenda Rio Grande',
         local: 'Fazenda Rio Grande',
-        franqueado: 'Solange Galbiati',
+        franqueada: 'Solange Galbiati',
         telefone: '(41) 92000-7880',
         facebook: '@pontotvfazendariogrande',
         instagram: '@pontotvfazendariogrande'
+      },
+      {
+        nome: 'Ponto TV Ponta Grossa',
+        local: 'Ponta Grossa',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvcwb',
+        instagram: '@pontotvcwb'
       },
       {
         nome: 'Ponto TV Foz do Iguaçu',
         local: 'Foz do Iguaçu',
         franqueado: 'Juliano Pimentel',
         telefone: '(41) 99257-6534',
-        facebook: '@pontotvfozdoiguaçu',
-        instagram: '@pontotvfozdoiguaçu'
-      },    
-      {
-        nome: 'Ponto TV Ponta Grossa',
-        local: 'Ponta Grossa',
-        franqueado: 'Solange Galbiati',
-        telefone: '(41) 92000-7880',
-        facebook: '@pontotvpg',
-        instagram: '@pontotvpontagrossa'
+        facebook: '@pontotvcwb',
+        instagram: '@pontotvcwb'        
       },
+      {
+        nome: 'Ponto TV Londrina',
+        local: 'Londrina, Arapongas e Rolândia ',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvcwb',
+        instagram: '@pontotvcwb'
+      },         
+      {
+        nome: 'Ponto TV Interior',
+        local: 'Prudentópolis, Guarapuava, Pato Branco, Medianeira, Jandaia do Sul e Francisco Beltrão',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvcwb',
+        instagram: '@pontotvcwb'
+      },      
     ]
   },
   {
@@ -98,21 +92,7 @@ export const franchisees = [
   {
     id: 'ma',
     estado: 'MARANHÃO | MA',
-    representantes: [
-      {
-        nome: 'Ponto TV Colinas',
-        local: 'Colinas',
-        franqueado: 'Luiz Filho',
-        telefone: '(99) 98176-2772',      
-        instagram: '@pontotvcolinas'
-      },
-      {      
-        nome: 'Ponto TV Tutóia',
-        local: 'Tutóia',
-        franqueado: 'Wanderson da Silva',
-        telefone: '(98) 99992-5290',      
-        instagram: '@pontotvtutoia'
-      },
+    representantes: [         
     ]
   },
   {
@@ -146,21 +126,20 @@ export const franchisees = [
   {
     id: 'rj',
     estado: 'RIO DE JANEIRO | RJ',
-    representantes: [
-      {
-        nome: 'Ponto TV Techno Mais',
-        local: 'Cachoeiras de Macacu',
-        franqueado: 'Rodrigo Amaral',
-        telefone: '(21) 97005-3870',
-        facebook: '@pontotvtechnomais',
-        instagram: '@pontotv_technomais'
-      },
+    representantes: [      
       { 
         nome: 'Ponto TV Macaé',
         local: 'Macaé',
         franqueado: 'Thiago Guerra Marques',
         telefone: '(21) 97141-9611',      
         instagram: '@pontotvmacae'
+      },
+      {
+        nome: 'Ponto TV Cabo Frio',
+        local: 'Cabo Frio',
+        franqueado: 'Breno Jotha Rodrigues',
+        telefone: '(22) 98839-8137',        
+        instagram: '@pontotvcabofrio'
       },      
     ]
   },
@@ -216,14 +195,7 @@ export const franchisees = [
   {
     id: 'ba',
     estado: 'BAHIA | BA',
-    representantes: [
-      { 
-        nome: 'Ponto TV Ipiaú',
-        local: 'Ipiaú',
-        franqueado: 'Uilliam Macedo',
-        telefone: '(73) 98182-5022',  
-        instagram: '@pontotvipiau'
-      },
+    representantes: [      
     ]
   },
   {
@@ -279,7 +251,16 @@ export const franchisees = [
   {
     id: 'sc',
     estado: 'SANTA CATARINA | SC',
-    representantes: []
+    representantes: [
+      { 
+        nome: 'Ponto TV SC',
+        local: 'Balneário Camboriú e Joinville',
+        franqueado: 'Juliano Pimentel',
+        telefone: '(41) 99257-6534',
+        facebook: '@pontotvcwb',  
+        instagram: '@pontotvcwb'
+      },
+    ]
   },
   {
     id: 'se',
